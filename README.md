@@ -7,7 +7,7 @@ The preprint as a pdf is available at XXXXX PUT PREPRINT LINK HERE XXXX
 
 ## This repository contains
 - Quarto document with R chuncks for Diversity analysis and Similarity analysis
-- Data as .csv files
+- Data as .csv files (too many files, need to clean it!)
 - Tables as .csv files
 - JPG and PNG files for some figures which are not created via the code
 - Bibtek file for the bibliography cited in the manuscript
