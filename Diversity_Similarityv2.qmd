@@ -32,7 +32,7 @@ format:
     embed-resources: true
 prefer-html: true
 execute:
-  cache: false
+  cache: true
   echo: false
   warning: false
   message: false
@@ -517,8 +517,11 @@ bgy.ramp = colorRampPalette(c(rgb(0.95,0.95,0.95),rgb(0,0.5,0.5))) # from very l
 
 # Data loading
 df_rawmaterial <- read.csv(file = "bdd_paaf_rawmaterial.csv", row.names = 1)
+df_rawmaterial = df_rawmaterial[,-c(1:8)]
 df_greenstone <- read.csv(file = "bdd_paaf_greenstone.csv", row.names = 1)
+df_greenstone = df_greenstone[,-c(1:8)]
 df_greenturq <- read.csv(file = "bdd_paaf_greenturq.csv", row.names = 1)
+df_greenturq = df_greenturq[,-c(1:8)]
 
 #Preparing colors by period
 color_periods = c("Early Ceramic" = "dodgerblue", 
@@ -565,68 +568,47 @@ BRsim.mat <- function(x) {
 matrix_simBR = BRsim.mat(df_rawmaterial)
 
 # Data preparation for network analysis
-Paaf_bdd <- read.csv(file = "network_bdd_paaf_rawmaterial.csv")
-row.names(Paaf_bdd) = Paaf_bdd$Site
+Paaf_bdd <- read.csv(file = "bdd_paaf_rawmaterial.csv",row.names=1)
 Paaf_bdd = Paaf_bdd[order(Paaf_bdd$Period),]
 Paaf_bdd_C=Paaf_bdd[1:11,] # Keeping only Early Ceramic sites
 Paaf_raw = subset(Paaf_bdd, select = Anorthite:Turquoise) # Keeping only gemstones informations
 Paaf_raw_C = Paaf_raw[1:11,]
 
-Paaf_greenstone <- read.csv(file = "network_bdd_paaf_greenstone.csv")
-row.names(Paaf_greenstone) = Paaf_greenstone$Site
+Paaf_greenstone <- read.csv(file = "bdd_paaf_greenstone.csv",row.names=1)
 Paaf_greenstone = Paaf_greenstone[order(Paaf_greenstone$Period),]
 Paaf_rawgreen = subset(Paaf_greenstone, select = Anorthite:Greenstone)
 Paaf_greenstone_C = Paaf_greenstone[1:11,]
 
-Paaf_greenturq <- read.csv(file = "network_bdd_paaf_greenturq.csv")
-row.names(Paaf_greenturq) = Paaf_greenturq$Site
+Paaf_greenturq <- read.csv(file = "bdd_paaf_greenturq.csv",row.names=1)
 Paaf_greenturq = Paaf_greenturq[order(Paaf_greenturq$Period),]
 Paaf_rawgreenturq = subset(Paaf_greenturq, select = Anorthite:Greenstone)
 Paaf_greenturq_C = Paaf_greenturq[1:11,]
 
-df_typesobjets  <- read.csv(file = "network_bdd_paaf_typesobjets.csv")
-row.names(df_typesobjets) = df_typesobjets$Site
+df_typesobjets  <- read.csv(file = "bdd_paaf_typesobjets.csv",row.names=1)
 df_typesobjets = df_typesobjets[order(df_typesobjets$Period),]
 Paaf_typesobjets = subset(df_typesobjets, select = Bead:Earplug)
 Paaf_typesobjets_C = Paaf_typesobjets[1:14,]
 df_typesobjets_C = df_typesobjets[1:14,]
 
-df_toustypes  <- read.csv(file = "network_bdd_paaf_toustypes.csv")
-row.names(df_toustypes) = df_toustypes$Site
+df_toustypes  <- read.csv(file = "bdd_paaf_toustypes.csv",row.names=1)
 df_toustypes = df_toustypes[order(df_toustypes$Period),]
 Paaf_toustypes = subset(df_toustypes, select = Anthropomorphic:Zoomorphic)
 Paaf_toustypes_C = Paaf_toustypes[1:12,]
 df_toustypes_C = df_toustypes[1:12,]
 
-df_typesperles  <- read.csv(file = "network_bdd_paaf_typesperles.csv")
-row.names(df_typesperles) = df_typesperles$Site
+df_typesperles  <- read.csv(file = "bdd_paaf_typesperles.csv",row.names=1)
 df_typesperles = df_typesperles[order(df_typesperles$Period),]
 Paaf_typesperles = subset(df_typesperles, select = Biconical:Barrel)
 Paaf_typesperles_C = Paaf_typesperles[1:10,]
 df_typesperles_C = df_typesperles[1:10,]
 
 #Number of artifacts per site for all combinations type-raw material
-df_typerawsites  <- read.csv(file = "network_bdd_paaf_rawtyposites.csv") 
-row.names(df_typerawsites) = df_typerawsites$Site
+df_typerawsites  <- read.csv(file = "bdd_paaf_rawtyposites.csv",row.names=1) 
 df_typerawsites = df_typerawsites[order(df_typerawsites$Period),]
 Paaf_typerawsites = subset(df_typerawsites, 
                            select = Amethyst.Biconical:Turquoise.Zoomorphic)
 Paaf_typerawsites_C = Paaf_typerawsites[1:9,]
 df_typerawsites_C = df_typerawsites[1:9,]
-
-# Creating functions Création des fonctions spécifiques (basé sur travail de Peeples)
-co.p <- function(x) {
-  # create matrix of proportions
-  x <- as.matrix(x)
-  # define anything with greater than or equal to 0.1 as present (1)
-  x[x >= 1] <- 1
-  # define all other cells as absent (0)
-  x[x < 1] <- 0
-  # matrix algebraic calculation to find co-occurence 
-  #(%*% indicates matrix multiplication), t(temp) is transposed of temp
-  out <- x %*% t(x)
-  return(out)
-}
 
 # Creation function to create Brainerd-Robinson matrix
 BR.sim <- function(x) {
@@ -653,25 +635,7 @@ BR.sim <- function(x) {
   return(results)
 }
 
-# Calculating centrality values for binary networks (edges between sites are coded 0 or 1).
-
-net.stats <- function(y) {
-  # calculate degree centrality
-  dg <- as.matrix(sna::degree(y, gmode = "graph"))
-  # calculate and scale eigenvector centrality
-  eg <- as.matrix(sna::evcent(y))
-  eg <- sqrt((eg^2) * length(eg))
-  # calculate betweenness centrality
-  bw <- sna::betweenness(y, gmode = "graph")
-  # combine centrality scores into matrix
-  output <- cbind(dg, eg, bw)
-  rownames(output) <- rownames(as.matrix(y))
-  colnames(output) <- c("degree", "eigen", "betweeness")
-  return(output)
-}
-
 # Calculating centrality values for weigthed networks (edges between sites have a weight).
-
 net.stats.wt <- function(y) {
   # calculate weighted degree as the sum of weights - 1
   dg.wt <- as.matrix(rowSums(y) - 1)
@@ -688,12 +652,10 @@ net.stats.wt <- function(y) {
 }
 
 # Function to get the threshold to keep a single and complete network with all sites.
-
 thresh = function(similarity_matrix) 
   min(sapply(as.data.frame(x= similarity_matrix),sort)[nrow(similarity_matrix)-1,])
 
 # Function to create muliple graphs from a list
-
 plot_a_list <- function(master_list_with_plots, no_of_rows, no_of_cols) {
   
   patchwork::wrap_plots(master_list_with_plots, 
@@ -701,30 +663,12 @@ plot_a_list <- function(master_list_with_plots, no_of_rows, no_of_cols) {
 }
 
 # Applying the functions to our data
-Paaf_raw_CoP <- co.p(Paaf_raw)
-Paaf_raw_CoP_sup <- co.p(Paaf_raw)
-Paaf_raw_CoP_sup[upper.tri(Paaf_raw_CoP_sup)] = 0 # Keeping only upper matrix so that the edges are not doubled in the graphs, which is visible only in the cartographic projections of nodes.
-Paaf_raw_CoP_C <- co.p(Paaf_raw_C) # calculating on Early Ceramic age only
-Paaf_raw_CoP_C[upper.tri(Paaf_raw_CoP_C)] = 0
-
 Paaf_raw_BR <- BR.sim(Paaf_raw)
 Paaf_raw_BR_sup <- BR.sim(Paaf_raw)
 Paaf_raw_BR_sup[upper.tri(Paaf_raw_BR_sup)] = 0 
 Paaf_raw_BR_C <- BR.sim(Paaf_raw_C) 
 Paaf_raw_BR_C_sup <- BR.sim(Paaf_raw_C)
 Paaf_raw_BR_C_sup[upper.tri(Paaf_raw_BR_C_sup)] = NA
-
-Paaf_rawgreen_CoP <- co.p(Paaf_rawgreen)
-Paaf_rawgreen_CoP_sup <- co.p(Paaf_rawgreen)
-Paaf_rawgreen_CoP_sup[upper.tri(Paaf_rawgreen_CoP_sup)] = 0
-Paaf_rawgreen_CoP_C <- co.p(Paaf_rawgreen[1:11,])
-Paaf_rawgreen_CoP_C[upper.tri(Paaf_rawgreen_CoP_C)] = 0
-
-Paaf_rawgreenturq_CoP <- co.p(Paaf_rawgreenturq)
-Paaf_rawgreenturq_CoP_sup <- co.p(Paaf_rawgreenturq)
-Paaf_rawgreenturq_CoP_sup[upper.tri(Paaf_rawgreenturq_CoP_sup)] = 0
-Paaf_rawgreenturq_CoP_C_sup <- co.p(Paaf_rawgreenturq[1:11,])
-Paaf_rawgreenturq_CoP_C_sup[upper.tri(Paaf_rawgreenturq_CoP_C_sup)] = 0
 
 Paaf_rawgreen_BR <- BR.sim(Paaf_rawgreen)
 Paaf_rawgreen_BR_sup <- BR.sim(Paaf_rawgreen)
@@ -740,26 +684,12 @@ Paaf_rawgreenturq_BR_C <- BR.sim(Paaf_rawgreenturq[1:11,])
 Paaf_rawgreenturq_BR_C_sup <- BR.sim(Paaf_rawgreenturq[1:11,])
 Paaf_rawgreenturq_BR_C_sup[upper.tri(Paaf_rawgreenturq_BR_C_sup)] = 0
 
-Paaf_typesobjets_CoP <- co.p(Paaf_typesobjets)
-Paaf_typesobjets_CoP_sup <- co.p(Paaf_typesobjets)
-Paaf_typesobjets_CoP_sup[upper.tri(Paaf_typesobjets_CoP_sup)] = 0
-Paaf_typesobjets_CoP_C <- co.p(Paaf_typesobjets[1:14,])
-Paaf_typesobjets_CoP_C_sup <- co.p(Paaf_typesobjets[1:14,])
-Paaf_typesobjets_CoP_C_sup[upper.tri(Paaf_typesobjets_CoP_C_sup)] = 0
-
 Paaf_typesobjets_BR <- BR.sim(Paaf_typesobjets)
 Paaf_typesobjets_BR_sup <- BR.sim(Paaf_typesobjets)
 Paaf_typesobjets_BR_sup[upper.tri(Paaf_typesobjets_BR_sup)] = 0
 Paaf_typesobjets_BR_C <- BR.sim(Paaf_typesobjets[1:14,])
 Paaf_typesobjets_BR_C_sup <- BR.sim(Paaf_typesobjets[1:14,])
 Paaf_typesobjets_BR_C_sup[upper.tri(Paaf_typesobjets_BR_C_sup)] = 0
-
-Paaf_toustypes_CoP <- co.p(Paaf_toustypes)
-Paaf_toustypes_CoP_sup <- co.p(Paaf_toustypes)
-Paaf_toustypes_CoP_sup[upper.tri(Paaf_toustypes_CoP_sup)] = 0
-Paaf_toustypes_CoP_C <- co.p(Paaf_toustypes[1:12,])
-Paaf_toustypes_CoP_C_sup <- co.p(Paaf_toustypes[1:12,])
-Paaf_toustypes_CoP_C_sup[upper.tri(Paaf_toustypes_CoP_C_sup)] = 0
 
 Paaf_toustypes_BR <- BR.sim(Paaf_toustypes)
 Paaf_toustypes_BR_sup <- BR.sim(Paaf_toustypes)
@@ -768,26 +698,12 @@ Paaf_toustypes_BR_C <- BR.sim(Paaf_toustypes[1:12,])
 Paaf_toustypes_BR_C_sup <- BR.sim(Paaf_toustypes[1:12,])
 Paaf_toustypes_BR_C_sup[upper.tri(Paaf_toustypes_BR_C_sup)] = 0
 
-Paaf_typesperles_CoP <- co.p(Paaf_typesperles)
-Paaf_typesperles_CoP_sup <- co.p(Paaf_typesperles)
-Paaf_typesperles_CoP_sup[upper.tri(Paaf_typesperles_CoP_sup)] = 0
-Paaf_typesperles_CoP_C <- co.p(Paaf_typesperles[1:10,])
-Paaf_typesperles_CoP_C_sup <- co.p(Paaf_typesperles[1:10,])
-Paaf_typesperles_CoP_C_sup[upper.tri(Paaf_typesperles_CoP_C_sup)] = 0
-
 Paaf_typesperles_BR <- BR.sim(Paaf_typesperles)
 Paaf_typesperles_BR_sup <- BR.sim(Paaf_typesperles)
 Paaf_typesperles_BR_sup[upper.tri(Paaf_typesperles_BR_sup)] = 0
 Paaf_typesperles_BR_C <- BR.sim(Paaf_typesperles[1:10,])
 Paaf_typesperles_BR_C_sup <- BR.sim(Paaf_typesperles[1:10,])
 Paaf_typesperles_BR_C_sup[upper.tri(Paaf_typesperles_BR_C_sup)] = 0
-
-Paaf_typerawsites_CoP <- co.p(Paaf_typerawsites)
-Paaf_typerawsites_CoP_sup <- co.p(Paaf_typerawsites)
-Paaf_typerawsites_CoP_sup[upper.tri(Paaf_typerawsites_CoP_sup)] = 0
-Paaf_typerawsites_CoP_C <- co.p(Paaf_typerawsites[1:99,])
-Paaf_typerawsites_CoP_C_sup <- co.p(Paaf_typerawsites[1:9])
-Paaf_typerawsites_CoP_C_sup[upper.tri(Paaf_typerawsites_CoP_C_sup)] = 0
 
 Paaf_typerawsites_BR <- BR.sim(Paaf_typerawsites)
 Paaf_typerawsites_BR_sup <- BR.sim(Paaf_typerawsites)
@@ -875,11 +791,12 @@ color_sites = as.data.frame(row.names(df_rawmaterial))
   color_sites=inner_join(color_sites,data_sites, by = c("Site" = "Site")) %>%
   select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
    color_sites$Color = str_replace_all(color_sites$Period, color_periods)
-    df_rawmaterialCA=cbind(df_rawmaterial,color_sites)
+    
+   df_rawmaterialCA=cbind(df_rawmaterial,color_sites)
     df_rawmaterialCA$Period <- factor(df_rawmaterialCA$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
     df_rawmaterialCA$Color = factor(df_rawmaterialCA$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
     
-    ca_MP = CA(df_rawmaterialCA[,1:19],graph = F)
+    ca_MP = CA(df_rawmaterialCA[,1:18],graph = F)
     dim1_2 = fviz_ca_biplot(ca_MP, axes = c(1, 2), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_rawmaterialCA$Color, palette = df_rawmaterialCA$Color) + scale_color_identity("Period", labels = levels(as.factor(df_rawmaterialCA$Period)),guide = "legend") + theme(legend.position = "none")
     dim1_3 = fviz_ca_biplot(ca_MP, axes = c(1, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_rawmaterialCA$Color, palette = df_rawmaterialCA$Color) + scale_color_identity("Period", labels = levels(as.factor(df_rawmaterialCA$Period)),guide = "legend") +     theme(legend.position="bottom",
   legend.margin=margin(c(0,0,0,0)),legend.key.width = unit(0.2, "cm"))+ guides(color = guide_legend(nrow = 2, byrow = TRUE))
@@ -941,7 +858,7 @@ Paaf_bdd$Color = factor(Paaf_bdd$Color, levels=c("dodgerblue", "darkorange","med
 edges <- melt(Paaf_raw_BR) %>%
   rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
   filter(Similarity>=Tmin)
-g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd[,1:6])
+g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd),Paaf_bdd[,1:5]))
 
 # Ploting the network
 big_plot = ggraph(g, layout = "kk") + 
@@ -962,7 +879,7 @@ for (T in number_list) {
   edges = melt(Paaf_raw_BR) %>%
     rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
     filter(Similarity>=thresholds_BR[T])
-  g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd[,1:6])
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd),Paaf_bdd[,1:5]))
   my_list_BR[[T]] =   
     ggraph(g, layout = "kk") + 
     geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
@@ -997,7 +914,7 @@ T = thresh(Paaf_raw_BR_C)
 edges = melt(Paaf_raw_BR_C_sup) %>%
     rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
     filter(Similarity>=T)
-  g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd_C[,1:6])
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd_C),Paaf_bdd_C[,1:5]))
   
   # Calculating centrality values for nodes in a weighted network
   Paaf_raw_BR_C_thresh = Paaf_raw_BR_C
@@ -1052,7 +969,7 @@ Trgt = thresh(Paaf_rawgreenturq_BR_C)
 edges = melt(Paaf_rawgreenturq_BR_C_sup) %>%
     rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
     filter(Similarity>=Trgt)
-  g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd_C[,1:6])
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd_C),Paaf_bdd_C[,1:5]))
   
   # Calculating centrality values for nodes in a weighted network
   Paaf_rawgreenturq_BR_C_thresh = Paaf_rawgreenturq_BR_C
@@ -1108,8 +1025,11 @@ plot_grid(graph1,graph4,graph2,graph5,graph3,graph6,ncol = 2, nrow=3, labels = c
 
 ```{r preparation of data}
 df_typesobjets  <- read.csv(file = "bdd_paaf_typesobjets.csv", row.names = 1)
+df_typesobjets = df_typesobjets[,-c(1:5)]
 df_toustypes  <- read.csv(file = "bdd_paaf_toustypes.csv", row.names = 1)
+df_toustypes = df_toustypes[,-c(1:5)]
 df_typesperles  <- read.csv(file = "bdd_paaf_typesperles.csv", row.names = 1)
+df_typesperles = df_typesperles[,-c(1:5)]
 
 color_sites_types = as.data.frame(row.names(df_typesobjets))
   colnames(color_sites_types)="Site" 
