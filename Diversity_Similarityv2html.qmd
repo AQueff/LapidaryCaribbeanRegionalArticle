@@ -1,0 +1,1480 @@
+---
+title: "Diversity and similarity in the Ceramic Age lapidary production in the Caribbean islands"
+author:
+  - name: Alain Queffelec
+    orcid: 0000-0002-9763-7600
+    email: alain.queffelec@u-bordeaux.fr
+    affiliations:
+      - name: UMR CNRS 5199 PACEA, Univ. Bordeaux, Ministère de la Culture
+        address: B2 Allée Geoffroy St. Hilaire
+        city: Pessac
+        postal-code: F-33600
+
+date: last-modified
+date-format: long
+format:
+#   docx:
+#     toc: true
+#  pdf:
+#    include-in-header:
+#      - text: |
+#         \usepackage{booktabs}
+#         \usepackage{hyperref}
+#         \usepackage{multirow}
+#         \usepackage{lscape}
+#         \usepackage{changepage}
+#    toc: true
+#    colorlinks: true
+#    number-sections: true
+   html:
+    code-fold: true
+    keep-tex: true
+    toc: true
+    title-block-style: default
+    title-block-banner: true
+    embed-resources: true
+prefer-html: true
+execute:
+  cache: true
+  echo: true
+  warning: false
+  message: false
+editor: visual
+bibliography: references.bib
+
+abstract: |
+  Personal ornaments are an important part of the archaeological record, as they provide valuable insights into various aspects of past human societies. Among these ornaments, those made of lithic materials are particularly significant due to their wide distribution and excellent preservation in archaeological sites. In the Caribbean islands, during the Ceramic Age, lapidary artifacts exhibit remarkable abundance and diversity in terms of both raw materials and typology. While archaeologists have previously highlighted differences between the Saladoid and Post-Saladoid periods, this was based on incomplete data without robust mineralogical or typological identification. A South-American origin of the specific lapidary production of the Early Ceramic period has been proposed, following the origin of Ceramic production styles, but relies on the same incomplete data. In this article, I demonstrate that robust analysis of extensive datasets, combining first-hand identification and literature survey, enables to address the questions of spactial and temporal distribution, diversity and similarity of lithic beads and pendants during the Caribbean Age in the Antilles. The study reveals that the Early and Middle Ceramic periods exhibit higher raw material and typological diversity compared to later periods. Furthermore, similarities are greater between sites attributed to the same period than between geographically close sites, both in terms of mineralogy and typology. Finally, I establish that the lapidary production during the Early Ceramic Age differs significantly between South American sites and Saladoid sites in the archipelago. Some indications pointing to the Isthmo-Colombian area are proposed, which will require further research to enhance our understanding to the same level as that of the Caribbean islands, enabling advanced comparisons.
+  
+  **Keywords**: Caribbean; Lapidary artifacts; Ceramic Age; Beads; Pendants; Raw materials
+
+license: |
+  This manuscript is Distributed under a CC-BY licence (https://creativecommons.org/licenses/by/4.0/)
+---
+
+```{css, echo = FALSE}
+.justify {
+  text-align: justify !important
+}
+```
+
+# Introduction
+
+::: justify
+The archipelago formed of the Caribbean islands is a specific region of America, very probably the last region where people settled on the continent [@wilson_archaeology_2007], but the first to be (re)discovered by C. Columbus. It has been inhabited first by hunter-gatherers and then horti-ceramists during few millenia between the first peopling and the European colonization [@keegan_oxford_2013]. The periodization of the Ceramic Age for the Caribbean islands is primarily based on the styles of ceramic production, following the pioneering work of Rouse, although recent archaeological research now integrates other parts of the archaeological record to better understand the evolution of the lifestyles of the indigenous peoples of this period [see a summary of this in @berard_boxes_2019]. It is worth noting that despite this renewal of archaeological research in the archipelago, the Saladoid/Post-Saladoid segmentation remains strong and persistent, even when considering other analytical criteria. This major distinction has also been regularly supported by the observation of changes in the production of stone ornaments, with significant and diversified production attributed to the Saladoid period, while the populations occupying the Antilles during more recent periods were less focused on this craft [@berard_saladoid_2013; @hofman_island_2007; @knippenberg_stone_2007; @rodriguez_early_1993; @hofman_networks_2014]. Unfortunately, archaeological interpretations based on personal ornaments in the Caribbean are based on qualitative observations rather than robust data. The specific archaeological record that personal ornaments constitute holds significant informative potential for archaeologists. Beads and pendants are indeed used worldwide to decorate not only the body but also clothing, humans, animals, and beyond their decorative aspect, they serve to display one's social status, wealth, gender, as talismans, good luck charms, currency, or other attributes recognized by society members, such as the biological maturity of the wearer [e.g. @nguru_socialcultural_2020; @nobayashi_diversity_2020; @munan_social_1995; @heizer_handbook_1978; @wiessner_risk_1982; @gasson_quiripas_2000]. Vanhaeren and d'Errico [-@vanhaeren_aurignacian_2006] summarize the various topics approached by archaeologists through the study of adornments. This list remains relevant, as shown by more recent publications on these same topics. For earlier periods, the study of the appearance of the first adornments and thus the symbolism behind them opens a window into the cognitive abilities of our ancestors [e.g. @bar-yosefmayer_holes_2020; @vanhaeren_variability_2019]. For later periods, it is possible to study the manufacturing techniques to shed light on the technical abilities of ancient craftsmen [@georjon_late_2021; @burley_shell_2019; @raymond_technological_2022], to examine the exchange networks of these populations, and to assess the economic significance that a particular type of material production may hold [e.g. @gomes_phytomorphic_2021; @so_connecting_2018; @miller_ostrich_2022; @carter_geologic_2016; @stiner_finding_2014]. Furthermore, the distribution of adornments in burials may help to better understand the social organization of a group [e.g. @wang_bayesian_2021]. It is also possible to trace back to a certain segmentation in space and time of a population into ethno-linguistic groups [@vanhaeren_aurignacian_2006; @rigaud_ornaments_2015; @newell_inquiry_1990; @miller_ostrich_2022], an application that would be really interesting for the study of the Caribbean islands. During recent years, new data have been created with respect to lapidary production in the Caribbean islands, especially for archaeological sites located in the French islands [@queffelec_local_2018a; @queffelec_stone_2020; @queffelec_parures_2022], in Grenada [@falci_lapidary_2020] and Dominican Republic [@falci_biographies_2020]. These studies have shed light on the diversity of production both in terms of types and raw materials, the techniques employed to produce these beads and pendants for different periods, but the chronological and geographical comparison of productions have not been addressed in these recent works. A compilation of these new results with literature have been published for the entire archipelago [@queffelec_database_2021], and this article will test, in a quantitative manner using statistical analyses and graphical representations, the empirically observed differences between occupation periods, the homogeneity of production in the region, as well as the links they could indicate with the South American continent.
+:::
+
+# Materials and methods
+
+## Periodization
+
+::: justify
+If, as previously stated, the Caribbean islands have been inhabited for more than 7000 years, the work presented here focuses entirely on the Ceramic Age, since no significant lapidary production\footnote{we will use the term *lapidary* in this manuscript for the personal ornaments made of stone} is known before in the Caribbean. The Ceramic Age, traditionally subdivided on the basis of changes in ceramic production (decorations and shapes), and lasting about 2000 years, begins with the first Saladoid/Huecoid sites and ends with the arrival of European settlers. The Saladoid designation, like all other series (with the suffix "-oid") and sub-series (with the suffix "-an") [@keegan_oxford_2013], takes its name from the eponymous site where a particular type of ceramic production was identified, here the Saladero site in Venezuela [@cruxent_archeological_1958]. The diversity of appellations is great in the Caribbean, and as Keegan and Hofman recently reminded us [-@keegan_caribbean_2017]: "*Archaeologists have used a bewildering assortment of names: Saladoid, Ostionoid, Troumassoid, la Hueca, Island Carib, Island Arawak, Taíno, Lucayan, Agroalfarera, Ciboney, and so on. The challenge is to make sense of these various names, some of which even we are not sure what they really mean.*". Currently, the majority of archaeologists agree that this classification into series and sub-series, supposed to represent particular geographical areas and chronological periods, has significant limitations, but is still necessary for communication among researchers in the Caribbean area [@keegan_caribbean_2017]. The most commonly used scheme, reworked from Rouse's pioneering work [-@rouse_tainos_1992] and involving complex local variations among the islands, proposes for the Lesser Antilles a division into Saladoid and a group of different facies often integrated under the term post-Saladoid [@keegan_oxford_2013; @hofman_postsaladoid_2013]. The former includes two main subseries: Huecan Saladoid (named after the La Hueca site in Puerto Rico), whose sites are rather old and mainly concentrated in the northern part of the Lesser Antilles, and Cedrosan Saladoid (named after the Cedros site in Venezuela), which lasted longer and is found in all the Lesser Antilles. The post-Saladoid, on the other hand, encompasses a fairly wide variety of local variations mainly within the Troumassoid (Troumassée site in St. Lucia) and Ostionoid (Ostiones site in Puerto Rico) series, themselves subdivided into subseries such as Troumassan, Suazan, Ostionan, Elenan, Chican, Marmoran [@berard_saladoid_2013; @hofman_postsaladoid_2013]. The Ceramic Age can also be called Neo-Indian, as is sometimes the case in South America [@navarrete_prehistory_2008; @rouse_venezuelan_1963], to emphasize not only the evolution of ceramic production but also all the changes in the way of life during this transition [@bonnissent_melting_2013]. It is then divided into Early Neo-Indian and Late Neo-Indian [@bonnissent_archeologie_2008; @bonnissent_gisements_2013; @bonnissent_melting_2013]. Another school also proposes to put Huecoid and Saladoid on the same level, respectively under the names of Agroalfarero I and Agroalfarero II, the former having allowed for the local development of Agroalfarero III (Ostionoid) and IV (Taíno phase) [@chanlattebaik_huecoid_2013]. To name the periods in a homogeneous way, without relying exclusively on the characteristics of the ceramic assemblages, and for the whole area of the Lesser Antilles, B. Bérard [-@berard_boxes_2019] proposes to divide the Ceramic Age into four periods: Early, Middle, Late, and Final Ceramic (@tbl-periodization). In each of these periods, which succeed one another in time within the same space, several cultural components are grouped together, such as the Early Cerdosan Saladoid and Huecan Saladoid/Huecoid in the Early Ceramic period. The Late Ceramic period, on the other hand, groups together the numerous variations of Troumassoid, Ostionoid, and even the late Cedrosan Saladoid, which are geographical variations in ceramic production, but contemporary and grouped together in this way for a better overall view and understanding for the non-specialist. This, in particular, makes it possible to integrate other disciplines into the ongoing discussion about the cultural evolution of the populations of the Lesser Antilles and Puerto Rico during the two millennia of the Ceramic Age. \textbf{It is on this periodization, since one must be chosen, and because it allows for regional-scale study, that this work will be based.}
+:::
+
+```{r tbl-periodization}
+#| label: tbl-periodization
+#| tbl-cap: Periodization of the Ceramic Age in the Lesser Antilles and Puerto Rico (mod. after Bérard 2019).
+library(knitr)
+library(kableExtra)
+periodization=read.csv(file = "Table_periodization.csv",na.strings = "0",encoding="UTF8")
+kable(periodization,col.names = gsub("[_]", " ", names(periodization)),align = "ccl") %>%
+  collapse_rows(columns = c(1,2)) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+## Datasets and subsets
+
+::: justify
+The database of 80 archaeological sites and more than 8000 artifacts related to the lapidary production during the Ceramic Age in the Caribbean islands [@queffelec_database_2021], whose aim was to be exhaustive, need to be sub-set for the diversity and similarity analysis conducted in this work due to heterogeneous quality of the data. For the diversity analysis, only the 11 best datasets were kept, including only the sites for which the complete lapidary sample has been investigated recently, and where the raw materials and types are described. For the similarity analysis, a larger number of sites have been included, but these site are not necessarily the same for raw material and typological analyses. For raw material similarity analyses, data was reduced to 22 sites by keeping only the sites with at least 10 artifacts remaining after removing the raw materials identified in a single site or never formally identified by analytical techniques (@tbl-dataset_rawmaterials). Given the quality of some mineralogical information, especially concerning the so-called *greenstones*, and also because one can argue that people from the Ceramic Age were not gemologists either, this subsample of 22 sites was also used with all green rocks and minerals gathered in a single category, and also with all green rocks and minerals gathered but turquoise, which is often easily recognized by naked-eye. For the site of Pearls, only data from Cody's excavations were considered, since we think it is less biased in terms of raw material distribution than the content of the surface collection published recently who could have clearly overcome chips or fragments of raw materials and therefore being biased towards some raw materials. As for the typological similarity analysis, the selection has been even more difficult since this kind of information is severely missing from the literature. Discrepancies between the datasets for raw materials and typology are then observed, and the different degrees of typological precision used for the different analysis imply the conservation of different archaeological sites in the sample. To explain some of these discrepancies, one can take the example of a site for which only the number of beads and pendants is given in the literature, with no detailed analysis. Such a site is used for very general study based on the number of beads and pendants, but cannot be integrated in a study based on the detailed typology of beads. This is the case for example for Royall's (199 artifacts), Punta Candelero (592 artifacts), Doig's (43 artifacts) for which the detailed typology is not published. Sometimes iconography in the literature allows to circumvent this issue, but sometimes not, as is the case for the 81 rock crystal beads from Golden Rock for which no standardized picture is published and then it is impossible from the picture in the article to know if the beads are cylindrical or discoid [@versteeg_archaeology_1992]. Other differences between different levels of details can also come from the incomplete description of the whole archaeological collection, as for Trants, for which the literature details the type of 123 beads and 7 pendants out of the 523 beads and 12 pendants listed in the article [@crock_archaeology_1998]. By not keeping the raw material fragments in this typological study and relying on the previously established rule of keeping only the sites with more than 10 remaining artifacts, we also removed two archaeological sites from the dataset (Grand Case and Hacienda Grande). Finally, it is noteworthy that data for the site of Pearls in this typological analysis integrates both the results from Cody's excavation [@cody_site_1991] and the private collection inventory based on surface collection [@falci_lapidary_2020], since we consider that complete and/or finished objects of any raw material would have been collected even in these uncontrolled circumstances. The different levels of precision allow to create several tables (@tbl-dataset_types, and @tbl-dataset_precisetypes), which sometimes lead to very small samples given the low level of detail in the literature.
+:::
+
+```{r tbl-dataset_rawmaterials}
+#| label: tbl-dataset_rawmaterials
+#| tbl-cap: Dataset used for regional analysis of the distribution of raw materials used for lapidary production during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_rawmaterials=read.csv(file = "Table_rawmaterials.csv",na.strings = "0",encoding = "UTF-8")
+kable(dataset_rawmaterials, col.names = gsub("[_]", " ", names(dataset_rawmaterials))) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+```{r tbl-dataset_types}
+#| label: tbl-dataset_types
+#| tbl-cap: Dataset used for regional analysis of the distribution of types of lapidary products during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_types=read.csv(file = "Table_types.csv",na.strings = "")
+kable(dataset_types,col.names = gsub("[_]", " ", names(dataset_types)), align = "lcccccc") %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+```{r tbl-dataset_precisetypes}
+#| label: tbl-dataset_precisetypes
+#| tbl-cap: Dataset used for regional analysis of the distribution of precise types of lapidary products during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_precisetypes=read.csv(file = "Table_precisetypes.csv",na.strings = "")
+kable(dataset_precisetypes,col.names = gsub("[_]", " ", names(dataset_precisetypes)), align = "lccccccccccccc") %>%
+   row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+## Diversity
+
+::: justify
+The diversity of lapidary production in the archaeological sites (characterized by different numbers of artifacts, types, raw materials) is evaluated following ecological methods of quantification. Diversity is calculated for different scales, giving more or less weight to rare mineral species [@tothmeresz_comparison_1995; @marcon_mesures_2018]. This use of parametric families of diversity, instead of classical diversity indices, avoids the inconsistencies sometimes observed when trying to reduce the complexity of a multidimensional entity to a single number [@tothmeresz_comparison_1995], for example with the richness index which is strongly impacted by the sample size [@kintigh_measuring_1984; @shott_size_2010]. In this method, diversity of scale q is noted \textsuperscript{q}D. \textsuperscript{0}D is species richness (the number of species), \textsuperscript{1}D is directly related to the Shannon index of diversity \[\textsuperscript{1}D = exp(Shannon index)\], while \textsuperscript{2}D is a value of diversity less sensitive to the rare species and equivalent to Simpson index [@hill_diversity_1973]. While these specific values of q are useful and regularly used in zooarchaeological studies [\textit{e.g.} @beaver_using_2019; @grayson_specialized_2002; @lopez-garcia_palaeoenvironmental_2014], the most interesting application of this method is plotting diversity profiles. A diversity profile situated above another one is declared more diverse. If profiles are crossing, there is no order relation, while it can still be informative to see at which order the profiles cross, since the lower the order, the higher the impact of rare species. To further assess the robustness of the observations made on diversity, particularly richness, it is possible to apply a test proposed by K.W. Kintigh [-@kintigh_measuring_1984] and coded as a function in R by M. Peeples [-@peeples_measuring_2018]. This article proposes to compare the observed richness\footnote{equivalent to \textsuperscript{0}D} of each site with the richness that could be statistically expected for a sample of that size. To calculate the expected average richness and its confidence interval for each sample size, 10 000 random draws for each sample size, from 1 up to the maximum observed number increased by 5% were made in a model sample composed of the sum of the data from all the studied sites. This model, aggregating all the data from the 11 sites, is therefore supposed to be representative of the frequency distribution of the different raw materials or types in the Caribbean region, during the Ceramic period. The same calculation was performed by only retaining the sites from the Early and Middle Ceramic periods. Since these assumptions are relatively strong, we will use a confidence interval of 80% as in the original publication, but also 95%. Finally, we calculated the Piélou's evenness index\footnote{equal to the Shannon index divided by the richness} [@pielou_measurement_1966] that states for the equitability of the distribution of the different categories. All these calculations were realized with the R package \textit{entropart} [@marcon_entropart_2019; @marcon_entropart_2015].
+:::
+
+## Similarity
+
+::: justify
+In this article, similarity analyses between archaeological sites are performed using several methods including seriation, formal network analysis, and correspondence analysis. These statistical methods for graphically representing the similarity between archaeological sites can be based on incidence matrices (presence/absence) or, as it is the case in this work, abundance matrices (frequencies, contingency tables) [@ihm_contribution_2005]. Seriation analysis has been used for a long time to address various issues at the scale of a site or inter-site comparison [@ihm_contribution_2005]. Many different applications have been proposed, ranging from the archaeological material found in burials as in the first use of this method [@petrie_sequences_1899], to the types of ceramics [@torvinen_refinement_2020 and examples cited inside], the decorations on bronze swords [@goldmann_zur_1968], as well as the types of jewelry or jewelry manufacturing techniques [@vanhaeren_aurignacian_2006; @derrico_zhoukoudian_2021]. Seriation is based on creating an ordered list of archaeological sites, where the order can be calculated in many ways. I have chosen here first to center the data (to avoid comparing sites with 10 beads and sites with 3000 beads without taking into account this huge difference), then base the seriation on the Heatmap method which applies a Hierarchical Clustering (= HC) \footnote{several classification algorithms were tested (single, average, complete, Ward) without observing any significant changes} on the Euclidean distances calculated between the sites and between the categories (raw material or type), and then optimally orders the 'leaves' of the tree with the Optimal Leaf Ordering (OLO) algorithm. Several other algorithms for seriation have been tested, without observing significant differences. This was done using the R package *seriation* [@hahsler_getting_2008]. In the case of archaeological data in the form of an abundance matrix, the Brainerd-Robinson similarity index, which quantifies the similarity between sites based on the proportions of each raw material in each site [@robinson_method_1951], is one of the most commonly used. I therefore also calculate the seriation based on this similarity index, which gives slightly different results from the hierarchical clustering based on Euclidean distances. This matrix si calculated using the R script proposed by M. Peeples [-@peeples_script_2011] and gives a similarity score for each pair of sites. This index improves the applicability of the method to our data by using a calculation specifically developed for archaeological questions, but the information about which category makes the similarity between sites is lost in the process.
+
+Network analysis is another means to explore data, in particular to highlight the relationships between archaeological sites, which are the nodes of the network connected by different types of links [e.g., @brughmans_thinking_2013; @knappett_network_2013; @brughmans_network_2018; @brughmans_network_2023]. These analyses, complementary to seriations or correspondence analysis [@ostborn_network_2014], allow the quantification of links between sites, and to characterize the sites themselves, without losing spatial or temporal information. Sites can thus be compared, connected, based on various criteria (interconnections by roads, inter-visibility, geographical proximity, sharing of characteristics or categories of archaeological material, etc.) and can also have a score according to their importance in the network on different criteria (number of links with other sites, number of links between two other sites that necessarily pass through it, etc.). This type of analysis is particularly widespread in archaeological studies of archipelagos [@dawson_network_2020], whether it concerns the islands of the Pacific [e.g., @oconnor_fishhook_2017; @cochrane_phylogenetic_2010], the Mediterranean [e.g., @freund_sardinian_2014; @knappett_modelling_2008], or, more specifically for this work, the Caribbean islands, which have also been the subject of a surprisingly large number of studies of this type [@amati_framework_2020; @mol_studying_2013; @mol_connected_2014; @keehnen_roots_2020; @mol_old_2013]. Specifically, my work enters the category *material networks* defined by Mills [-@mills_social_2017], which includes the possibility of representing the links between network nodes (here, the sites) based on the similarity of their archaeological material content. Like many authors, I used the Brainerd-Robinson similarity, already described above, to preserve the quantitative information in our data set, as suggested where possible [@peeples_binarize_2013, @weidele_graphical_2016]. The option of transforming the data into a presence/absence matrix has nevertheless been explored, as well as another measure of similarity, the $\chi$\textsuperscript{2} distance, but they will not be presented because this distance gives significant weight to rare materials, which, given our already imperfect data (especially regarding the determination of raw materials) would give too much weight to possibly doubtful mineralogical determinations. As already mentioned before, data on lapidary productions in the Caribbean islands are far from perfect, and it is important to keep in mind that "*\[n\]etworks, in and of themselves, do not represent past phenomena, but rather are merely a formal way of exploring our archaeological data and theories about relationships*" [@brughmans_network_2018] or, as Ostborn et al. [-@ostborn_network_2014] specify: "*At best, similarity network analysis is a versatile, yet systematic tool to formulate qualitative hypotheses*". Network analysis based on archaeological data must indeed take into account biases that are often nonexistent in sociology or other disciplines that have created these methods, particularly regarding the incompleteness of data, the approximation of contemporaneity of sites, and the numerous possibilities of social relations that may be at the origin of the distribution of a specific type of artifact or raw material [see @gjesfjeld_network_2015 for a description of these biases]. Firstly, I use the multi-period dataset to explore the data and the diachronic analysis of the lapidary production in the Antilles. Secondly, I subdivide the data by chronological period, as is traditionally done [e.g. @freund_sardinian_2014; @mills_dynamics_2013], and focus on the period with the most sites, namely the Early Ceramic period, to explore the structure of the network. Network analysis not only allows for visualizing the links between nodes, but also for visualizing the importance of nodes in the network, particularly through centrality calculations. Each node is thus characterized by its own centrality in the network, which can be calculated in different ways. For the type of archaeological application that interests me, the most commonly used centrality metrics are degree, betweenness, and eigenvector centrality [@peeples_binarize_2013]. Degree corresponds to the number of links connecting the node to the network, betweenness corresponds to the number of shortest paths between two nodes passing through the node in question, and eigenvector centrality measures the connection of the node with other highly connected nodes in the network.
+
+The third method, correspondence analysis, is a method of information reduction, historically derived from seriation analyses, thanks to the development of computing [@ihm_contribution_2005]. It is of the same type as Principal Component Analysis (PCA), but applicable to a contingency table such as a count of objects per site. It allows the representation of sites and raw materials on the same graph and is interpreted as a PCA.
+:::
+
+## Geographic distribution
+
+::: justify
+For the geographical distribution of sites, raw materials and types of lapidary artifacts, we used the Free and Open Source QGIS software.
+:::
+
+# Results
+
+## Diversity analysis
+
+### Raw materials diversity
+
+```{r Diversity preparing steps}
+#| warning: false
+
+# Load packages
+library(ggplot2)
+library(vegan)
+library(entropart)
+library(stringr)
+library(dplyr)
+
+# Load data for Diversity profiles
+data_sites=read.csv(file = "bdd_sites.csv")
+diversite_MP=read.csv(file = "diversite_MP.csv")
+diversite_Types=read.csv(file = "diversite_types.csv")
+
+# Prepare objects
+## Raw materials diversity
+AAG <-as.ProbaVector(diversite_MP[1,1:9])
+GMBT <-as.ProbaVector(diversite_MP[2,1:13])
+Morel <-as.ProbaVector(diversite_MP[3,1:15])
+Vive <-as.ProbaVector(diversite_MP[4,1:15])
+HopeEstate <-as.ProbaVector(diversite_MP[5,1:20])
+Elliot <-as.ProbaVector(diversite_MP[6,1:12])
+Royall <-as.ProbaVector(diversite_MP[7,1:12])
+BaieOrientale2 <-as.ProbaVector(diversite_MP[8,1:2])
+ElFlaco <-as.ProbaVector(diversite_MP[9,1:2])
+ElCabo <-as.ProbaVector(diversite_MP[10,1:3])
+PlayaGrande <-as.ProbaVector(diversite_MP[11,1:2])
+
+## Types diversity
+AAGtypes <-as.ProbaVector(diversite_Types[1,1:3])
+BaieOrientale2types <-as.ProbaVector(diversite_Types[2,1:2])
+ElCabotypes <-as.ProbaVector(diversite_Types[3,1:2])
+ElFlacotypes <-as.ProbaVector(diversite_Types[4,1:3])
+Elliottypes <-as.ProbaVector(diversite_Types[5,1:3])
+GMBTtypes <-as.ProbaVector(diversite_Types[6,1:6])
+GrandBaytypes <-as.ProbaVector(diversite_Types[7,1:4])
+HaciendaGrandetypes <-as.ProbaVector(diversite_Types[8,1:6])
+HopeEstatetypes <-as.ProbaVector(diversite_Types[9,1:7])
+MainStreettypes <-as.ProbaVector(diversite_Types[10,1:4])
+Moreltypes <-as.ProbaVector(diversite_Types[11,1:7])
+Pearlstypes <-as.ProbaVector(diversite_Types[12,1:9])
+Prosperitytypes <-as.ProbaVector(diversite_Types[13,1:6])
+Sorcetypes <-as.ProbaVector(diversite_Types[14,1:8])
+LaHuecatypes <-as.ProbaVector(diversite_Types[15,1:8])
+Teclatypes <-as.ProbaVector(diversite_Types[16,1:7])
+Trantstypes <-as.ProbaVector(diversite_Types[17,1:8])
+Vivetypes <-as.ProbaVector(diversite_Types[18,1:7])
+
+# Prepare colors
+color_periods = c("Early Ceramic" = "dodgerblue", 
+                    "Middle-Late Ceramic" = "mediumblue", 
+                    "Middle Ceramic" = "darkorange", 
+                    "Late Ceramic" = "darkgrey", 
+                    "Late-Final Ceramic" = "gold")
+
+# Calculate Piélou indices and store them in a .csv
+Sites_MP = c("AnseGourde","GareMaritime","Morel","Vive","HopeEstate","Elliot","Royall",
+             "BaieOrientale2","ElFlaco","ElCabo","PlayaGrande")
+list_proba_vectors_MP = list(AAG,GMBT,Morel,Vive,HopeEstate,
+                             Elliot,Royall,BaieOrientale2,ElFlaco,ElCabo,PlayaGrande)
+shannon_MP = sapply(list_proba_vectors_MP, vegan::diversity,index = "shannon")
+richesse_MP = sapply(list_proba_vectors_MP,Richness)
+pielou_MP = as.data.frame(shannon_MP/log(richesse_MP))
+row.names(pielou_MP) = Sites_MP ; colnames(pielou_MP) = "Pielou_index"
+write.csv(pielou_MP, file = "pielou_MP.csv")
+
+Sites_Types = c("AnseGourde","BaieOrientale2","ElCabo","ElFlaco","Elliot",
+                "GareMaritime","GrandBay","HaciendaGrande","HopeEstate",
+                "MainStreet","Morel","Pearls","Prosperity","Sorce",
+                "LaHueca","Tecla","Trants","Vive")
+list_proba_vectors_toustypes = list(AAGtypes,BaieOrientale2types,
+                            ElCabotypes,ElFlacotypes,
+                            Elliottypes,GMBTtypes,
+                            GrandBaytypes,HaciendaGrandetypes,HopeEstatetypes,
+                            MainStreettypes,Moreltypes,Pearlstypes,
+                            Prosperitytypes,Sorcetypes,LaHuecatypes,Teclatypes,
+                            Trantstypes,Vivetypes)
+shannon_toustypes = sapply(list_proba_vectors_toustypes,
+                           vegan::diversity,index = "shannon")
+richesse_toustypes = sapply(list_proba_vectors_toustypes,Richness)
+pielou_toustypes = as.data.frame(shannon_toustypes/log(richesse_toustypes))
+row.names(pielou_toustypes) = Sites_Types
+colnames(pielou_toustypes) = "Pielou_index"
+write.csv(pielou_toustypes, file = "pielou_Toustypes.csv")
+
+# Prepare the diversity profile plots
+q.seq <-seq(0, 2, .1) #create sequence of q values
+
+fun_profile = function(x){
+  CommunityProfile(Diversity, x, q.seq)[2] #create function based on the entropart package
+}
+
+# Load data for Kintigh_84 method
+MP = read.csv(file = "PAAF_Div_MP_Kintigh84.csv",header=T,row.names=1)
+MP_Salad = MP[2:7,] #Keep only Early Ceramic sites
+Types = read.csv(file = "PAAF_Div_Type_Kintigh84.csv",header=T,row.names=1)
+Types_Majeurs = Types[,c(1,3:5,7:9,11:12)] # Removing rare types (anthropozoomorphes, faceted beads and spherical beads)
+
+# Create functions and plots for Kintigh_84 method, based on script by M. Peeples, transformed for ggplot2
+div.ggplot <- function(x, nsim=1000 , by.d=1, q.d1=0.8, q.d2=0.95,nudge.y.value=1) { # create script 
+    # and set default values for input
+    require(vegan) # this script requires the vegan package
+    maxn <- max(rowSums(x))*1.05 # the number of sample sizes considered is set as 
+    #the maximum observed sample size + 5%
+    step.d <- seq(1,maxn,by=by.d) # this step simply creates a sequence from 1 to 
+    #maxn by the interval set using the by.d variable
+    prob.d <- colSums(x) # this step produces the pool from which random samples 
+    #will be drawn by simply summing the values across all units by type (column)
+    divlist <- list() # create an empty list for output
+    # the following line is the meat of the program we created in class. It uses the 
+    #rmultinom function to create nsim (1000 by default) simulations by
+    # randomly drawing from prob.d (the sum of types across all units) for sample 
+    #size i. i is part of a for loop so this is conducted for every sample
+    # size from 1 to maxn defined above. Next we use the specnumber command (set to 
+    #calculate on MARGIN 2 or columns) to calculate the richness of every
+    # random sample. The results of this procedure are placed into the list divlist which
+    #gets longer by 1 each time it is run (length(divlist)+1).
+    for (i in step.d) {
+      divlist[[length(divlist)+1]] <- specnumber(rmultinom(nsim,i,prob.d),MARGIN=2)
+    } 
+    mean.d <- rapply(divlist,mean) # this rapply command recursively calculates the mean 
+    #richness for each sample size in divlist
+    sd.d <- rapply(divlist,sd) # this rapply command recursively calculates the standard 
+    #deviation of richness for each sample size in divlist
+    
+    # add the Period information
+    x=cbind(Site=row.names(x),x) %>%
+      inner_join(data_sites, by = c("Site" = "Site")) %>%
+      select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    rownames(x) = x$Site
+    x = select(x, -Site)
+    
+    x$Color <- str_replace_all(x$Period, color_periods)
+    
+    if (length(levels(as.factor(x$Period)))==4) {
+      x$Period <- factor(x$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+      x$Color = factor(x$Color, levels=c("dodgerblue", "darkorange", "darkgrey", "gold"))
+    } else {
+      x$Period <- factor(x$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+      x$Color = factor(x$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+    }
+    
+    ggplot() + geom_line(aes(step.d,mean.d),colour='red',show.legend=F) + 
+      geom_point(data=x,aes(rowSums(x[,1:(ncol(x)-2)]),specnumber(x[,1:(ncol(x)-2)]),colour=Color)) +
+      geom_text(data=x,aes(rowSums(x[,1:(ncol(x)-2)]),specnumber(x[,1:(ncol(x)-2)]),colour=Color),label= rownames(x),nudge_y = nudge.y.value, show.legend = FALSE) +
+      scale_color_identity("Legend", labels = levels(as.factor(x$Period)),guide = "legend") +
+      #theme(legend.position="bottom",legend.margin=margin(c(0,0,0,0)),legend.key.width = unit(0.3, "cm")) +
+      #guides(color = guide_legend(nrow = 2, byrow = TRUE)) + 
+      xlim(0,maxn) + ylim(0,ncol(x)-1) + xlab("Sample size") + ylab("Richness") +
+      geom_line(aes(step.d,mean.d+(sd.d*qnorm((1-q.d1)/2))),colour='red2',linetype = 2,show.legend=F) +
+      geom_line(aes(step.d,mean.d-(sd.d*qnorm((1-q.d1)/2))),colour='red2',linetype = 2) +
+      geom_line(aes(step.d,mean.d+(sd.d*qnorm((1-q.d2)/2))),colour='red3',linetype = 2) +
+      geom_line(aes(step.d,mean.d-(sd.d*qnorm((1-q.d2)/2))),colour='red3',linetype = 2)
+} 
+
+
+# Same type of plot ut zoomed on the low values
+div.ggplot200 <- function(x, nsim=1000 , by.d=1, q.d1=0.8, q.d2=0.95,nudge.y.value=1) { # create script 
+    # and set default values for input
+    require(vegan) # this script requires the vegan package
+    maxn <- max(rowSums(x))*1.05 # the number of sample sizes considered is set as 
+    #the maximum observed sample size + 5%
+    step.d <- seq(1,maxn,by=by.d) # this step simply creates a sequence from 1 to 
+    #maxn by the interval set using the by.d variable
+    prob.d <- colSums(x) # this step produces the pool from which random samples 
+    #will be drawn by simply summing the values across all units by type (column)
+    divlist <- list() # create an empty list for output
+    # the following line is the meat of the program we created in class. It uses the 
+    #rmultinom function to create nsim (1000 by default) simulations by
+    # randomly drawing from prob.d (the sum of types across all units) for sample 
+    #size i. i is part of a for loop so this is conducted for every sample
+    # size from 1 to maxn defined above. Next we use the specnumber command (set to 
+    #calculate on MARGIN 2 or columns) to calculate the richness of every
+    # random sample. The results of this procedure are placed into the list divlist which
+    #gets longer by 1 each time it is run (length(divlist)+1).
+    for (i in step.d) {
+      divlist[[length(divlist)+1]] <- specnumber(rmultinom(nsim,i,prob.d),MARGIN=2)
+    } 
+    mean.d <- rapply(divlist,mean) # this rapply command recursively calculates the mean 
+    #richness for each sample size in divlist
+    sd.d <- rapply(divlist,sd) # this rapply command recursively calculates the standard 
+    #deviation of richness for each sample size in divlist
+    
+    # add the Period information
+    x=cbind(Site=row.names(x),x) %>%
+      inner_join(data_sites, by = c("Site" = "Site")) %>%
+      select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    rownames(x) = x$Site
+    x = select(x, -Site)
+    
+    x$Color <- str_replace_all(x$Period, color_periods)
+    
+    #needed to fix the order of colors and labels in the legend, which is not alphabetical
+    if (length(levels(as.factor(x$Period)))==4) {
+      x$Period <- factor(x$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+      x$Color = factor(x$Color, levels=c("dodgerblue", "darkorange", "darkgrey", "gold"))
+    } else {
+      x$Period <- factor(x$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+      x$Color = factor(x$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+    }
+    
+    #ploting the model and the points for sites
+    ggplot() + geom_line(aes(step.d,mean.d),colour='red',show.legend=F)  + 
+      geom_point(data=x,aes(rowSums(x[,1:(ncol(x)-2)]),specnumber(x[,1:(ncol(x)-2)]),colour=Color)) +
+      geom_text(data=x,aes(rowSums(x[,1:(ncol(x)-2)]),specnumber(x[,1:(ncol(x)-2)]),colour=Color),label= rownames(x),nudge_y = nudge.y.value, show.legend = FALSE)+ 
+      scale_color_identity("Legend", labels = levels(as.factor(x$Period)),guide = "legend") +
+      xlim(0,200) + ylim(0,ncol(x)-1) + xlab("Sample size") + ylab("Richness") +
+      geom_line(aes(step.d,mean.d+(sd.d*qnorm((1-q.d1)/2))),colour='red2',linetype = 2,show.legend=F) +
+      geom_line(aes(step.d,mean.d-(sd.d*qnorm((1-q.d1)/2))),colour='red2',linetype = 2) +
+      geom_line(aes(step.d,mean.d+(sd.d*qnorm((1-q.d2)/2))),colour='red3',linetype = 2) +
+      geom_line(aes(step.d,mean.d-(sd.d*qnorm((1-q.d2)/2))),colour='red3',linetype = 2) +
+      theme(legend.position="none",axis.title.x=element_blank(),axis.title.y=element_blank())
+  }
+```
+
+::: justify
+Exhaustive and reliable data for lapidary production for 11 and 18 sites for raw material and typology, respectively, show different patterns based on the periodization. For raw materials, this analysis completes the initial analysis that included Gare Maritime, Vivé, Morel, and Anse à la Gourde [@queffelec_stone_2020] with Hope Estate [@queffelec_parures_2022] and Baie Orientale 2 [Fouéré dans @bonnissent_gisements_2013] for Saint Martin, Royall's and Elliot's [@murphy_precolumbian_2000] for Antigua, and El Flaco, El Cabo and Playa Grande in Dominican Republic [@falci_biographies_2020]. The obtained diversity profiles highlight a clear pattern linked to the period of occupation of the archaeological sites (@fig-diversity_rawmat). The diversity profiles of sites from the Early Ceramic period are located at the top of the graph, particularly for relatively low diversity order values, indicating significant richness and diversity of raw materials, some of which are not well represented. This is particularly the case for Hope Estate, which could be due to the dual Huecan Saladoid and Cedrosan Saladoid occupation of the site. The two sites in Antigua, attributed to the Middle Ceramic period, have lower richness, but the Elliot's site shows a diversity profile that intersects all the profiles of the Early Ceramic sites, indicating that when the weight of rare materials is decreased, it is ultimately the most diversified collection. Anse à la Gourde and Baie Orientale 2, the two sites from the Late Ceramic period included in this dataset, show two very different behaviors. Anse à la Gourde hass a profile strongly resembling the older sites, but simply lower on the graph, while Baie Orientale 2, which has only two materials (99 objects made of calcite and 1 object made of volcanic rock), is located at the bottom of the graph. If Anse à la Gourde had been interpreted as not diversified in an earlier version of this work [@queffelec_stone_2020], it should be noted that the graph is now very different with truly undiversified sites, such as Baie Orientale 2, as mentioned earlier, but also the three sites from the Late-Final Ceramic period: El Cabo, El Flaco, and Playa Grande. The Piélou's equitability index shows three groups (@fig-pielouraw). The first group of sites, the majority, whose equitability is relatively high, ranging from 0.74 to 0.91, shows a descending continuum in which it is difficult to place a clear separation. These sites do not have materials that are significantly overrepresented compared to others. The second group, consisting of El Cabo and Playa Grande, whose values range from 0.56 to 0.62, is interpreted as having a predominance of one material over others, here in diorite and calcite respectively. Finally, Baie Orientale 2, as noted above, shows a very strong imbalance in favor of calcite, which is reflected in the Piélou's equitability index with a value of 0.08.
+:::
+
+```{r Plot diversity profiles raw material}
+#| label: fig-diversity_rawmat
+#| fig-cap: "Raw materials diversity profiles"
+#| warning: false
+profils_MP = lapply(list_proba_vectors_MP,fun_profile)
+names(profils_MP) = Sites_MP
+Plot_Diversite_MP = as.data.frame(unlist(profils_MP))
+colnames(Plot_Diversite_MP) = "Diversity"
+Plot_Diversite_MP$Site = str_replace_all(row.names(Plot_Diversite_MP),"[:punct:]","_")
+Plot_Diversite_MP$Site = str_split_fixed(Plot_Diversite_MP$Site,"_",2)[,1]
+Plot_Diversite_MP$q = q.seq
+Plot_Diversite_MP$Period = str_replace_all(Plot_Diversite_MP[,2],c("AnseGourde" = "Late Ceramic", "BaieOrientale2" = "Late Ceramic", "ElCabo" = "Late-Final Ceramic", "ElFlaco" = "Late-Final Ceramic", "PlayaGrande" = "Late-Final Ceramic", "Elliot" = "Middle Ceramic", "Royall" = "Middle Ceramic", "GareMaritime" = "Early Ceramic", "HopeEstate" = "Early Ceramic", "Morel" = "Early Ceramic", "Vive" = "Early Ceramic"))
+Plot_Diversite_MP$Color = str_replace_all(Plot_Diversite_MP$Period, color_periods)  
+Plot_Diversite_MP$Period <- factor(Plot_Diversite_MP$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+Plot_Diversite_MP$Color = factor(Plot_Diversite_MP$Color, levels=c("dodgerblue", "darkorange", "darkgrey", "gold"))
+
+ggplot(Plot_Diversite_MP, aes(q,Diversity, colour=Color)) + geom_line(aes(group=Site), size=1)+
+  scale_color_identity("Legend", labels = levels(as.factor(Plot_Diversite_MP$Period)),guide = "legend")
+```
+
+```{r Barplot Pielou index raw materials}
+#| label: fig-pielouraw
+#| fig-cap: "Piélou's index for raw materials diversity"
+#| warning: false
+pielou_MP_graph=cbind(Site=row.names(pielou_MP),pielou_MP) %>%
+  inner_join(data_sites, by = c("Site" = "Site_short"))
+
+    # Fixing the order of colors and labels for the legend
+    pielou_MP_graph$Color <- str_replace_all(pielou_MP_graph$Period, color_periods)
+pielou_MP_graph$Period <- factor(pielou_MP_graph$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+      pielou_MP_graph$Color = factor(pielou_MP_graph$Color, levels=c("dodgerblue", "darkorange", "darkgrey", "gold"))
+      
+      # Ploting the barplot
+plot <- ggplot(pielou_MP_graph, aes(x = reorder(Site,-Pielou_index), y = Pielou_index,fill=Color)) +
+  geom_bar(stat="identity")+
+   scale_fill_identity("Legend", labels = levels(as.factor(pielou_MP_graph$Period)),guide = "legend") + xlab("Archaeological site") + ylab("Piélous' index") + guides(x = guide_axis(angle = 45))
+plot
+```
+
+::: justify
+Richness in raw materials of all the sites from the Early Ceramic falls within the possible variability calculated for the number of objects they have delivered, if we randomly drew the same number of objects 10 000 times from the pool composed of all lapidary objects from the 11 sites (@fig-model_rawmat). They are even situated rather in the high part of the confidence interval, with Hope Estate and Vivé being respectively outside the confidence interval at 80% and 95%. Royall's, a site from the Middle Ceramic, having delivered a significant number of objects, is well below what would be expected from a random drawing of such a number of objects and therefore shows a rather strong selection of raw materials compared to all available materials. The sites from Late and Final Ceramic are largely below what would be expected if it were a random drawing of this number of objects, except Anse à la Gourde, which shows a comparable wealth to the average of random drawings. The recent sites are therefore very selective in terms of the raw material used, and this is not an artifact linked to the sample size, even for Playa Grande, which is the site that delivered the fewest objects (13). Combining the interpretation of diversity profiles and observed richness compared to numerical simulations makes it possible to distinguish very clearly the Early Ceramic sites in terms of raw material diversity.
+:::
+
+```{r Plot diversity model raw material}
+#| label: fig-model_rawmat
+#| fig-cap: "Raw materials richness model and position of the archaeological sites"
+#| warning: false
+#| out-width: 100%
+
+div.ggplot(MP,nsim=10000,q.d1=0.80,q.d2=0.95)
+```
+
+### Typological diversity
+
+Similarly to the diversity of raw materials, diversity profiles for types (beads and pendants combined) were calculated (@fig-diversity_types). They demonstrate a very marked difference between the sites of the Early Ceramic period and the other sites, with the former having a much higher diversity than the latter. The typological diversity profiles of the Middle Ceramic period sites are here similar to those of the more recent sites, unlike the diversity profiles of raw materials for sites of this same period. However, it is important to note that the typological data are very imperfect for the Middle Ceramic period sites, unfortunately, as mentioned earlier. Regarding the homogeneity of the distribution of bead and pendant types by site (revealed by the Piélou index), a variety of situations without strong limits is observed (@fig-pieloutypes), except for Baie Orientale 2 whose collection, apart from raw material fragments, consists of 11 cylindrical beads and a single disc-shaped bead. The only chronological particularity belongs to the Final Ceramic period sites in the Dominican Republic, both of which have a very strong evenness index: for these sites, types are evenly represented.
+
+```{r Plot diversity profiles typology}
+#| label: fig-diversity_types
+#| fig-cap: "Types diversity profiles"
+#| warning: false
+profils_Types = lapply(list_proba_vectors_toustypes,fun_profile)
+names(profils_Types) = Sites_Types
+Plot_Diversite_Types = as.data.frame(unlist(profils_Types))
+colnames(Plot_Diversite_Types) = "Diversity"
+Plot_Diversite_Types$Site = str_replace_all(row.names(Plot_Diversite_Types),"[:punct:]","_")
+Plot_Diversite_Types$Site = str_split_fixed(Plot_Diversite_Types$Site,"_",2)[,1]
+Plot_Diversite_Types$q = q.seq
+Plot_Diversite_Types$Period = str_replace_all(Plot_Diversite_Types$Site,c("AnseGourde" = "Late Ceramic", "BaieOrientale2" = "Late Ceramic", "ElCabo" = "Late-Final Ceramic", "ElFlaco" = "Late-Final Ceramic", "PlayaGrande" = "Late-Final Ceramic", "Elliot" = "Middle Ceramic", "Royall" = "Middle Ceramic", "GareMaritime" = "Early Ceramic", "HopeEstate" = "Early Ceramic", "Morel" = "Early Ceramic", "Vive" = "Early Ceramic", "GrandBay" = "Middle Ceramic", "HaciendaGrande" = "Early Ceramic", "LaHueca" = "Early Ceramic", "MainStreet" = "Middle-Late Ceramic", "Pearls" = "Early Ceramic", "Prosperity" = "Early Ceramic", "Sorce" = "Early Ceramic", "Tecla" = "Early Ceramic", "Trants" = "Early Ceramic"))
+Plot_Diversite_Types$Color = str_replace_all(Plot_Diversite_Types$Period, color_periods)  
+Plot_Diversite_Types$Period <- factor(Plot_Diversite_Types$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic')) # giving the list of factors in the order I want so that it is in this order in the legend
+Plot_Diversite_Types$Color = factor(Plot_Diversite_Types$Color, levels=c("dodgerblue", "darkorange", "mediumblue","darkgrey", "gold")) # giving the list of factors in the order I want so that it is in this order in the legend
+ggplot(Plot_Diversite_Types, aes(q,Diversity, colour=Color)) + geom_line(aes(group = Site), size = 1) + 
+  scale_color_identity("Legend", labels = levels(as.factor(Plot_Diversite_Types$Period)),guide = "legend")
+  
+```
+
+```{r Barplot Pielou index typology}
+#| label: fig-pieloutypes
+#| fig-cap: "Piélou's index for typological diversity"
+#| warning: false
+pielou_toustypes_graph=cbind(Site=row.names(pielou_toustypes),pielou_toustypes) %>%
+  inner_join(data_sites, by = c("Site" = "Site_short"))
+
+    pielou_toustypes_graph$Color <- str_replace_all(pielou_toustypes_graph$Period, color_periods)
+pielou_toustypes_graph$Period <- factor(pielou_toustypes_graph$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Middle-Late Ceramic', 'Late Ceramic','Late-Final Ceramic'))
+pielou_toustypes_graph$Color = factor(pielou_toustypes_graph$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+      
+
+plot <- ggplot(pielou_toustypes_graph, aes(x = reorder(Site,-Pielou_index), y = Pielou_index,fill=Color)) +
+  geom_bar(stat="identity")+
+  scale_fill_identity("Legend", labels = levels(as.factor(pielou_toustypes_graph$Period)),guide = "legend") + xlab("Archaeological site") + ylab("Piélous' index") + guides(x = guide_axis(angle = 45))
+plot
+
+```
+
+The observed richness of archaeological samples was compared to a model created by merging the 18 sites' samples into one, and drawing randomly 10 000 times in this pool for each sample size (@fig-model_typology). This figure shows the results when all types are retained (@fig-model_typology A) and when only major types, the most frequent ones, are retained (meaning excluding faceted beads (one site), spherical beads (n = 6) and anthropozoomorphic pendants (n = 5)) (@fig-model_typology B). These graphs indicate that sites with high amount of lapidary production (Sorcé, Pearls and La Hueca) do not have a typology based solely on randomness, since they should have a even higher richness that the one they actually show. Their inventory, even is diverse, does not correspond to a simple random draw from a virtual lot of objects created by summing all collections from all represented sites. For sites with smaller sample size, this is also often the case: sites with low richness (2 or 3) are all outside the modeled variability, indicating that they also have a specific choice of bead and pendant types, since a random draw of the number of objects that make up their collection should have created a more diversified collection. Sites with richness between four and seven (except Trants) are within the modeled variability. Their relatively small sample size could be the cause of their lower richness than sites with higher number of artifacts. This interpretation is the same whether all types, even the rarest ones, are retained or when these rare types are excluded. It could indeed have been thought that with such rare types, sites with large sample size would necessarily be below the modeled richness, as the random draw of 2800 objects has a very high chance of containing all types, even the rarest ones. However, when these rare types are excluded, the sites with the highest frequencies remain below the modeled distribution.
+
+```{r Plot diversity model typology, fig.height=9,fig.width=11}
+#| label: fig-model_typology
+#| fig-cap: "Raw materials richness model and position of the archaeological sites"
+#| out-width: 100%
+#| fig-asp: 1.5
+#| warning: false
+
+library(cowplot)
+a = div.ggplot(Types,nsim=10000,q.d1=0.80,q.d2=0.95,nudge.y.value=0.5)
+inseta <- div.ggplot200(Types,nsim=10000,q.d1=0.80,q.d2=0.95,nudge.y.value=0.7)
+b = div.ggplot(Types_Majeurs,nsim=10000,q.d1=0.80,q.d2=0.95,nudge.y.value=0.5)
+insetb = div.ggplot200(Types_Majeurs,nsim=10000,q.d1=0.80,q.d2=0.95,nudge.y.value=0.7)
+plot_types = ggdraw(a) + draw_plot(inseta, .20, .08, .55, .45)
+plot_types_majeurs = ggdraw(b) + draw_plot(insetb, .20, .08, .55, .45)
+plot_grid(plot_types,plot_types_majeurs,nrow=2,align = "v")
+```
+
+## Similarity
+
+```{r Data preparation similarity}
+#| warning: false
+
+#Package for seriations
+library(seriation)
+library(heatmaply)
+library(stringr)
+
+# Packages for Correspondence Analysis
+library(FactoMineR)
+library(factoextra)
+
+# Packages for network analysis
+library(ggraph)
+library(tidygraph)
+library(ggmap)
+library(purrr)
+library(dplyr)
+library(ggplot2)
+library(reshape2)
+library(patchwork)
+library(igraph)
+library(tnet)
+library(statnet)
+library(dendextend)
+
+#Package for organizing plot
+library(cowplot)
+
+#Preparation of color ramp
+bgy.ramp = colorRampPalette(c(rgb(0.95,0.95,0.95),rgb(0,0.5,0.5))) # from very light grey to teal
+
+# Data loading
+df_rawmaterial <- read.csv(file = "bdd_paaf_rawmaterial.csv", row.names = 1)
+df_rawmaterial = df_rawmaterial[,-c(1:8)]
+df_greenstone <- read.csv(file = "bdd_paaf_greenstone.csv", row.names = 1)
+df_greenstone = df_greenstone[,-c(1:8)]
+df_greenturq <- read.csv(file = "bdd_paaf_greenturq.csv", row.names = 1)
+df_greenturq = df_greenturq[,-c(1:8)]
+
+#Preparing colors by period
+color_periods = c("Early Ceramic" = "dodgerblue", 
+                  "Middle-Late Ceramic" = "mediumblue", 
+                  "Middle Ceramic" = "darkorange", 
+                  "Late Ceramic" = "darkgrey", 
+                  "Late-Final Ceramic" = "gold")
+
+color_sites = as.data.frame(row.names(df_rawmaterial))
+  colnames(color_sites)="Site" 
+  color_sites=inner_join(color_sites,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    color_sites$color = str_replace_all(color_sites$Period, color_periods)
+
+
+# Cerating the function for calculating the Brainerd-Robinson similarity matrix (based on script by M. Peeples)
+
+BRsim.mat <- function(x) {
+  # get names of sites
+  names <- row.names(x)
+  x <- na.omit(x)  # remove any rows with missing data
+  x <- prop.table(as.matrix(x), 1)  # convert to row proportions
+  rd <- dim(x)[1]
+  # create an empty symmetric matrix of 0s
+  results <- matrix(0, rd, rd)
+  # the following dreaded double for loop goes through every cell in the
+  # output data table and calculates the BR value as described above
+  for (s1 in 1:rd) {
+    for (s2 in 1:rd) {
+      x1Temp <- as.numeric(x[s1, ])
+      x2Temp <- as.numeric(x[s2, ])
+      results[s1, s2] <- 2 - (sum(abs(x1Temp - x2Temp)))
+    }
+  }
+  row.names(results) <- names  # assign row names to output
+  colnames(results) <- names  # assign column names to output
+  results <- results/2  # rescale results between 0 and 1
+  results <- round(results, 3)  # round results
+  return(results)
+}
+
+# Applying the function to our data
+
+matrix_simBR = BRsim.mat(df_rawmaterial)
+
+# Data preparation for network analysis
+Paaf_bdd <- read.csv(file = "bdd_paaf_rawmaterial.csv",row.names=1)
+Paaf_bdd = Paaf_bdd[order(Paaf_bdd$Period),]
+Paaf_bdd_C=Paaf_bdd[1:11,] # Keeping only Early Ceramic sites
+Paaf_raw = subset(Paaf_bdd, select = Anorthite:Turquoise) # Keeping only gemstones informations
+Paaf_raw_C = Paaf_raw[1:11,]
+
+Paaf_greenstone <- read.csv(file = "bdd_paaf_greenstone.csv",row.names=1)
+Paaf_greenstone = Paaf_greenstone[order(Paaf_greenstone$Period),]
+Paaf_rawgreen = subset(Paaf_greenstone, select = Anorthite:Greenstone)
+Paaf_greenstone_C = Paaf_greenstone[1:11,]
+
+Paaf_greenturq <- read.csv(file = "bdd_paaf_greenturq.csv",row.names=1)
+Paaf_greenturq = Paaf_greenturq[order(Paaf_greenturq$Period),]
+Paaf_rawgreenturq = subset(Paaf_greenturq, select = Anorthite:Greenstone)
+Paaf_greenturq_C = Paaf_greenturq[1:11,]
+
+df_typesobjets  <- read.csv(file = "bdd_paaf_typesobjets.csv",row.names=1)
+df_typesobjets = df_typesobjets[order(df_typesobjets$Period),]
+Paaf_typesobjets = subset(df_typesobjets, select = Bead:Earplug)
+Paaf_typesobjets_C = Paaf_typesobjets[1:14,]
+df_typesobjets_C = df_typesobjets[1:14,]
+
+df_toustypes  <- read.csv(file = "bdd_paaf_toustypes.csv",row.names=1)
+df_toustypes = df_toustypes[order(df_toustypes$Period),]
+Paaf_toustypes = subset(df_toustypes, select = Anthropomorphic:Zoomorphic)
+Paaf_toustypes_C = Paaf_toustypes[1:12,]
+df_toustypes_C = df_toustypes[1:12,]
+
+df_typesperles  <- read.csv(file = "bdd_paaf_typesperles.csv",row.names=1)
+df_typesperles = df_typesperles[order(df_typesperles$Period),]
+Paaf_typesperles = subset(df_typesperles, select = Biconical:Barrel)
+Paaf_typesperles_C = Paaf_typesperles[1:10,]
+df_typesperles_C = df_typesperles[1:10,]
+
+#Number of artifacts per site for all combinations type-raw material
+df_typerawsites  <- read.csv(file = "bdd_paaf_rawtyposites.csv",row.names=1) 
+df_typerawsites = df_typerawsites[order(df_typerawsites$Period),]
+Paaf_typerawsites = subset(df_typerawsites, 
+                           select = Amethyst.Biconical:Turquoise.Zoomorphic)
+Paaf_typerawsites_C = Paaf_typerawsites[1:9,]
+df_typerawsites_C = df_typerawsites[1:9,]
+
+# Creation function to create Brainerd-Robinson matrix
+BR.sim <- function(x) {
+  # get names of sites
+  names <- row.names(x)
+  x <- na.omit(x)  # remove any rows with missing data
+  x <- prop.table(as.matrix(x), 1)  # convert to row proportions
+  rd <- dim(x)[1]
+  # create an empty symmetric matrix of 0s
+  results <- matrix(0, rd, rd)
+  # the following dreaded double for loop goes through every cell in the
+  # output data table and calculates the BR value as described above
+  for (s1 in 1:rd) {
+    for (s2 in 1:rd) {
+      x1Temp <- as.numeric(x[s1, ])
+      x2Temp <- as.numeric(x[s2, ])
+      results[s1, s2] <- 2 - (sum(abs(x1Temp - x2Temp)))
+    }
+  }
+  row.names(results) <- names  # assign row names to output
+  colnames(results) <- names  # assign column names to output
+  results <- results/2  # rescale results between 0 and 1
+  results <- round(results, 3)  # round results
+  return(results)
+}
+
+# Calculating centrality values for weigthed networks (edges between sites have a weight).
+net.stats.wt <- function(y) {
+  # calculate weighted degree as the sum of weights - 1
+  dg.wt <- as.matrix(rowSums(y) - 1)
+  # calculate weighted eigenvector centrality and rescale
+  eg.wt <- as.matrix(sna::evcent(y))
+  eg.wt <- sqrt((eg.wt^2) * length(eg.wt))
+  # calculate weighted betweenness from the tnet package (we use the
+  # suppressWarnings package to avoid notifications)
+  bw.wt <- suppressWarnings(tnet::betweenness_w(y, directed = F))[, 2]
+  output <- cbind(dg.wt, eg.wt, bw.wt)
+  rownames(output) <- rownames(as.matrix(y))
+  colnames(output) <- c("degree.wt", "eigen.wt", "between.wt")
+  return(output)
+}
+
+# Function to get the threshold to keep a single and complete network with all sites.
+thresh = function(similarity_matrix) 
+  min(sapply(as.data.frame(x= similarity_matrix),sort)[nrow(similarity_matrix)-1,])
+
+# Function to create muliple graphs from a list
+plot_a_list <- function(master_list_with_plots, no_of_rows, no_of_cols) {
+  
+  patchwork::wrap_plots(master_list_with_plots, 
+                        nrow = no_of_rows, ncol = no_of_cols)
+}
+
+# Applying the functions to our data
+Paaf_raw_BR <- BR.sim(Paaf_raw)
+Paaf_raw_BR_sup <- BR.sim(Paaf_raw)
+Paaf_raw_BR_sup[upper.tri(Paaf_raw_BR_sup)] = 0 
+Paaf_raw_BR_C <- BR.sim(Paaf_raw_C) 
+Paaf_raw_BR_C_sup <- BR.sim(Paaf_raw_C)
+Paaf_raw_BR_C_sup[upper.tri(Paaf_raw_BR_C_sup)] = NA
+
+Paaf_rawgreen_BR <- BR.sim(Paaf_rawgreen)
+Paaf_rawgreen_BR_sup <- BR.sim(Paaf_rawgreen)
+Paaf_rawgreen_BR_sup[upper.tri(Paaf_rawgreen_BR_sup)] = 0
+Paaf_rawgreen_BR_C <- BR.sim(Paaf_rawgreen[1:11,])
+Paaf_rawgreen_BR_C_sup <- BR.sim(Paaf_rawgreen[1:11,])
+Paaf_rawgreen_BR_C_sup[upper.tri(Paaf_rawgreen_BR_C_sup)] = 0
+
+Paaf_rawgreenturq_BR <- BR.sim(Paaf_rawgreenturq)
+Paaf_rawgreenturq_BR_sup <- BR.sim(Paaf_rawgreenturq)
+Paaf_rawgreenturq_BR_sup[upper.tri(Paaf_rawgreenturq_BR_sup)] = 0
+Paaf_rawgreenturq_BR_C <- BR.sim(Paaf_rawgreenturq[1:11,])
+Paaf_rawgreenturq_BR_C_sup <- BR.sim(Paaf_rawgreenturq[1:11,])
+Paaf_rawgreenturq_BR_C_sup[upper.tri(Paaf_rawgreenturq_BR_C_sup)] = 0
+
+Paaf_typesobjets_BR <- BR.sim(Paaf_typesobjets)
+Paaf_typesobjets_BR_sup <- BR.sim(Paaf_typesobjets)
+Paaf_typesobjets_BR_sup[upper.tri(Paaf_typesobjets_BR_sup)] = 0
+Paaf_typesobjets_BR_C <- BR.sim(Paaf_typesobjets[1:14,])
+Paaf_typesobjets_BR_C_sup <- BR.sim(Paaf_typesobjets[1:14,])
+Paaf_typesobjets_BR_C_sup[upper.tri(Paaf_typesobjets_BR_C_sup)] = 0
+
+Paaf_toustypes_BR <- BR.sim(Paaf_toustypes)
+Paaf_toustypes_BR_sup <- BR.sim(Paaf_toustypes)
+Paaf_toustypes_BR_sup[upper.tri(Paaf_toustypes_BR_sup)] = 0
+Paaf_toustypes_BR_C <- BR.sim(Paaf_toustypes[1:12,])
+Paaf_toustypes_BR_C_sup <- BR.sim(Paaf_toustypes[1:12,])
+Paaf_toustypes_BR_C_sup[upper.tri(Paaf_toustypes_BR_C_sup)] = 0
+
+Paaf_typesperles_BR <- BR.sim(Paaf_typesperles)
+Paaf_typesperles_BR_sup <- BR.sim(Paaf_typesperles)
+Paaf_typesperles_BR_sup[upper.tri(Paaf_typesperles_BR_sup)] = 0
+Paaf_typesperles_BR_C <- BR.sim(Paaf_typesperles[1:10,])
+Paaf_typesperles_BR_C_sup <- BR.sim(Paaf_typesperles[1:10,])
+Paaf_typesperles_BR_C_sup[upper.tri(Paaf_typesperles_BR_C_sup)] = 0
+
+Paaf_typerawsites_BR <- BR.sim(Paaf_typerawsites)
+Paaf_typerawsites_BR_sup <- BR.sim(Paaf_typerawsites)
+Paaf_typerawsites_BR_sup[upper.tri(Paaf_typerawsites_BR_sup)] = 0
+Paaf_typerawsites_BR_C <- BR.sim(Paaf_typerawsites[1:9,])
+Paaf_typerawsites_BR_C_sup <- BR.sim(Paaf_typerawsites[1:9])
+Paaf_typerawsites_BR_C_sup[upper.tri(Paaf_typerawsites_BR_C_sup)] = 0
+```
+
+### Raw material similarity
+
+Seriation (centered data, Euclidean distance, OLO algorithm) of sites and individualized raw materials highlights four groups of sites (@fig-heatmap_rawmaterial). Huecan Saladoid sites (Punta Candelero, La Hueca, Gare Maritime and Sorcé, the site neighbouring La Hueca) are grouped due to their high serpentine content. A second group stands out, based on the significant presence of calcite, including sites from the Late Ceramic (Anse à la Gourde, Baie Orientale 2, Grand Case) and Final Ceramic (El Flaco) periods, and with a weaker similarity, Hope Estate (Early Ceramic) and Royall's (Middle Ceramic). A third group corresponds to Early Ceramic and Middle Ceramic sites rich in rock crystal and presenting a diversity of materials such as nephrite, amethyst, diorite, etc. Finally, a group with significant proportions of diorite and, to a lesser extent, carnelian, is highlighted. It includes sites from several periods, such as the Early Ceramic (Trants), but especially recent and final sites (Golden Grove, which is a diorite bead production workshop, El Cabo, Playa Grande). In this group, but relatively distant from the others, is the site of Vivé, which, while indeed presenting several objects in diorite and carnelian, also stands out for a high proportion of turquoise and amethyst.
+
+In order to eliminate a potential bias created by the sites studied in more detail from a gemological perspective (the sites of Antigua and those of the French islands), and also to perhaps get closer to the Amerindian view of these materials who did not have the analytical means to distinguish all green rocks, nor maybe the need or desire to do so, I attempted two different groupings for the green rocks. First, I considered that turquoise could be left aside, due to its relatively easy recognition for non-gemologist archaeologists, as well as potentially by Amerindians (@fig-heatmap_greenturq). I also grouped all green rocks together (@fig-heatmap_greenstones). Similar groupings can be observed in both figures: a diorite (+carnelian) group including sites from different periods, a calcite-oriented group mainly comprising recent sites, a diversified group (rock crystal + amethyst + turquoise + green rocks) including ancient sites, and finally a group heavily oriented towards green rocks including Early Ceramic sites in which the Huecan Saladoid sites are even more strongly grouped.
+
+```{r Plot seriations raw material}
+#| label: fig-heatmap_rawmaterial
+#| fig-cap: "Seriation of archaeological sites and detailed raw materials."
+#| warning: false
+library(heatmaply)
+hmap_rawmaterial = heatmaply(df_rawmaterial,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites$color, #adding the  color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_rawmaterial[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_rawmaterial[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period"
+hmap_rawmaterial
+#changing the automatic name to Period below the color bars
+#export(p = hmap_rawmaterial,file = "hmap_rawmaterial.png")
+#only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+```
+
+```{r Plot seriations raw material greenturq}
+#| label: fig-heatmap_greenturq
+#| fig-cap: "Seriation of archaeological sites and raw materials, with greenstones grouped except turquoise."
+#| warning: false
+
+hmap_greenturq = heatmaply(df_greenturq,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites$color, #adding the  color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_greenturq[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_greenturq[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmap_greenturq
+#export(p = hmap_greenturq,file = "hmap_greenturq.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+```
+
+```{r Plot seriations raw material greenstones}
+#| label: fig-heatmap_greenstones
+#| fig-cap: "Seriation of archaeological sites and raw materials, with all greenstones grouped."
+#| warning: false
+
+hmap_greenstone = heatmaply(df_greenstone,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites$color, #adding the  color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_greenstone[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_greenstone[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmap_greenstone
+#export(p = hmap_greenstone,file = "hmap_greenstone.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+```
+
+Another way of representing the affinities between sites and raw materials is Correspondence Analysis. @fig-CA_rawmaterial shows the first three dimensions of this analysis. The first dimension clearly corresponds to the opposition between sites rich in greenstones (especially serpentine) and other minerals, with a cluster of ancient sites including the Huecan Saladoid sites on the left of the graph, and more recent sites on the right side. The second dimension distinguishes sites rich in calcite from those rich in diorite, as already observed in the seriations. The third dimension mainly incorporates the variance in crystal quartz proportion. By keeping only dimensions 1 and 3 (@fig-CA_rawmaterial), this analysis separates the sites extremely effectively based on their period. The results obtained by the Correspondence Analysis largely confirm the results of the seriations, highlighting the robustness of this quantitative methodology.
+
+```{r Plot CA raw material}
+#| label: fig-CA_rawmaterial
+#| fig-cap: "Correspondence Analysis of sites and raw materials."
+#| warning: false
+#| out-width: 100%
+
+color_periods = c("Early Ceramic" = "dodgerblue", 
+                  "Middle-Late Ceramic" = "mediumblue", 
+                  "Middle Ceramic" = "darkorange", 
+                  "Late Ceramic" = "darkgrey", 
+                  "Late-Final Ceramic" = "gold")
+
+color_sites = as.data.frame(row.names(df_rawmaterial))
+  colnames(color_sites)="Site" 
+  color_sites=inner_join(color_sites,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+   color_sites$Color = str_replace_all(color_sites$Period, color_periods)
+    
+   df_rawmaterialCA=cbind(df_rawmaterial,color_sites)
+    df_rawmaterialCA$Period <- factor(df_rawmaterialCA$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+    df_rawmaterialCA$Color = factor(df_rawmaterialCA$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+    
+    ca_MP = CA(df_rawmaterialCA[,1:18],graph = F)
+    dim1_2 = fviz_ca_biplot(ca_MP, axes = c(1, 2), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_rawmaterialCA$Color, palette = df_rawmaterialCA$Color) + scale_color_identity("Period", labels = levels(as.factor(df_rawmaterialCA$Period)),guide = "legend") + theme(legend.position = "none")
+    dim1_3 = fviz_ca_biplot(ca_MP, axes = c(1, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_rawmaterialCA$Color, palette = df_rawmaterialCA$Color) + scale_color_identity("Period", labels = levels(as.factor(df_rawmaterialCA$Period)),guide = "legend") +     theme(legend.position="bottom",
+  legend.margin=margin(c(0,0,0,0)),legend.key.width = unit(0.2, "cm"))+ guides(color = guide_legend(nrow = 2, byrow = TRUE))
+    
+    legend_CA = cowplot::get_legend(dim1_3) 
+    dim1_2[["labels"]][["colour"]] = "Period"
+    dim1_3[["labels"]][["colour"]] = "Period"
+    #plot_grid(dim1_2,dim1_3 + theme(legend.position = "none"),legend_CA,rel_widths = c(1,1,0.5),nrow =1, labels = c("A","B"),align = 'v')
+   p1 = plot_grid(dim1_2,dim1_3 + theme(legend.position = "none"),nrow =1, labels = c("A","B"))
+   legend = legend_CA
+   plot_grid(p1,legend,ncol=1,rel_heights = c(1,0.2))
+    
+```
+
+Rather than Euclidean distance, archaeologists often use the Brainerd-Robinson distance, to assess the similarity between archaeological collections from different sites. On the heatmap created from this similarity matrix (@fig-heatmapBR_rawmaterial), the color of the cell at the intersection of two sites a and b corresponds to this similarity value, and the seriation orders the sites to bring the most similar sites closer together. One can immediately notice the grouping of recent sites at the bottom right of the graph, especially the sites rich in calcite that form a compact group. The recent sites rich in diorite deviate slightly and are located close to the older sites that have yielded several diorite beads. The heart of the graph groups diversified Cedrosan Saladoid sites, and as we move up towards the top right, a group of Huecan Saladoid sites stand out, just before the Golden Rock site. Golden Rock can be considered an outlier due to the uniqueness of the rock crystal as the gemstone used to produce a necklace found in a burial. The nine possible combinations of the three data precisions (all distinct raw materials, green rocks grouped except for turquoise, all green rocks grouped) and the three seriation algorithms (Heatmap, PCA, PCA-Angle) have been tested, with very few variations.
+
+```{r Plot seriation Brainerd-Robinson raw material}
+#| label: fig-heatmapBR_rawmaterial
+#| fig-cap: "Heatmap of similarity of archaeological collections based on detailed raw materials (Brainerd-Robinson similarity, ’Heatmap’ algorithm)."
+#| warning: false
+
+hmapsimBR = heatmaply(matrix_simBR,
+                 #scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites$color, #adding the  color bars for Periods
+                 ColSideColors = color_sites$color,
+                 key.title = "Brainerd-Robinson \n similarity",
+                 show_dendrogram = c(FALSE, FALSE),
+                 cexCol = 1)
+#hmapsimBR[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row dendrogram
+#hmapsimBR[["x"]][["layout"]][["annotations"]][[2]][["text"]]=""
+hmapsimBR[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmapsimBR[["x"]][["layout"]][["yaxis"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmapsimBR[["x"]][["layout"]][["showlegend"]] = FALSE
+hmapsimBR
+#export(p = hmapsimBR,file = "hmapsimBR.png")
+```
+
+The exploration of network analysis results can be made difficult by the entanglement of too many links between nodes or the overlap of nodes. Several methods exist to represent such networks [@henry_representations_2008], and one of them corresponds to the representation by clusters or matrices. Here, to maintain the node/link representation type, thresholds are applied to the list of links between sites to keep only links with a similarity greater than or equal to the chosen threshold. @fig-networksBR_rawmaterial thus represents the network of archaeological sites when the threshold is set to remove the maximum number of links between sites while maintaining a single, fully connected network, meaning that all sites are linked in a single network. It can be observed that the strongest similarities are between recent period sites, namely between Playa Grande and El Cabo for the Late-Final Ceramic and Baie Orientale 2 and Grand Case for the Late Ceramic. Two groups of recent sites are linked to the group of ancient and Middle Ceramic sites through Hope Estate for the group of sites rich in calcite, and through Trants for sites rich in diorite and carnelian, forming a system similar to that already observed. It should also be noted that there is a specific group of Early Ceramic sites at the top of the figure, which includes sites attributed to the Huecan Saladoid and Sorcé, the neighboring site of La Hueca on the island of Vieques. These sites are connected to sites attributed to the Cedrosan Saladoid through the Guadeloupean site of Gare Maritime. Finally, the Middle Ceramic sites\footnote{except Golden Rock which is alone, due to its very specific collection made of a a single rock crystal collar} are located as interface between recent sites rich in diorite and Cedrosan Saladoid sites. The Grand Bay site, attributed to Middle-Late Ceramic without being able to distinguish the origin of the lapidary objects more precisely in this multicomponent site, is here clearly located in one of the Post-Saladoid groups. The choice of the threshold used to represent the network being arbitrary, as interesting as the threshold that allows at least one link per site may be, it is important to observe the networks formed with other thresholds [@peeples_binarize_2013]. With the lowest threshold represented here, 0.3, it can be seen that the Late and Final Ceramic sites form a single set with very strong similarities. The color scale of the links, as well as the thickness scale of the links, representing a wider range of values, allow for better differentiation between groups. Thus, recent sites, which have much less diversity than older sites, can show much stronger similarities because they only involve two or three raw materials. The heart of the network, formed by Cedrosan Saladoid sites, has many more connections (which places it at the center via the node positioning algorithm), but the links are weaker, as the raw materials are more diverse, making it difficult to achieve very high similarities. From a threshold of 0.4, the two groups within the recent sites are distinguished, and the network strongly resembles the network described previously for a threshold of 0.461. At a threshold of 0.462 (not shown here), the network is no longer complete, and of course, the Golden Rock site is the first to be removed from the network. At a threshold of 0.5, the groups of recent sites are also separated from the Early and Middle Ceramic sites, clearly indicating that this is where the chronological and possibly cultural limit lies if one wishes to dichotomize Ceramic Age lapidary.
+
+```{r Plot networks raw material thresholded network,fig.height=7,fig.width=9}
+#| label: fig-networksBR_rawmaterial
+#| out-width: 100%
+#| fig-asp: 1.2
+#| fig-cap: "A. Network based on Brainerd-Robinson similarity index between sites calculated from the detailed raw material composition of the collection. Threshold for keeping edges was set to the minimum value allowing to keep a complete and unique network. B-E. Networks for different values of the threshold. for all 5 graphs, nodes are positioned following the Kamada and Kawai algorithm, color and width of the links relate to the similarity value."
+#| warning: false
+
+# Calculating the threshold to keep a single and complete network.
+Tmin = thresh(Paaf_raw_BR)
+
+# Preparation of Paaf_bdd for colors and legend in the right order.
+Paaf_bdd$Subserie <- str_replace_all(Paaf_bdd$Period, color_periods) 
+Paaf_bdd = rename(Paaf_bdd,Color = Subserie)
+Paaf_bdd$Period <- factor(Paaf_bdd$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+Paaf_bdd$Color = factor(Paaf_bdd$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+
+# Calculating the network with the threshold
+edges <- melt(Paaf_raw_BR) %>%
+  rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+  filter(Similarity>=Tmin)
+g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd),Paaf_bdd[,1:5]))
+
+# Ploting the network
+big_plot = ggraph(g, layout = "kk") + 
+  geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+  scale_edge_width_continuous(range = c(1, 3),guide = "none") +
+  scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+  geom_node_point(aes(color=Paaf_bdd$Color),shape = 19,stroke = 0.5) +
+  scale_color_identity("Legend", labels = levels(as.factor(Paaf_bdd$Period)),guide = "legend") +    
+  geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                 color = "black", fontface = "bold")+
+  theme(panel.background = element_rect(fill = "grey90", colour = "grey80"))
+
+# Same thing for 4 different thresholds, put in a list.
+number_list = c(1,2,3,4)
+thresholds_BR = c(0.3,0.4,0.5,0.6) # list of thresholds
+my_list_BR = list()
+for (T in number_list) {
+  edges = melt(Paaf_raw_BR) %>%
+    rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+    filter(Similarity>=thresholds_BR[T])
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd),Paaf_bdd[,1:5]))
+  my_list_BR[[T]] =   
+    ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") +
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(color=Paaf_bdd$Color), shape = 19,size = 3,stroke = 0.5,show.legend = F) +
+    scale_color_identity("Legend", labels = levels(as.factor(Paaf_bdd$Period)),guide = "none") +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold ",thresholds_BR[T]))
+}
+
+row1 = plot_grid(big_plot,labels = "A")
+row2 = plot_grid(my_list_BR[[1]], my_list_BR[[2]],labels = c("B","C"))
+row3 = plot_grid(my_list_BR[[3]], my_list_BR[[4]],labels = c("D","E"))
+plot_grid(row1,row2,row3,nrow=3)
+
+```
+
+For the Early Ceramic period, the period represented by the most numerous sites, it is possible to calculate the network and the various centrality values for the nodes (@fig-networksEarlyCeramic_rawmaterial). This network and the centrality values were calculated and represented with the threshold allowing to maintain a unique and complete network, and for detailed raw materials (@fig-networksEarlyCeramic_rawmaterial A, B, and C) or greenstones grouped but turquoise (@fig-networksEarlyCeramic_rawmaterial D, E, and F). It can be observed that the site of Morel has the highest degree, meaning that it has the most links with other sites, especially due to its position as a connector between two more peripheral sites, Trants and Main Street, and the rest of the Cedrosan Saladoid sites (@fig-networksEarlyCeramic_rawmaterial A). If we look at the inventory of these three sites, it is the relatively high content of rock crystal and carnelian at Morel that ensures this connection with Trants and Main Street. Apart from these two more peripheral sites, the differences between sites in terms of centrality degree are not very pronounced, and they are even less so when the specificity of mineralogical characterization of the studied sites in the French islands is largely eliminated by grouping green rocks together (@fig-networksEarlyCeramic_rawmaterial D). This specificity of sites whose materials have been characterized in the finest detail is even more visible with regard to betweenness (@fig-networksEarlyCeramic_rawmaterial B), where three sites are visibly more central than the others: Morel, which makes this connection with the two aforementioned sites, as well as Vivé and Gare Maritime, which are the sites connecting the Cedrosan Saladoid sites and the Huecan Saladoid sites (+ Sorcé). When green minerals are grouped together, except for turquoise, which is considered relatively easy to identify with the naked eye and without being a gemologist, the Morel site retains an important position in the network, but the Pearls site becomes the site with the highest betweenness (@fig-networksEarlyCeramic_rawmaterial E). Sites with high betweenness are often called "hubs" and can have an important influence on the network, whether in terms of exchanges of goods or information, depending on the reasons for the existence of the network. Finally, when eigenvector centrality is used to represent the size of the network nodes, one can observe the importance of a node in the entire network, rather than only in relation to those with whom it is directly linked [@peeples_binarize_2013]. It can then be noted that the 5 highly interconnected sites of the Cedrosan Saladoid (Morel, Doig's, Pearls, Hope Estate and Vivé) are of paramount importance in this Early Ceramic network, unlike the peripheral sites, Trants and Main Street, as well as the trio of the Huecan subs-series completed by the Sorcé site, if the maximum degree of precision regarding raw materials is maintained (@fig-networksEarlyCeramic_rawmaterial C). However, when green materials are grouped together, no site stands out clearly in the network as better connected than the others (@fig-networksEarlyCeramic_rawmaterial F). What is most striking is the low connectivity of Trants, which, only connected to the Morel site thanks to its relatively high content of diorite, seems to be very poorly connected to this network of Early Ceramic sites in terms of raw materials. Unfortunately, more recent periods than the Early Ceramic period do not allow for this type of analysis, as they have too few sites.
+
+```{r Plot Early Ceramic networks raw material, fig.height=7,fig.width=9}
+#| label: fig-networksEarlyCeramic_rawmaterial
+#| fig-cap: "Networks of the Early Ceramic sites, based on the Brainerd-Robinson similarity. Color and width of edges arepresent the similarity. Size of the nodes represent the centrality values (Degree for A and D, Betweeness for B and E, Eigenvectors for C and F). Similarity are calculated with detailed raw materials (A, B, and C) or with greenstones grouped but turquoise (D, E, and F). Nodes are positioned through the Kamada and Kawai algorithm."
+#| warning: false
+#| out-height: 100% 
+# Calculate the network and the centrality of nodes for the Early Ceramic period, with detailed raw materials:
+
+T = thresh(Paaf_raw_BR_C)
+
+edges = melt(Paaf_raw_BR_C_sup) %>%
+    rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+    filter(Similarity>=T)
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd_C),Paaf_bdd_C[,1:5]))
+  
+  # Calculating centrality values for nodes in a weighted network
+  Paaf_raw_BR_C_thresh = Paaf_raw_BR_C
+  Paaf_raw_BR_C_thresh[Paaf_raw_BR_C_thresh < T] <- 0
+  stats.wt_thresh = net.stats.wt(Paaf_raw_BR_C_thresh)
+  
+  graph1 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,1]*3, #Choice of centrality index, here Degree
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",T,". Degree"))
+  
+  graph2 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,3]*0.5, #Choice of centrality index, here Betweenness
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",T,". Betweenness"))
+  
+  graph3 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,2], #Choice of centrality index, here Eigenvectors
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",T,". Eigenvectors"))
+  
+### Same calculation for the greenstones grouped but turquoise ###
+Trgt = thresh(Paaf_rawgreenturq_BR_C)
+
+edges = melt(Paaf_rawgreenturq_BR_C_sup) %>%
+    rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+    filter(Similarity>=Trgt)
+  g = graph_from_data_frame(edges,directed = FALSE,vertices = cbind(row.names(Paaf_bdd_C),Paaf_bdd_C[,1:5]))
+  
+  # Calculating centrality values for nodes in a weighted network
+  Paaf_rawgreenturq_BR_C_thresh = Paaf_rawgreenturq_BR_C
+  Paaf_rawgreenturq_BR_C_thresh[Paaf_rawgreenturq_BR_C_thresh < Trgt] <- 0
+  stats.wt_thresh = net.stats.wt(Paaf_rawgreenturq_BR_C_thresh)
+  
+  graph4 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,1]*3, #Choice of centrality index, here Degree
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",Trgt,". Degree"))
+  
+  graph5 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,3]*0.5, #Choice of centrality index, here Betweenness
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",Trgt,". Betweenness"))
+  
+  graph6 = ggraph(g, layout = "kk") + 
+    geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+    scale_edge_width_continuous(range = c(1, 3),guide = "none") + 
+    scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+    geom_node_point(aes(), shape = 19,
+                    size = stats.wt_thresh[,2], #Choice of centrality index, here Eigenvectors
+                    stroke = 0.5,
+                    color = "dodgerblue") +
+    scale_size_continuous(range = c(1,6)) +
+    geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                   color = "black", fontface = "bold") +
+    theme(panel.background = element_rect(fill = "white", colour = "grey50")) +
+    ggtitle(paste0("   Threshold set to ",Trgt,". Eigenvectors"))
+  
+plot_grid(graph1,graph4,graph2,graph5,graph3,graph6,ncol = 2, nrow=3, labels = c("A","D","B","E","C","F"))
+```
+
+### Typological similarity
+
+```{r preparation of data}
+df_typesobjets  <- read.csv(file = "bdd_paaf_typesobjets.csv", row.names = 1)
+df_typesobjets = df_typesobjets[,-c(1:5)]
+df_toustypes  <- read.csv(file = "bdd_paaf_toustypes.csv", row.names = 1)
+df_toustypes = df_toustypes[,-c(1:5)]
+df_typesperles  <- read.csv(file = "bdd_paaf_typesperles.csv", row.names = 1)
+df_typesperles = df_typesperles[,-c(1:5)]
+
+color_sites_types = as.data.frame(row.names(df_typesobjets))
+  colnames(color_sites_types)="Site" 
+  color_sites_types=inner_join(color_sites_types,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    color_sites_types$color = str_replace_all(color_sites_types$Period, color_periods)
+    
+color_sites_toustypes = as.data.frame(row.names(df_toustypes))
+  colnames(color_sites_toustypes)="Site" 
+  color_sites_toustypes=inner_join(color_sites_toustypes,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    color_sites_toustypes$color = str_replace_all(color_sites_toustypes$Period, color_periods)
+    
+color_sites_typesperles = as.data.frame(row.names(df_typesperles))
+  colnames(color_sites_typesperles)="Site" 
+  color_sites_typesperles=inner_join(color_sites_typesperles,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    color_sites_typesperles$color = str_replace_all(color_sites_typesperles$Period, color_periods)  
+```
+
+Similarity analyses by seriation and correspondence analysis were also carried out on typological data in order to search for chronological specificities in terms of the forms of produced objects, which could provide very interesting information on the technical and/or aesthetic choices of the Amerindians of the Ceramic period. At the lowest level of detail, what I call object type, there is no very interesting result but the fact that beads are largely dominant in the samples, except for the site of La Hueca which yielded more pendants than beads (@fig-ratiobeadpendant). The seriation concerning object types was still carried out, showing a division in three groups of the archaeological sites (@fig-seriation_typeobject). One group is characterized by a high proportion of bead-pendants, composed of two late Ceramic sites in the Dominican Republic, El Carril and El Cabo. Another group of three sites includes the sites richest in pendants: Sorcé La Hueca, Punta Candelero and Elliot's, two early Ceramic sites and one middle Ceramic site. Finally, the vast majority of sites are located in a third cluster very rich in beads, within which only those of the late Ceramic period stand out a little: Playa Grande because of the labrets that have been identified there, and El Flaco because of its content of bead-pendants that places it close to the first group.
+
+```{r Barplot ratio bead-pendant}
+#| label: fig-ratiobeadpendant
+#| fig-cap: "Ratio between beads and penants for each archaeological site."
+#| warning: false
+#pielou_toustypes_graph=cbind(Site=row.names(pielou_toustypes),pielou_toustypes) %>%
+#  inner_join(data_sites, by = c("Site" = "Site_short"))
+
+df_objets = data.frame(
+  Site = row.names(df_typesobjets),
+  Ratio = 100*df_typesobjets$Bead/(df_typesobjets$Bead+df_typesobjets$Pendant)
+)
+df_objets = inner_join(df_objets,data_sites, by = c("Site" = "Site"))
+
+df_objets$Color <- str_replace_all(df_objets$Period, color_periods)
+df_objets$Period <- factor(df_objets$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Middle-Late Ceramic', 'Late Ceramic','Late-Final Ceramic'))
+df_objets$Color = factor(df_objets$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+
+plot <- ggplot(df_objets, aes(x = reorder(Site,+Ratio), y = Ratio,fill=df_objets$Color))+
+  geom_bar(stat="identity")+
+  scale_fill_identity("Legend", labels = levels(as.factor(df_objets$Period)),guide = "legend") +
+  theme(axis.text.x=element_text(angle=45, hjust=0.9)) + xlab("Site")
+plot
+```
+
+```{r seriation object type}
+#| label: fig-seriation_typeobject
+#| fig-cap: "Seriation of the archaeological sites based on their Euclidean distances calculated on the types of objects that have been identified."
+#| warning: false
+
+hmap_typesobjets = heatmaply(df_typesobjets,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites_types$color, #adding the color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_typesobjets[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_typesobjets[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmap_typesobjets
+#export(p = hmap_typesobjets,file = "hmap_typesobjets.png")
+```
+
+Looking more closely at the typology, it is interesting to observe the groups formed when seriation concerns the sites for which information on bead and pendant types is known (@fig-seriation_alltypes), as well as focusing solely on the beads (@fig-seriation_typebeads). When bead and pendant types are taken into account, the main distinction is between Late Ceramic sites and the others, once again, since El Flaco and El Cabo are isolated due to their content of bead-pendants. The other sites are separated into two groups depending on whether they are richer in cylindrical or discoid beads, which is even more strongly confirmed in the analysis focused solely on bead types, which clearly distinguishes these two groups (@fig-seriation_typebeads). Although the separation criteria of the clusters are clear, the content of these clusters only provides one clear piece of information on a possible chronological distinction: there is none. These analyses clearly indicate that sites can be quite different from each other in terms of the typology of beads and pendants, but this difference is not related to the chronological period to which the archaeological site is attributed, except for the Late Ceramic sites from Dominican Republic.
+
+```{r seriation all types}
+#| label: fig-seriation_alltypes
+#| fig-cap: "Seriation of the archaeological sites based on their Euclidean distances calculated on the detailed types of objects that have been identified."
+#| warning: false
+hmap_toustypes = heatmaply(df_toustypes,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites_toustypes$color, #adding the color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_toustypes[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_toustypes[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmap_toustypes
+#export(p = hmap_toustypes,file = "hmap_toustypes.png")
+```
+
+```{r seriation types of beads}
+#| label: fig-seriation_typebeads
+#| fig-cap: "Seriation of the archaeological sites based on their Euclidean distances calculated on the types of beads that have been identified."
+#| warning: false
+hmap_typesperles = heatmaply(df_typesperles,
+                 scale = "row", #scaling of values to compare quite different samples
+                 col = bgy.ramp(100), #use of teal color
+                 seriate = "OLO", #ordering of the leaves
+                 RowSideColors = color_sites_typesperles$color, #adding the color bars for Periods
+                 key.title = "Similarity",
+                 cexCol = 0.9)
+#hmap_typesperles[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+hmap_typesperles[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
+hmap_typesperles
+#export(p = hmap_typesperles,file = "hmap_typesperles.png")
+```
+
+Correspondence Analysis carried out on the detailed typological data required additional processing. Indeed, while seriations aim to group sites, CA tries to maximize the variance on a few dimensions and therefore seeks to highlight disparities and differences. Thus, rare types have a huge weight in the overall variance of the dataset, as the few sites that contain them are compared to sites that do not contain them at all, and this obscures the variability related to other types. If in the seriations the rarity of faceted beads identified only in Trants, or the rarely inventoried labrets, did not seem to play a major role in bringing sites closer together, in the CA, it was necessary to remove them from the dataset, otherwise the only information that could be gleaned was that the sites that presented these rare types were different from the others. Then, as with some diversity analyses, the faceted bead type was excluded (only 1 site), as well as spherical beads (less than 10 objects) and anthropozoomorphic pendants (less than 10 objects). The bead-pendants, which also have a strong weight in the analysis, were not removed because they are present in significant quantities, are easily identifiable, and since they have a strong impact only on the first dimension, it is possible to ignore their presence by observing dimensions 2 and 3 (@fig-CA_types C). This also applies when performing the same analysis on bead types only (@fig-CA_typesbeads). These analyses confirm the clear distinction between the El Cabo and El Flaco sites, related to their content of bead-pendants. When observing dimensions 2 and 3 of these CA, the sites do not form well-defined groups, and in particular, no chronological distinction is evident. The most opposed types are the biconical, barrel, and planoconvex beads, while discoid and cylindrical beads are located more centrally, indicating that they have lower variance. In particular, discoid beads seem to be the most common element in both analysis including all types as well as in the one including only beads.
+
+```{r CA Typology after data cleaning for rare types, fig.height=7,fig.width=9}
+#| label: fig-CA_types
+#| fig-cap: "Correspondence Analysis for the archaeological sites and the detailed typological composition of the lapidary production."
+#| warning: false
+#| out-height: 100%
+
+df_alltypescleanCA=cbind(df_toustypes[,-c(2,6,10)],color_sites_toustypes)
+df_alltypescleanCA$Period <- factor(df_alltypescleanCA$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+df_alltypescleanCA$color = factor(df_alltypescleanCA$color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+ca_alltypes = CA(df_alltypescleanCA[,1:9],graph = F)
+dim1_2 = fviz_ca_biplot(ca_alltypes, axes = c(1, 2), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_alltypescleanCA$color, palette = df_alltypescleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_alltypescleanCA$Period)),guide = "legend") + theme(legend.position = "none")
+dim1_3 = fviz_ca_biplot(ca_alltypes, axes = c(1, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_alltypescleanCA$color, palette = df_alltypescleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_alltypescleanCA$Period)),guide = "legend")
+dim2_3 = fviz_ca_biplot(ca_alltypes, axes = c(2, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_alltypescleanCA$color, palette = df_alltypescleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_alltypescleanCA$Period)),guide = "legend") + theme(legend.position = "none")
+legend_CA_alltypes = cowplot::get_legend(dim1_3)
+dim1_2[["labels"]][["colour"]] = "Period"
+dim1_3[["labels"]][["colour"]] = "Period"
+dim2_3[["labels"]][["colour"]] = "Period"
+plot_grid(dim1_2,dim1_3 + theme(legend.position = "none"),dim2_3,legend_CA_alltypes,rel_widths = c(1,1,.5),nrow =2, labels = c("A","B","C"),align = 'v')
+```
+
+```{r CA Typology for bead types only after data cleaning for rare types, fig.height=9,fig.width=11}
+#| label: fig-CA_typesbeads
+#| fig-cap: "Correspondence Analysis for the archaeological sites and the detailed typological composition of the beads."
+#| warning: false
+#| out-height: 300%
+
+# Removing from the beads dataset the faceted beads (only one site) and the spherical beads (less than 10 in the dataset).
+df_typesbeadscleanCA=cbind(df_typesperles[,-c(4,7)],color_sites_typesperles)
+
+# Fixing order of colors and labels for legend
+df_typesbeadscleanCA$Period <- factor(df_typesbeadscleanCA$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+df_typesbeadscleanCA$color = factor(df_typesbeadscleanCA$color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+# Calculating Correspondance Analysis
+ca_typesbeads = CA(df_typesbeadscleanCA[,1:6],graph = F)
+dim1_2 = fviz_ca_biplot(ca_typesbeads, axes = c(1, 2), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_typesbeadscleanCA$color, palette = df_typesbeadscleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typesbeadscleanCA$Period)),guide = "legend") + theme(legend.position = "none")
+dim1_3 = fviz_ca_biplot(ca_typesbeads, axes = c(1, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_typesbeadscleanCA$color, palette = df_typesbeadscleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typesbeadscleanCA$Period)),guide = "legend")
+dim2_3 = fviz_ca_biplot(ca_typesbeads, axes = c(2, 3), graph.type = "ggplot", invisible="quali", labelsize = 2,repel = T,col.row=df_typesbeadscleanCA$color, palette = df_typesbeadscleanCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typesbeadscleanCA$Period)),guide = "legend") + theme(legend.position = "none")
+legend_CA_typesbeads = cowplot::get_legend(dim1_3) # storing the legend of a graph
+dim1_2[["labels"]][["colour"]] = "Period"
+dim1_3[["labels"]][["colour"]] = "Period"
+dim2_3[["labels"]][["colour"]] = "Period"
+plot_grid(dim1_2,dim1_3 + theme(legend.position = "none"),dim2_3,legend_CA_typesbeads,rel_widths = c(1,1,.5),nrow =2, labels = c("A","B","C"),align = 'v')
+```
+
+### Combined typology and raw materials similarity
+
+```{r}
+# Number of objects of each type for each raw material
+df_typeraw  <- read.csv(file = "bdd_paaf_rawtypo.csv", row.names = 1) 
+# Number of objects of each type for each raw material (greenstones grouped except turquoise)
+df_typerawgreenturq  <- read.csv(file = "bdd_paaf_rawgreenturqtypo.csv", row.names = 1) 
+
+# number of object of each combination type-raw material for each site
+df_typerawsites_simple  <- read.csv(file = "bdd_paaf_rawtyposites.csv", row.names = 1) 
+
+    color_sites_typerawsites = as.data.frame(row.names(df_typerawsites_simple))
+  colnames(color_sites_typerawsites)="Site" 
+  color_sites_typerawsites=inner_join(color_sites_typerawsites,data_sites, by = c("Site" = "Site")) %>%
+  select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
+    color_sites_typerawsites$color = str_replace_all(color_sites_typerawsites$Period, color_periods)
+```
+
+In order to extract even more in-depth information, while being aware of the varying quality of the data when it comes to entering into detail, we can try to analyze the dataset combining raw materials and typology. First, a new dataset needs to be created, combining information from typology, raw materials, and keeping only the sites for which both information is known (@tbl-dataset_types_rawmaterials). Correspondence Analysis, whether introducing maximum precision at the level of green rocks or grouping green rocks together (except for turquoise), shows well-marked preferences for certain materials for the production of certain types of lapidary adornments (@fig-CA_typesraw). These analyses also show that zoomorphic pendants (the vast majority of pendants) are located opposite to colorless materials (calcite, rock crystal) and finally opposite to most types of beads, as they are opposed on the first dimension of the CA which accounts for 65% of the variance. In particular, the proximity of serpentine with zoomorphic pendants is noteworthy, when precise determinations of materials are preserved, and that of malachite with geometric pendants. Nephrite and paragonite are less affiliated with a particular type, but when green rocks are grouped, the weight of serpentine (in very rich sites in Puerto Rico, for example) takes over (@fig-CA_typesraw B). The discoid type remains fairly central on the second dimension of the Correspondence Analysis, which mainly opposes elongated beads with planoconvex beads and geometric pendants. The most common colorless materials (calcite and rock crystal) are also located in the central part of this second dimension, used to produce several different types of beads. It is interesting to note that these two materials with similar colors ultimately have a similar, diversified use. Other materials are strongly linked to elongated beads: white and red materials, and to a lesser extent, amethyst and diorite. It can also be observed that turquoise, as expected, is located close to the planoconvex type.
+
+```{r tbl-dataset_types_rawmaterials}
+#| label: tbl-dataset_types_rawmaterials
+#| tbl-cap: Dataset combining precise types and raw materials of the general lapidary production during the Ceramic Age in the Caribbean islands.
+
+library(knitr)
+library(kableExtra)
+dataset_types_rawmaterials=read.csv(file = "Table_types_rawmaterials.csv")
+kable(dataset_types_rawmaterials,col.names = gsub("[_]", " ", names(dataset_types_rawmaterials)), align = "lccccccccc") %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+```{r CA Typo/Raw}
+#| label: fig-CA_typesraw
+#| fig-cap: Correspondence Analysis combining raw materials and detailed typology, for the detailed raw materials (A) and the greenstones grouped but turquoise (B).
+#| warning: false
+#| out-height: 200%
+
+ca_typeraw = CA(df_typeraw, graph = F)
+ca_typerawgreenturq = CA(df_typerawgreenturq, graph = F)
+
+plot_grid(fviz_ca(ca_typeraw, axes = c(1, 2),graph.type = "ggplot",labelsize = 2,repel = T), fviz_ca(ca_typerawgreenturq, axes = c(1, 2),graph.type = "ggplot",labelsize = 2,repel = T),ncol = 2, labels = "AUTO")
+```
+
+It is also possible, while retaining the most information (site+raw material+typology), to create a dataset allowing for the analysis of similarity between sites (@tbl-dataset_types_rawmaterials_sites). With such precise data, the number of objects is significantly reduced and drop to 2224, due to the combination of lacking typologocial or gemological information for several sites. For example, the site of Doig's only includes one object here because only one object from this site is described in terms of raw material and type, while the complete collection is made of 43 objects. The problem is the same for sites that have been included in other analyses, such as Hacienda Grande (5 objects known for type and raw material), Main Street (8), Playa Grande (4), Punta Candelero (7), and Tecla (2). All of which have been removed from the dataset. Although their weight is very low and does not change the result of the correspondence analysis, these poorly documented sites create significant distortions in network analyses. The limit for retaining an archaeological site in the dataset was arbitrarily set at 10 objects documented for their type and raw material. This dataset of 14 sites and 84 Type-Raw material, although it is far from ideal, allows the study of proximities between archaeological sites in the corpus at an unprecedented level of detail. The resulting CA includes the 14 sites, but it is not possible to display the 84 Type-Raw material combinations while maintaining a readable graph (@fig-CA_typesrawsites). This analysis highlights, on the first dimension of the analysis (28% of the expressed variance), the major opposition that exists, at this level of precision, between the sites rich in green rocks and pendants from the Early Ceramic of Vieques, such as La Hueca and Sorcé, and the sites richer in colorless and non-green materials, and richer in beads, from the Cedrosan Saladoid and later periods. The second and third dimensions of the analysis (29% of the variance combined) confirm the clear opposition between the Early Ceramic and the later periods. Although the only Middle Ceramic site retained in this dataset behaves in this CA like the Early Ceramic sites, the site of Grand Bay, attributed to the Middle/Late Ceramic period for the lapidary collection, is situated at an interface position between the Early Ceramic and Late/Final Ceramic sites.
+
+```{r tbl-dataset_types_rawmaterials_sites}
+#| label: tbl-dataset_types_rawmaterials_sites
+#| tbl-cap: Dataset combining precise types and raw materials for each site during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_types_rawmaterials_sites=read.csv(file = "Table_types_rawmaterials_sites.csv")
+kable(dataset_types_rawmaterials_sites,col.names = gsub("[_]", " ", names(dataset_types_rawmaterials_sites)),align = "lccccccccccccccccccc") %>%
+  add_indent(c(1, 10,30,45,47,56,63,67,82), level_of_indent = 1) %>%
+  row_spec(0, align = "c") %>%
+  row_spec(c(1, 10,30,45,47,56,63,67,82), bold = T) %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+```{r CA Typo/Raw/Sites}
+#| label: fig-CA_typesrawsites
+#| fig-cap: "Correspondence Analysis of the archaeological sites' lapidary collection combining raw materials and detailed typology for each site."
+#| warning: false
+#| out-width: 100%
+
+df_typerawsitesCA=cbind(df_typerawsites_simple,color_sites_typerawsites)
+df_typerawsitesCA$Period <- factor(df_typerawsitesCA$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+df_typerawsitesCA$color = factor(df_typerawsitesCA$color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+ca_typerawsites = CA(df_typerawsites_simple[,6:89],graph = F)
+dim1_2 = fviz_ca_biplot(ca_typerawsites, axes = c(1, 2), graph.type = "ggplot", invisible=c("col","quali"), labelsize = 2,repel = T,col.row=df_typerawsitesCA$color, palette = df_typerawsitesCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typerawsitesCA$Period)),guide = "legend")+ theme(legend.position = "none")
+dim1_3 = fviz_ca_biplot(ca_typerawsites, axes = c(1, 3), graph.type = "ggplot", invisible=c("col","quali"), labelsize = 2,repel = T,col.row=df_typerawsitesCA$color, palette = df_typerawsitesCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typerawsitesCA$Period)),guide = "legend")
+dim2_3 = fviz_ca_biplot(ca_typerawsites, axes = c(2, 3), graph.type = "ggplot", invisible=c("col","quali"), labelsize = 2,repel = T,col.row=df_typerawsitesCA$color, palette = df_typerawsitesCA$color) + scale_color_identity("Period", labels = levels(as.factor(df_typerawsitesCA$Period)),guide = "legend")+ theme(legend.position = "none")
+
+legend_CA_typerawsites = cowplot::get_legend(dim1_2)
+dim1_2[["labels"]][["colour"]] = "Period"
+dim1_3[["labels"]][["colour"]] = "Period"
+dim2_3[["labels"]][["colour"]] = "Period"
+
+plot_grid(dim1_2,dim1_3+ theme(legend.position = "none"),dim2_3,legend_CA_typerawsites,rel_widths = c(1,1),nrow =2, labels = c("A","B","C"),align = 'v')
+```
+
+When network analysis is performed on this dataset combining types and raw materials, it is clear that the core of the network corresponds to Cedrosan Saladoid sites, while Vieques' Early Ceramic sites (Sorcé La Hueca and Sorcé) are only weakly connected to it (@fig-network_typesrawsites). The Late Ceramic and Final Ceramic sites are also isolated, grouped together, although clearer links connect them to the core of the network. The large number of very specific categories on which this analysis is based creates weaker similarity indices than when only types or raw materials were analyzed. However, the same pattern of distribution of sites is found, based on a rather clear subdivision between Early/Middle Ceramic sites and Late/Final Ceramic sites.
+
+```{r network typesrawsites}
+#| label: fig-network_typesrawsites
+#| fig-cap: "Network based on Brainerd-Robinson similarity index between sites calculated from the detailed raw material and typology of the archaeological samples. Threshold for keeping edges was set to the minimum value allowing to create a unique and complete network. Nodes are positioned following the Kamada and Kawai algorithm."
+#| warning: false
+#| out-width: 100%
+
+T = 0.161 # Threshold for single and complete network
+df_typerawsites$Index = row.names(df_typerawsites)
+df_typerawsites$Subserie <- str_replace_all(df_typerawsites$Period, color_periods) 
+df_typerawsites = rename(df_typerawsites,Color = Subserie)
+df_typerawsites$Period <- factor(df_typerawsites$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+df_typerawsites$Color = factor(df_typerawsites$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
+
+edges <- melt(Paaf_typerawsites_BR) %>%
+  rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+  filter(Similarity>T) 
+g = graph_from_data_frame(edges,directed = FALSE,vertices = df_typerawsites[,1:5])
+
+ggraph(g, layout = "kk") + 
+  geom_edge_link(aes(colour = Similarity,edge_width = Similarity)) +
+  scale_edge_width_continuous(range = c(1, 3),guide = "none") +
+  scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+  geom_node_point(aes(color=df_typerawsites$Color),shape = 19, stroke = 0.5) +
+  scale_color_identity("Legend", labels = levels(as.factor(df_typerawsites$Period)),guide = "legend") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                 color = "black", fontface = "bold")
+```
+
+## Geographic distribution
+
+### Distribution of sites and lapidary artifacts
+
+::: justify
+The distribution of lapidary production in the Ceramic period at a regional level has mostly been analyzed within a chrono-cultural framework, as we have done above. However, it seems important to also analyze this data from a purely geographical perspective in order to highlight whether or not there are variations attributable to this dimension of human settlement in the region. One could indeed expect different distributions of raw materials depending on the geology of the islands. It would also be conceivable that certain types of objects, certain types of beads or pendants, are more represented in one or another sub-region of the archipelago.
+
+It is possible to show that archaeological sites that have yielded lapidary artifacts are distributed throughout the entire Caribbean arc (@fig-map_sites). Almost every island has at least one site (except Barbados), but some islands are less well supplied than others. First of all, there is a certain bias in the two main French islands, Guadeloupe and Martinique, where the research conducted for several years has allowed for an exhaustive inventory that would not have been possible if I had only been able to rely on easily accessible publications, as was the case for the other islands. Antigua is particularly well-endowed, thanks to the work of R. Murphy [-@murphy_prehistory_1999; -@murphy_precolumbian_2000]. Jamaica is also well-endowed, especially for an island in the Greater Antilles, thanks to the pioneering work of M.J. Roobol & J.W. Lee [-@roobol_petrography_1976]. When comparing this first map of site distribution with the map of the number of beads and pendants per site, a quite different picture emerges (@fig-map_counts). In fact, less rich areas appear here, such as in the Lesser Antilles: Barbados, St. Vincent, St. Lucia, Dominica. These islands, which all have one or more sites (except Barbados), have not yielded any truly rich sites, unlike Montserrat with the unique but very rich site of Trants, or St. Eustache, which seems quite rich, but actually corresponds to the single site of Golden Rock where we have already seen that there was only one exceptional find: a burial with 81 beads. In the Greater Antilles, too, the change is significant: Puerto Rico and Vieques take their rightful place, which we have already seen with the sites of the Early Ceramic period such as Sorcé, La Hueca, and Punta Candelero, while Jamaica is visibly much poorer, with the numerous sites identified mostly having only one identified object, and although they are attributed to the Early/Middle Ceramic period, they only present objects made of chalcedony, calcite, limestone, but no objects made of green stone or amethyst. Several of these observations can be related to the archaeological research effort in certain islands: Dominica, St. Vincent, Barbados, and Jamaica have not received as much interest as Antigua, St. Martin, or Grenada, at least for the study of stone adornments. However, serendipity certainly plays a role in this unequal distribution, as archaeological research often owes the discovery of major deposits to chance, as is the case, for example, with the Golden Rock burial, which makes up the entire corpus of stone beads from St. Eustache. Excavation methods can also be responsible for differences between islands, as they have been excavated according to various field practice schools, some excavating larger surfaces than others. The only observation that seems possible from these two maps is a greater concentration of beads, not sites, in the Lesser Antilles and up to the east of Puerto Rico.
+:::
+
+![Map of the distribution of Ceramic Age sites with lapidary artifacts](General_map_sites.png){#fig-map_sites}
+
+![Map showing the distribution of the number of lapidary artifacts per site](General_map_nb_beads.png){#fig-map_counts}
+
+### Distribution of raw materials
+
+::: justify
+The network analysis of raw materials shows that the links between sites do not follow a geographical logic since strong similarities can connect sites with very distant positions, while close sites can be unrelated (@fig-network_map). As previously demonstrated, it is the periods that matters to connect the sites, and not their geographical proximity. The analysis was also carried out by combining green stones with each other (with or without excluding turquoise), and the result is very similar.
+
+```{r network raw material with geographic coordinates}
+#| label: fig-network_map
+#| fig-cap: "Network based on Brainerd-Robinson similarity index between sites calculated from the detailed raw material, with nodes located at their geographic coordinates. Threshold for keeping edges was set to the minimum value allowing to create a unique and complete network."
+#| warning: false
+#| out-width: 100%
+
+# Creation of the them of the map, the background and the limits to which the map must be drawn.
+
+maptheme <- theme(panel.grid = element_blank()) +
+  theme(axis.text = element_blank()) +
+  theme(axis.ticks = element_blank()) +
+  theme(axis.title = element_blank()) +
+  theme(legend.position = "right") +
+  theme(panel.grid = element_blank()) +
+  theme(panel.background = element_rect(fill = "#ffffff")) +
+  theme(plot.margin = unit(c(0, 0, 0.5, 0), 'cm'))
+
+country_shapes <- geom_polygon(aes(x = long, y = lat, group = group),
+                               data = map_data('world'),
+                               fill = "#CECECE", color = "#515151",
+                               size = 0.15)
+
+mapcoords <- coord_fixed(xlim = c(-75, -59), ylim = c(10, 24))
+
+
+# Calculating threshold, centrality values, edges and nodes
+
+T = thresh(Paaf_raw_BR)
+Paaf_raw_BR_full_thresh = Paaf_raw_BR
+Paaf_raw_BR_full_thresh[Paaf_raw_BR_full_thresh < T] <- 0
+stats.wt_thresh = net.stats.wt(Paaf_raw_BR_full_thresh)
+
+edges = melt(Paaf_raw_BR_sup) %>%
+  rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
+  filter(Similarity>=T) #Tmin ou T
+Paaf_bdd$Index=row.names(Paaf_bdd)
+Paaf_bdd = rename(Paaf_bdd,Site = Index)
+g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd[,1:7])
+
+# Giving the edges the strating and ending points which are the coordinates of the sites.
+
+edges_for_plot <- edges %>%
+  inner_join(Paaf_bdd %>% select(Site, Longitude, Latitude), 
+             by = c('Site1' = 'Site')) %>%
+  rename(x = Longitude, y = Latitude) %>%
+  inner_join(Paaf_bdd %>% select(Site, Longitude, Latitude), 
+             by = c('Site2' = 'Site')) %>%
+  rename(xend = Longitude, yend = Latitude)
+edge.id = seq(from = 1, to = nrow(edges_for_plot), by = 1)
+edges_for_plot = cbind(edge.id,edges_for_plot)
+
+# Positioning the nodes
+node_pos <- Paaf_bdd %>%
+  select(Longitude, Latitude) %>%
+  rename(x = Longitude, y = Latitude)
+
+# Plotting the whole thing (map+edges+nodes)
+
+lay <- create_layout(g, "manual", circular = FALSE, x=node_pos$x, y=node_pos$y)
+
+ggraph(lay) + country_shapes + mapcoords + maptheme +
+  geom_edge_arc(aes(colour = Similarity,
+                    edge_width = Similarity,   
+                    circular = FALSE),# draw edges as arcs
+                data = edges_for_plot, strength = 0.33) + #strength is the curvature of the edges
+  
+  scale_edge_width_continuous(range = c(1, 2), # scale for edge widths
+                              guide = "none") + # guide = "none" to remove the legend for this scale
+  scale_edge_colour_gradient(low = "#fafafa",high = "#008080") +
+  geom_node_point(aes(color=Color), shape = 19,size = 3,stroke = 0.5) +
+    scale_color_identity("Legend", labels = levels(as.factor(Paaf_bdd$Period)),guide = "legend") +
+  geom_node_text(aes(label = name), repel = TRUE, size = 3,
+                 color = "black", fontface = "bold")
+
+```
+
+Beyond this global analysis of the distribution of all raw materials based on the similarity of their representation in sites, which allows for a direct comparison with the chronological distribution previously established, it is also possible to study simply the geographic distribution of each raw material. To do so, I extracted data from the GIS created from the database for each of the most represented raw materials and for some materials worthy of discussion. I intentionally omitted doubtful determinations, materials identified in only one site, and very general determinations such as "volcanic rock". This leaves eight widely spread materials: amethyst, calcite, carnelian, rock crystal, diorite, nephrite, turquoise, and serpentine (@fig-mapsMP1 A, B, C, D, E, F and @fig-mapsMP2 A, B). I also represented the distribution of limestone and five other green materials, namely malachite, sudoite, jadeite/jadeitite, paragonite, and pumpellyite (@fig-mapsMP1 B and @fig-mapsMP2 C, D, E, F). The maps of the most common materials clearly show a homogeneous distribution of all materials on the scale of the Antillean arc. Note simply the distribution of calcite and diorite, which extends to the Dominican Republic, due to the presence of recent and final Ceramic sites that have been unearthed there. These maps thus once again demonstrate the very high geographical homogeneity of the materials used in lapidary production during the Ceramic Age in the Antilles, with the only notable exception being the distinction of the Dominican Republic sites. As for the rarer materials, I chose to represent six of them here, for various reasons. First of all, I find it interesting to note the distribution of limestone adornment elements, which are only identified in the northern part of the Lesser Antilles, and particularly on limestone islands. This distribution clearly shows the relation between lapidary production and archaeological sites' substrate and therefore, very probably, a local production of these elements, with the most easily available material, to supplement, no doubt, the materials desired in terms of color, brilliance, hardness, etc. The second interesting material is malachite. This green mineral, rather easily recognizable to the naked eye, has been identified only in the northern part of the Lesser Antilles. If no precise source for this gemstone is known in the region, it seems quite possible that it is also local, according to a mode of reasoning similar to that developed for limestone. Poor-quality sources of malachite are mentioned in Puerto Rico [@rodriguez_early_1993] and Antigua [@murphy_precolumbian_2000], and may suggest, perhaps, sources of better quality, of low volume, unknown to archaeologists. The map representing the distribution of jadeite and jadeitite, two terms used for the same material (one is the name of the mineral, the other the name of the rock essentially composed of this mineral), is interesting in another way, as are those concerning sudoite, paragonite, and pumpellyite. These three maps highlight more the history of the sciences concerning the study of stone adornments in the Antilles than actual distributions. For jadeite/jadeitite, it is mainly used as synonyms for greenstones by some researchers that have unfortunately never been confirmed by analyses. While it is not ruled out that this material was used for the production of pendants, it would still be very curious if this had not been highlighted by a single study integrating mineralogical characterizations, such as those published for Antigua [@murphy_precolumbian_2000] or three French islands [@queffelec_stone_2020; @queffelec_local_2018a; @queffelec_parures_2022].
+
+![Maps showing the distribution of diverse raw materials.](Figure-maps_rawmaterials_1.jpg){#fig-mapsMP1}
+
+![Maps showing the distribution of greenstones.](Figure-maps_rawmaterials_2.jpg){#fig-mapsMP2}
+
+### Distribution of types
+
+The most abundant objects, beads, are distributed ubiquitously, since almost all the inventoried sites present this type of object (@fig-mapsbeads A). The most common types of beads are also evenly distributed in the Caribbean islands, even for slightly rarer types such as bi-conical or plano-convex beads (@fig-mapsbeads B-F). As for pendants, it can be noted that they are also evenly distributed in the Lesser Antilles and Puerto Rico (@fig-mapspendants). Regarding the Greater Antilles, it should be noted that although sites that have yielded pendants are present, they are not the most common sub-types (geometric, zoomorphic). For Jamaica in particular, this is due to a lack of information, as pendants are not described at all except for their raw material [@roobol_petrography_1976]. For the Dominican Republic sites, the link between the objects studied and the sites is not feasible, even when scrutinizing the supplementary information, so they cannot be integrated into the database. Finally, the raw material fragments are homogeneously recovered from archaeological sites too (@fig-mapswastes).The degree of precision of the information on the shapes that these fragments take in the sites is not always very high, and many of them are simply indicated as being raw material or elements of the operational chain waste, but there is still a significant number of crystals mentioned. The presence of flakes is not so rare, and it is therefore likely that the initial stages of the production of these beads, which produce flakes, could have occurred on most sites, even if some sites far surpass others in terms of raw material fragments or preforms, such as Trants and Golden Grove [@crock_archaeology_1998; @mones_amerindian_2007].
+
+![Maps showing the distribution of types of beads.](Figure-maps_Beads.jpg){#fig-mapsbeads}
+
+![Maps showing the distribution of pendants and their principal sub-types.](Figure-maps_Pendants.jpg){#fig-mapspendants}
+
+![Maps showing the distribution of raw material wastes and crystals.](Figure-maps_rawmaterials.jpg){#fig-mapswastes}
+
+For objects of more particular shapes, such as pendants, I think it is interesting to represent a large number of them, as this has never been done before, while preserving their relative positions as much as possible (@fig-mapsfrogs1, @fig-mapsfrogs2, @fig-mapspendants3). Unfortunately, for the sake of readability, it is not possible to maintain the respective scales of the artifacts, but these elements can be accessed to scale in the online database [@queffelec_database_2021]. These figures allow us to visualize, thanks to the inventory work carried out, remarkable similarities between some archaeological objects found on very distant islands. Within zoomorphic pendants in the form of frogs, flat or round, usually attributed to the Cedrosan Saladoid, exceptional similarities in shape are noted, highlighted by frames of the same color (@fig-mapsfrogs1). These particularly similar greenstone decorative elements are sometimes separated by thousands of kilometers, for example, very similar objects have been found in Grenada and Puerto Rico, at both ends of the Antillean arc. As for the small zoomorphic pendants, called "segmented frogs" and traditionally attributed to the Huecan Saladoid sub-series, since more than a thousand of them were found in the Sorcé-La Hueca site (VI-02), striking similarities are also noted that extend beyond purely Huecan Saladoid sites (@fig-mapsfrogs2). In particular, some similar productions have been found in Pearls (GR-01) [@falci_lapidary_2020], at the very southern tip of the archipelago, where Huecan Saladoid is not usually recognized in ceramic production, although D. Bonnissent [-@bonnissent_melting_2013] includes it in the Saladoide Huecan diffusion area based on the work of R. P. Bullen [-@bullen_archaeology_1964] and R. P. Bullen and A. K. Bullen [-@bullen_stratigraphic_1973]. A more recent re-evaluation of the site collections confirms that the attribution of Huecan Saladoid to certain levels of Pearls should not be considered [@hanna_camahogne_2019a, Annex A.2 and footnote no. 10].It is also interesting to mention that this category of pendants is not only made of green stones, unlike the previous one. At Sorcé-La Hueca (VI-02), a wide variety of materials seems to be used, although it is not possible to know exactly which ones based on the published study, while the use of calcite to produce several of these objects is observed at Hope Estate (SM-02). Finally, it is worth noting the strong resemblance between the two axe-shaped pendants, one from Gare Maritime (GD-01) and the other from Pearls (GR-01) (@fig-mapspendants3).
+
+![Map showing the distribution of frog-shaped pendants classically attributed to Cedrosan Saladoid tradition. Images not at the same scale for ease of vizualisation.](Figure-map-pendants_1.jpg){#fig-mapsfrogs1}
+
+![Map showing the distribution of "segmented frog" pendants classically attributed to Huecan Saladoid tradition. Images not at the same scale for ease of vizualisation.](Figure-map-pendants_2.jpg){#fig-mapsfrogs2}
+
+![Map showing the distribution of other zoomorphic pendants, "axe-god" pendants and anthropomorphic pendants. Only a selection of pendants from Vieques, Puerto Rico and Grenada is shown. Pendant TR-00 is of doubtful archaeological provenience. Images not at the same scale for ease of vizualisation. Similar types are squared with same color.](Figure-map-pendants_3.jpg){#fig-mapspendants3}
+:::
+
+# Discussion
+
+## Temporal or spatial distinction of lapidary production
+
+::: justify
+Despite the many limitations associated with the archaeological record of the Caribbean islands, it is possible to demonstrate, through the use of a database that is as comprehensive as possible, that the lithic productions of the pre-colonial period are very different between the Early Ceramic and the more recent periods. Whether it is the raw materials used, the types of objects produced, or even the more precise combinations of raw materials and types of objects, the Early Ceramic is clearly distinguished, both in terms of diversity and similarity. The sites of the Early Ceramic are more diversified in terms of richness, but also when diversity is evaluated more globally through diversity profiles. I have also been able to show that the lower diversity of the Late Ceramic and Final Ceramic sites is not solely due to their smaller populations, but is indeed due to a choice made by the inhabitants of the Caribbean islands during these periods. As for the similarity of the lithic object collections, it is clear that it is the periodization and not the geographical location that groups the sites. I have been able to demonstrate this in various ways, through seriation analyses, AFC or network analyses. Within the Early Ceramic sites, these analyses have also highlighted a subgroup consisting of sites that provide Huecan Saladoid ceramics, among which is generally found the Sorcé site, even though it is attributed based on its ceramic productions to the Cedrosan sub-series. Its extreme geographical proximity to the La Hueca site (the two sites are next to each other) could explain this phenomenon. These sites are mainly characterized by a significant use of green rocks and are similar to each other to a lesser extent in terms of typology, although many of them have delivered a significant number of zoomorphic pendants. This differentiation, which has been observed by archaeologists for many years, is thus confirmed here by robust analyses based on more comprehensive data than ever before. Within the period during which Saladoid ceramic productions developed, some authors have noted a strong distinction between the Early Cedrosan Saladoid and the Middle-Late Cedrosan Saladoid, or at least between the periods represented by these ceramic ensembles, which are the Early Ceramic and the Middle Ceramic. Several authors highlight differences in the lifestyle of the agro-ceramicists between these two periods, with the Amerindians having colonized a large part of the Caribbean archipelago, expanding the types of environments occupied and the types of ceramics produced, in parallel with a visible demographic increase as evidenced by the increase in the number of archaeological sites [@hofman_postsaladoid_2013; @curet_caribbean_2005a; @keegan_caribbean_2017; @crock_interisland_2004]. Unfortunately, the lapidary production during this period is quite poorly represented with only few sites, which could already indicate a loss of importance of this production during this period, since with the increase in the number of archaeological sites, one would expect to also inventory more stone adornments. The Middle Ceramic sites that have been able to integrate the data sets used in the statistical analyses, especially Elliot's and Royall's, show in most of the analyses based on raw materials a relatively intermediate position between Early Ceramic sites and more recent sites, when they are rather similar to Early Ceramic sites in terms of typology. As for their diversity, they are also in an intermediate position in terms of raw materials, but clearly similar to recent sites in terms of typological diversity. Taking into account this loss of diversity already initiated from the Middle Ceramic, the most obvious break between Saladoid tradition and more recent periods is mainly due to the raw materials used. The Late-Final Ceramic sites can be grouped together, in opposition to the older sites. The use of so-called exotic materials almost completely stops, and only three materials then provide the vast majority of production supports: calcite, diorite, and carnelian. Stylistically, forms associated with green materials are also abandoned: pendants in general and zoomorphic pendants in green rock in particular now represent only a very limited portion of stone jewelry. The cultural evolution of Middle Ceramic societies towards Late Ceramic societies, interpreted as internal to the Caribbean arc and not linked to a new migration based on ceramic remains [e.g. @hofman_postsaladoid_2013; @keegan_caribbean_2017] and genomic analyses [@nagele_genomic_2020; @fernandes_genetic_2020], has apparently also been at work regarding lapidary production. While the homogeneity of the Early Ceramic period can be emphasized, for these more recent periods, it is possible to distinguish two two very distinct groups of sites: those who use primarily calcite jewelry and those who use jewelry made of diorite and carnelian.
+
+If the evolution of lapidary productions is clear in the temporal dimension, it must be noted that, regardless of the period considered, no geographical difference is observed. Indeed, strong links between sites, as visible through network analyses for example, show that they do not correspond to geographical proximity once placed on a map. The Late/Final Ceramic period sites on Hispaniola, for example, integrate the two visible subgroups of this period and mix with the sites of Late Ceramic on St. Martin, Guadeloupe, or Tobago. The older sites themselves can be very strongly similar regardless of the distance that separates them, and from a more stylistic point of view, very similar zoomorphic pendants, barrel-shaped diorite beads, plano-convex beads made of turquoise, and cylindrical beads in rock crystal and amethyst are found throughout the Caribbean islands.
+
+This homogeneity implies regular contacts between human groups inhabiting the Antillean arc during this period, while the origin of at least some of the materials implies direct or indirect contacts with the inhabitants of the American continent. For many human societies, personal ornaments carry a strong symbolic charge, allowing individuals to assert their social status (see introduction). Maintaining homogeneity in these ornaments is therefore necessary to continue understanding these codes on a large geographic scale, such as this long archipelago. The function of adornment, which is very difficult to approach archaeologically unless there are direct associations between skeletons and artifacts, has been very little discussed in the literature, probably due to the fact that these objects are mainly found in midden deposits without association with their wearer. Only A. Boomert [-@boomert_saladoid_2001] hypothesizes that the use of these adornments was coded by gender, parallel to the gendered classification of animals in the cosmology of their wearers. In this cosmogenic vision, based on knowledge of the inhabitants of the Antilles and the Amazon at the time of contact, frogs, caterpillars, manatees, and turtles would be feminine attributes, while jaguars, dogs, sharks, and vultures would be masculine. It is probably not possible to directly transfer this knowledge of the Amazonian inhabitants in the 16th century to the populations of the Early Ceramic period, but one can imagine different adornment codes according to gender, life stages, and social status, which could require regional homogeneity to remain understandable on a large scale. This strong homogeneity, also evidenced in ceramic production, is interpreted by several authors as a characteristic of pioneering groups, compared to the first inhabitants of Pacific islands in terms of lithic raw material such as obsidian or ceramic styles [e.g. @earle_political_2015; @spriggs_political_2020; @shaw_frontier_2022; @kirch_road_2017]. The significant exchanges that can be imagined based on the widespread distribution of this most symbolic material tradition represented by lapidary production would then have everything to do with maintaining strong connections between isolated groups to minimize risks in a new and dangerous environment. The Caribbean islands are indeed subject to significant natural climatic and geological hazards such as hurricanes, droughts, volcanic eruptions, tsunamis, or epidemics, as well as social hazards such as conflicts. The sense of belonging to the same extended social group, in difficult or even dangerous conditions of colonizing new spaces, would then be an advantage in order to multiply the possibilities of mutual aid in case of problems [@keegan_caribbean_2017].
+:::
+
+## The origin of this lapidary production
+
+The most widely discussed topic among Caribbean archaeologists through the diverse lapidary productions of the Early Ceramic period is undoubtedly the distribution of these objects and the origin of the raw materials used for their production. The interpretations are mostly similar, indicating origins from all around the Caribbean islands as well as the northern coast of South America [e.g. @rodriguez_early_1993; @hofman_island_2007; @cody_distribution_1993]. @tbl-proposed_provenance summarizes the different proposals of archaeologists in the region regarding the origin of the most common materials. Some studies mainly cite old geological literature or personal communications from geologists [@cody_distribution_1993; @rodriguez_early_1993; @murphy_prehistory_1999], while most recent studies only repeat these hypothetical attributions. These two categories of work ultimately provide very little concrete evidence, and unfortunately, I do not currently believe it is possible to go further in a reasonable way. As D. Watters [@watters_stone_1997a] wrote: "*Archaeologists tend to favour lowland South American sources because of undoubted linguistic and artifactual evidence linking the Caribbean's early Ceramic Age colonizers with that region, but empirical evidence of such sources is largely lacking*". Ongoing work on turquoise and diorite will hopefully bear fruit in the coming years [@queffelec2022lithic; @queffelec_provenancing_2021], while carnelian could also be a possibility, based on recent work in other parts of the world [@carter_geologic_2016; @theunissen_doubts_2000; @insoll_understanding_2004]. Hypothesis will have to be tested both with fieldwork and analytical programs about the origin of sudoite [@queffelec_first_2021] and the origin of nephrite [@acevedogomez_placas_2018].
+
+```{r tbl-proposed_provenance}
+#| label: tbl-proposed_provenance
+#| tbl-cap: Summary of the proposed provenance in the literature for different gemstones
+
+
+proposed_provenance=read.csv(file = "Table_provenances.csv")
+kable(proposed_provenance,col.names = gsub("[_]", " ", names(proposed_provenance))) %>%
+  collapse_rows(columns = 1) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
+
+One aspect that remains unclear about the Early Ceramic period's production of lapidary adornments, in addition to the source of raw materials, is the origin of the cultural tradition and technical expertise. Caribbean archaeologists largely agree that the use of raw materials and the evolution of stylistic frog-shaped pendants suggest a desire to maintain ties with the inhabitants of the continent. Yet, while the link between ceramic productions has been established since the 1950s\footnote{However, the origin of the specificities of Huecan ceramic productions still raises questions, especially if their arrival in the Antilles is considered to be earlier than the Cedrosan Saladoid (Bonnissent 2013)} [e.g. @cruxent_archeological_1958; @rouse_venezuelan_1963; @rostain_archaeology_2008; @berard_saladoid_2013], and has recently been confirmed by genetic studies [@nagele_genomic_2020; @fernandes_genetic_2020], the production of lapidary adornments do not show such an obvious link, to say the least.
+
+When searching through general literature on the archaeology of northern South America and specifically the Orinoco Basin, references to stone adornments are rare, and some general articles or book chapters don't even mention them [@navarrete_prehistory_2008; @gasson_orinoquia_2002; @arroyokalin_entre_2019; @versteeg_barrancoid_2008]. This suggests that stone adornments were not a major element of material culture for the inhabitants of this region during the Ceramic Age, unlike the Early Ceramic period in the Caribbean, where all general writings mention them. The rare mentions of lapidary production mostly concern pendants: *muiraquitas* and winged plaque pendants or bat-shaped pendants ("*placas aladas*" in Spanish). However, *muiraquitas* on the continent are later than in Cedrosan Saladoid or Huecan occupations in the Caribbean islands, as they are found in Kwatta, Konduri or Santarem contexts, which are integrated into the Arauquinoid series (ca. 650-1250/1500 AD) [@rostain_archaeology_2008; @boomert_gifts_1987]. Their use persisted until colonial periods [see @boomert_gifts_1987 p. 36-40 for numerous examples]. The production of beads and pendants in the Santarém or Guyana region is extremely similar to that of the Early Ceramic period in the Caribbean islands [@barata_muiraquita_1954; @roth_stoneage_1944], but they are indeed later. The distribution of winged plaques and their production workshops is quite different: they are found from Costa Rica to Venezuela, passing through Panama and Colombia and are mainly found in the early centuries AD [@gasson_orinoquia_2002; @acevedogomez_placas_2018; @falci_recontextualizing_2017; @wagner_prehispanic_1972]. Some examples have been found in earlier contexts, in the first centuries before our era, in Costa Rica and Colombia [@acevedogomez_placas_2018]. The stone beads are even rarer and also later [@spencer_prehispanic_1992; @lozadamendieta_archaeology_2016], or completely absent from texts [@gasson_orinoquia_2002; @arroyokalin_entre_2019; @versteeg_barrancoid_2008]. When looking specifically at the elements found in Saladoid contexts on the continent, small lapidary adornment productions can be found, although they are difficult to find. For example, at the Corozal site [@roosevelt_parmana_1980], even though they mainly come from non-Saladoid levels, or at the Saladero site where cylindrical stone beads are mentioned: "*En Saladero, por ejemplo, solo encontramos restos de topi, lascas calcedonia, cuentas cilindricas de piedra y un punzon de hueso. No existen objetos ceremoniales.*" [p. 153 @rouse_venezuelan_1963]. After a request to the Peabody Museum at Yale University (R. Colten, pers. comm. 2022), it appears that their collections from major Saladoide sites such as Ronquín or Saladero are very poor in this regard. The Ronquín site, in fact, did not yield any stone beads, while all of the stone beads in their Saladero collection amount to five beads, four of which are made from a black and white material resembling diorite, the fifth resembling volcanic rock (@fig-saladero). These objects are very rare and currently there is no evidence attesting to a great diversity of production in terms of raw materials or forms: where are the continental Saladoid pendants or the amethyst beads? A more in-depth bibliographic research on these anciently excavated, studied, and published sites, which is difficult to conduct online, would require a significant effort to possibly find some images of lapidary productions, but that is out of the scope of this work.
+
+![Photographs of the five lithic beads from the site of Saladero curated at the Peabody Museum (photos Peabody Museum, layout A. Queffelec)](Figure-Beads-Saladero.jpg){#fig-saladero}
+
+Therefore, it is clear that the production of stone beads and pendants by the Saladoid ceramicists in South America had nothing to do with the one of groups in the Antillean archipelago, either in terms of typology, variety of raw materials, or even simply in quantity found in the sites. On the contrary, one could consider that it is the Isthmo-Colombian region that should be considered, and the Nahuange traditions (Colombia), Middle Zoned Bichrome, La Montana, or El Bosque (Costa Rica). Indeed, several arguments could be used to connect antillean and isthmo-colombian productions in a stronger way than antillean and lower Orinoco ones:
+
+a)  presence of contemporaneous lapidary production in this region as compared with Early Ceramic sites in the Caribbean islands [@jones_jade_1998; @rodriguezramos_isthmo_2013; @kuboyama_lapidary_2022; @fonsecazamora_stylistic_1978],
+b)  stylistic proximity for pendants production, such as vultures/condors\footnote{the taxonomic attribution is of low interest after C. Giovas 2019}, bats, frogs for the Huecan Saladoid [@rodriguezramos_circulation_2011; @rodriguezramos_close_2011; @cody_distribution_1993; @narganesstorde_lapidaria_1999; @fonsecazamora_stylistic_1978 and @fig-isthmo],
+c)  similar raw materials: amethyst, serpentine, agate, chalcedony, rock crystal, paragonite, nephrite [@guerrero_archaeological_1998; @rodriguezramos_close_2011; @hernandez-murillo_integrated_2021],
+d)  presence of nephrite in Colombia [@acevedogomez_placas_2018] and potential presence of sudoite in the ophiolites [@queffelec_first_2021].
+
+Furthermore, there are additional factors to consider in relation to other aspects of material culture. Recent analyses suggest that the jadeite utilized for axe production partly came from Guatemala [@knaf_traceelemental_2021], a hypothesis previously proposed by R. Rodriguez-Ramos [-@rodriguezramos_circulation_2011] based on the observation that there is no evidence of occupation as early as the beginning of the Early Ceramic period on the islands of Hispaniola and Cuba, which are the other potential sources of jadeite. Nevertheless, jadeite axes have been discovered in these early contexts. To support this hypothesis, R. Rodriguez-Ramos [-@rodriguezramos_circulation_2011] also examines the typology of the axes, highlighting the similarity between the plano-convex shapes found in Porto Rico and those of Costa Rica. Additionally, the presence of *guanin* (only one fragment found at the Maisabel site), mother-of-pearl elements, and other indicators, such as coastal lifestyles, certain plant introductions, and dog burials, all suggest proximity to the Isthmo-Colombian region. This interpretive model, which is not widely accepted in the Caribbean archaeology community, emphasizes the Huecoid ceramic series over the Huecan Saladoid sub-series also in terms of ceramic forms and decorations [@rodriguezramos_isthmo_2013].
+
+![Comparison of artifacts from La Hueca and Sorcé (a-c, l-p) and Costa Rica and Panama (d-f, g-k) [d'après @rodriguezramos_close_2011]](Figure-Compa-IsthmoCol.jpg){#fig-isthmo width="60%"}
+
+As it seems extremely difficult to challenge the solid knowledge gained in the fields of ceramics and genetics through the prism of stone adornment objects, specific hypotheses are probably needed for this particular part of material culture, which was already highly developed from the earliest ceramic age occupations in the Caribbean. One such hypothesis posits that the existing connections between the inhabitants of the Archaic Age Antilles and those of the Isthmo-Colombian region allowed the new arrivals with Saladoid ceramics to create a novel means of recognition, thereby strengthening their bonds during the precarious period of archipelago colonization. Evidence suggests that lapidary adornment items began production in Costa Rica with the Early Chiefdom Society around 300 BC [@kuboyama_lapidary_2022], thus contemporaneously with the oldest Huecan Saladoid sites. These new contacts established with the inhabitants of present-day Costa Rica may also have influenced the ceramic productions of some of the new arrivals, resulting in a distinction identified today as the Huecan Saladoid or the Huecoid, as proposed by researchers. Other groups from the continent may have concurrently integrated this new production of stone adornment objects while maintaining their ceramic tradition, as is known today in the Cedrosan Saladoid.
+
+# Conclusion
+
+::: justify
+With this work, knowledge of Amerindian lapidary productions in the Caribbean islands has been greatly updated. The data gathered through direct studies and a substantial inventory from scientific literature allowed to create a database of over 8000 objects distributed across more than 80 archaeological sites, providing a robust approach to test the intuitions of Caribbean archaeologists. The use of ecological methodologies confirmed the greater diversity of Early Ceramic assemblages, in terms of raw materials and types of objects, compared to later periods, without this being attributed to a bias arising from variable archaeological collection sizes. Several methods also highlighted that similarities in raw materials as well as typology were linked to site periodization rather than geographic location. The homogeneity of Early Ceramic lapidary productions and of the different archaeological sites in such a network of similarities, was also highlighted, while the specificities of productions from sites attributed to Huecan Saladoid were emphasized. Based on this specific archaeological record, more recent sites distinguished themselves into two groups. In this Early Ceramic - Late/Final Ceramic dichotomy, the lapidary productions of the Middle Ceramic are often in an intermediate position.
+
+Finally, this work highlights the significant similarities between the Antillean arch and the Isthmo-Colombian region in the Ceramic Age in terms of lapidary ornament production, as well as the absence of an evident link on this subject with the original Saladoid groups of the lower Orinoco valley. The exchange network of the Early Ceramic period probably included the Isthmo-Colombian region, and it is not easy to interpret the production of an exceptionally diverse ornamentation that used exotic materials among these pioneering groups as a desire to maintain a link with their region of origin, which was ultimately so poor in lapidary ornaments. The archaeological record rather highlights a desire to develop their own ethnic codes, possibly related to a new social organization, participating in the development of a sense of unity beneficial to the colonization of the archipelago.
+:::
+
+## Acknowledgments {.appendix .unnumbered .unlisted}
+
+This research was funded by the Direction des Affaires Culturelles de Guadeloupe and the Guadeloupe Regional Council for the period 2016-2019, and by the Direction des Affaires Culturelles de Martinique in 2018. This study received financial support from the French government in the framework of the University of Bordeaux's IdEx "Investments for the Future" program / GPR "Human Past".
+
+## Bibliography {.appendix}
