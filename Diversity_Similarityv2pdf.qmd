@@ -30,7 +30,7 @@ format:
     embed-resources: true
 prefer-html: true
 execute:
-  cache: true
+  cache: false
   echo: false
   warning: false
   message: false
@@ -38,7 +38,7 @@ editor: visual
 bibliography: references.bib
 
 abstract: |
-  Personal ornaments are an important part of the archaeological record, as they provide valuable insights into various aspects of past human societies. Among these ornaments, those made of lithic materials are particularly significant due to their wide distribution and excellent preservation in archaeological sites. In the Caribbean islands, during the Ceramic Age, lapidary artifacts exhibit remarkable abundance and diversity in terms of both raw materials and typology. While archaeologists have previously highlighted differences between the Saladoid and Post-Saladoid periods, this was based on incomplete data without robust mineralogical or typological identification. A South-American origin of the specific lapidary production of the Early Ceramic period has been proposed, following the origin of Ceramic production styles, but relies on the same incomplete data. In this article, I demonstrate that robust analysis of extensive datasets, combining first-hand identification and literature survey, enables to address the questions of spactial and temporal distribution, diversity and similarity of lithic beads and pendants during the Caribbean Age in the Antilles. The study reveals that the Early and Middle Ceramic periods exhibit higher raw material and typological diversity compared to later periods. Furthermore, similarities are greater between sites attributed to the same period than between geographically close sites, both in terms of mineralogy and typology. Finally, I establish that the lapidary production during the Early Ceramic Age differs significantly between South American sites and Saladoid sites in the archipelago. Some indications pointing to the Isthmo-Colombian area are proposed, which will require further research to enhance our understanding to the same level as that of the Caribbean islands, enabling advanced comparisons.
+  Personal ornaments are an important parnsimt of the archaeological record, as they provide valuable insights into various aspects of past human societies. Among these ornaments, those made of lithic materials are particularly significant due to their wide distribution and excellent preservation in archaeological sites. In the Caribbean islands, during the Ceramic Age, lapidary artifacts exhibit remarkable abundance and diversity in terms of both raw materials and typology. While archaeologists have previously highlighted differences between the Saladoid and Post-Saladoid periods, this was based on incomplete data without robust mineralogical or typological identification. A South-American origin of the specific lapidary production of the Early Ceramic period has been proposed, following the origin of Ceramic production styles, but relies on the same incomplete data. In this article, I demonstrate that robust analysis of extensive datasets, combining first-hand identification and literature survey, enables to address the questions of spactial and temporal distribution, diversity and similarity of lithic beads and pendants during the Caribbean Age in the Antilles. The study reveals that the Early and Middle Ceramic periods exhibit higher raw material and typological diversity compared to later periods. Furthermore, similarities are greater between sites attributed to the same period than between geographically close sites, both in terms of mineralogy and typology. Finally, I establish that the lapidary production during the Early Ceramic Age differs significantly between South American sites and Saladoid sites in the archipelago. Some indications pointing to the Isthmo-Colombian area are proposed, which will require further research to enhance our understanding to the same level as that of the Caribbean islands, enabling advanced comparisons.
   
   **Keywords**: Caribbean; Lapidary artifacts; Ceramic Age; Beads; Pendants; Raw materials
 
@@ -514,6 +514,7 @@ Exhaustive and reliable data for lapidary production for 11 and 18 sites for raw
 #| label: fig-diversity_rawmat
 #| fig-cap: "Raw materials diversity profiles"
 #| warning: false
+
 profils_MP = lapply(list_proba_vectors_MP,fun_profile)
 names(profils_MP) = Sites_MP
 Plot_Diversite_MP = as.data.frame(unlist(profils_MP))
@@ -623,6 +624,8 @@ plot_types = ggdraw(a) + draw_plot(inseta, .20, .08, .55, .45)
 plot_types_majeurs = ggdraw(b) + draw_plot(insetb, .20, .08, .55, .45)
 plot_grid(plot_types,plot_types_majeurs,nrow=2,align = "v")
 ```
+
+\clearpage 
 
 ## Similarity
 
@@ -856,6 +859,7 @@ Paaf_typerawsites_BR_C_sup <- BR.sim(Paaf_typerawsites[1:9])
 Paaf_typerawsites_BR_C_sup[upper.tri(Paaf_typerawsites_BR_C_sup)] = 0
 ```
 
+
 ### Raw material similarity
 
 Seriation (centered data, Euclidean distance, OLO algorithm) of sites and individualized raw materials highlights four groups of sites (@fig-heatmap_rawmaterial). Huecan Saladoid sites (Punta Candelero, La Hueca, Gare Maritime and Sorcé, the site neighbouring La Hueca) are grouped due to their high serpentine content. A second group stands out, based on the significant presence of calcite, including sites from the Late Ceramic (Anse à la Gourde, Baie Orientale 2, Grand Case) and Final Ceramic (El Flaco) periods, and with a weaker similarity, Hope Estate (Early Ceramic) and Royall's (Middle Ceramic). A third group corresponds to Early Ceramic and Middle Ceramic sites rich in rock crystal and presenting a diversity of materials such as nephrite, amethyst, diorite, etc. Finally, a group with significant proportions of diorite and, to a lesser extent, carnelian, is highlighted. It includes sites from several periods, such as the Early Ceramic (Trants), but especially recent and final sites (Golden Grove, which is a diorite bead production workshop, El Cabo, Playa Grande). In this group, but relatively distant from the others, is the site of Vivé, which, while indeed presenting several objects in diorite and carnelian, also stands out for a high proportion of turquoise and amethyst.
@@ -874,7 +878,6 @@ hmap_rawmaterial = heatmaply(df_rawmaterial,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-#hmap_rawmaterial[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_rawmaterial[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period"
 #changing the automatic name to Period below the color bars
 export(p = hmap_rawmaterial,file = "hmap_rawmaterial.png")
@@ -893,7 +896,7 @@ hmap_greenturq = heatmaply(df_greenturq,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-#hmap_greenturq[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+
 hmap_greenturq[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 export(p = hmap_greenturq,file = "hmap_greenturq.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
@@ -910,7 +913,7 @@ hmap_greenstone = heatmaply(df_greenstone,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-#hmap_greenstone[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+
 hmap_greenstone[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 export(p = hmap_greenstone,file = "hmap_greenstone.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
