@@ -13,19 +13,6 @@ author:
 date: last-modified
 date-format: long
 format:
-#   docx:
-#     toc: true
-#  pdf:
-#    include-in-header:
-#      - text: |
-#         \usepackage{booktabs}
-#         \usepackage{hyperref}
-#         \usepackage{multirow}
-#         \usepackage{lscape}
-#         \usepackage{changepage}
-#    toc: true
-#    colorlinks: true
-#    number-sections: true
    html:
     code-fold: true
     keep-tex: true
@@ -35,11 +22,11 @@ format:
     embed-resources: false
 prefer-html: true
 execute:
-  cache: true
+  cache: false
   echo: true
   warning: false
   message: false
-editor: visual
+editor: source
 bibliography: references.bib
 
 abstract: |
@@ -106,7 +93,7 @@ kable(dataset_rawmaterials, col.names = gsub("[_]", " ", names(dataset_rawmateri
 #| tbl-cap: Dataset used for regional analysis of the distribution of types of lapidary products during the Ceramic Age in the Caribbean islands.
 library(knitr)
 library(kableExtra)
-dataset_types=read.csv(file = "Table_types.csv",na.strings = "")
+dataset_types=read.csv(file = "Table_types.csv",na.strings = "",encoding = "UTF-8")
 kable(dataset_types,col.names = gsub("[_]", " ", names(dataset_types)), align = "lcccccc") %>%
   row_spec(0, align = "c") %>%
   kable_styling(latex_options = "hold_position")
@@ -520,7 +507,7 @@ library(cowplot)
 bgy.ramp = colorRampPalette(c(rgb(0.95,0.95,0.95),rgb(0,0.5,0.5))) # from very light grey to teal
 
 # Data loading
-df_rawmaterial <- read.csv(file = "bdd_paaf_rawmaterial.csv", row.names = 1)
+df_rawmaterial <- read.csv(file = "bdd_paaf_rawmaterial.csv", row.names = 1, check.names = F)
 df_rawmaterial = df_rawmaterial[,-c(1:8)]
 df_greenstone <- read.csv(file = "bdd_paaf_greenstone.csv", row.names = 1)
 df_greenstone = df_greenstone[,-c(1:8)]
@@ -722,8 +709,13 @@ Paaf_typerawsites_BR_C_sup[upper.tri(Paaf_typerawsites_BR_C_sup)] = 0
 Seriation (centered data, Euclidean distance, OLO algorithm) of sites and individualized raw materials highlights four groups of sites (@fig-heatmap_rawmaterial). Huecan Saladoid sites (Punta Candelero, La Hueca, Gare Maritime and Sorcé, the site neighbouring La Hueca) are grouped due to their high serpentine content. A second group stands out, based on the significant presence of calcite, including sites from the Late Ceramic (Anse à la Gourde, Baie Orientale 2, Grand Case) and Final Ceramic (El Flaco) periods, and with a weaker similarity, Hope Estate (Early Ceramic) and Royall's (Middle Ceramic). A third group corresponds to Early Ceramic and Middle Ceramic sites rich in rock crystal and presenting a diversity of materials such as nephrite, amethyst, diorite, etc. Finally, a group with significant proportions of diorite and, to a lesser extent, carnelian, is highlighted. It includes sites from several periods, such as the Early Ceramic (Trants), but especially recent and final sites (Golden Grove, which is a diorite bead production workshop, El Cabo, Playa Grande). In this group, but relatively distant from the others, is the site of Vivé, which, while indeed presenting several objects in diorite and carnelian, also stands out for a high proportion of turquoise and amethyst.
 
 In order to eliminate a potential bias created by the sites studied in more detail from a gemological perspective (the sites of Antigua and those of the French islands), and also to perhaps get closer to the Amerindian view of these materials who did not have the analytical means to distinguish all green rocks, nor maybe the need or desire to do so, I attempted two different groupings for the green rocks. First, I considered that turquoise could be left aside, due to its relatively easy recognition for non-gemologist archaeologists, as well as potentially by Amerindians (@fig-heatmap_greenturq). I also grouped all green rocks together (@fig-heatmap_greenstones). Similar groupings can be observed in both figures: a diorite (+carnelian) group including sites from different periods, a calcite-oriented group mainly comprising recent sites, a diversified group (rock crystal + amethyst + turquoise + green rocks) including ancient sites, and finally a group heavily oriented towards green rocks including Early Ceramic sites in which the Huecan Saladoid sites are even more strongly grouped.
-
 ```{r Plot seriations raw material}
+####################          WARNING      ########################
+########### Knitr 1.43 has issue with all heatmap chunks   ########
+###########       Need to stay on Knitr 1.42      #################
+#######  (may be OK later, don't know when they fix it) ###########
+###################################################################
+
 #| label: fig-heatmap_rawmaterial
 #| fig-cap: "Seriation of archaeological sites and detailed raw materials."
 #| warning: false
@@ -735,12 +727,12 @@ hmap_rawmaterial = heatmaply(df_rawmaterial,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-#hmap_rawmaterial[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
+
 hmap_rawmaterial[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period"
 hmap_rawmaterial
 #changing the automatic name to Period below the color bars
-#export(p = hmap_rawmaterial,file = "hmap_rawmaterial.png")
-#only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+
+
 ```
 
 ```{r Plot seriations raw material greenturq}
@@ -758,7 +750,6 @@ hmap_greenturq = heatmaply(df_greenturq,
 #hmap_greenturq[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_greenturq[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 hmap_greenturq
-#export(p = hmap_greenturq,file = "hmap_greenturq.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
 
 ```{r Plot seriations raw material greenstones}
@@ -776,7 +767,6 @@ hmap_greenstone = heatmaply(df_greenstone,
 #hmap_greenstone[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_greenstone[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 hmap_greenstone
-#export(p = hmap_greenstone,file = "hmap_greenstone.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
 
 Another way of representing the affinities between sites and raw materials is Correspondence Analysis. @fig-CA_rawmaterial shows the first three dimensions of this analysis. The first dimension clearly corresponds to the opposition between sites rich in greenstones (especially serpentine) and other minerals, with a cluster of ancient sites including the Huecan Saladoid sites on the left of the graph, and more recent sites on the right side. The second dimension distinguishes sites rich in calcite from those rich in diorite, as already observed in the seriations. The third dimension mainly incorporates the variance in crystal quartz proportion. By keeping only dimensions 1 and 3 (@fig-CA_rawmaterial), this analysis separates the sites extremely effectively based on their period. The results obtained by the Correspondence Analysis largely confirm the results of the seriations, highlighting the robustness of this quantitative methodology.
@@ -1281,7 +1271,7 @@ T = 0.161 # Threshold for single and complete network
 df_typerawsites$Index = row.names(df_typerawsites)
 df_typerawsites$Subserie <- str_replace_all(df_typerawsites$Period, color_periods) 
 df_typerawsites = rename(df_typerawsites,Color = Subserie)
-df_typerawsites$Period <- factor(df_typerawsites$Period, levels=c('Early Ceramic', 'Middle Ceramic','Middle-Late Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
+df_typerawsites$Period <- factor(df_typerawsites$Period, levels=c('Early Ceramic', 'Middle Ceramic', 'Late Ceramic', 'Late-Final Ceramic'))
 df_typerawsites$Color = factor(df_typerawsites$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
 
 edges <- melt(Paaf_typerawsites_BR) %>%
