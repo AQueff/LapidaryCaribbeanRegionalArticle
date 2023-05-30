@@ -15,30 +15,35 @@ date-format: long
 format:
 #   docx:
 #     toc: true
-  pdf:
-    include-in-header:
-      - text: |
-         \usepackage{booktabs}
-         \usepackage{hyperref}
-         \usepackage{multirow}
-         \usepackage{lscape}
-         \usepackage{changepage}
-    toc: true
-    colorlinks: true
-    number-sections: true
+#  pdf:
+#    include-in-header:
+#      - text: |
+#         \usepackage{booktabs}
+#         \usepackage{hyperref}
+#         \usepackage{multirow}
+#         \usepackage{lscape}
+#         \usepackage{changepage}
+#    toc: true
+#    colorlinks: true
+#    number-sections: true
+   html:
+    code-fold: true
     keep-tex: true
-    embed-resources: true
+    toc: true
+    title-block-style: default
+    title-block-banner: true
+    embed-resources: false
 prefer-html: true
 execute:
   cache: true
-  echo: false
+  echo: true
   warning: false
   message: false
 editor: visual
 bibliography: references.bib
 
 abstract: |
-  Personal ornaments are an important parnsimt of the archaeological record, as they provide valuable insights into various aspects of past human societies. Among these ornaments, those made of lithic materials are particularly significant due to their wide distribution and excellent preservation in archaeological sites. In the Caribbean islands, during the Ceramic Age, lapidary artifacts exhibit remarkable abundance and diversity in terms of both raw materials and typology. While archaeologists have previously highlighted differences between the Saladoid and Post-Saladoid periods, this was based on incomplete data without robust mineralogical or typological identification. A South-American origin of the specific lapidary production of the Early Ceramic period has been proposed, following the origin of Ceramic production styles, but relies on the same incomplete data. In this article, I demonstrate that robust analysis of extensive datasets, combining first-hand identification and literature survey, enables to address the questions of spactial and temporal distribution, diversity and similarity of lithic beads and pendants during the Caribbean Age in the Antilles. The study reveals that the Early and Middle Ceramic periods exhibit higher raw material and typological diversity compared to later periods. Furthermore, similarities are greater between sites attributed to the same period than between geographically close sites, both in terms of mineralogy and typology. Finally, I establish that the lapidary production during the Early Ceramic Age differs significantly between South American sites and Saladoid sites in the archipelago. Some indications pointing to the Isthmo-Colombian area are proposed, which will require further research to enhance our understanding to the same level as that of the Caribbean islands, enabling advanced comparisons.
+  Personal ornaments are an important part of the archaeological record, as they provide valuable insights into various aspects of past human societies. Among these ornaments, those made of lithic materials are particularly significant due to their wide distribution and excellent preservation in archaeological sites. In the Caribbean islands, during the Ceramic Age, lapidary artifacts exhibit remarkable abundance and diversity in terms of both raw materials and typology. While archaeologists have previously highlighted differences between the Saladoid and Post-Saladoid periods, this was based on incomplete data without robust mineralogical or typological identification. A South-American origin of the specific lapidary production of the Early Ceramic period has been proposed, following the origin of Ceramic production styles, but relies on the same incomplete data. In this article, I demonstrate that robust analysis of extensive datasets, combining first-hand identification and literature survey, enables to address the questions of spactial and temporal distribution, diversity and similarity of lithic beads and pendants during the Caribbean Age in the Antilles. The study reveals that the Early and Middle Ceramic periods exhibit higher raw material and typological diversity compared to later periods. Furthermore, similarities are greater between sites attributed to the same period than between geographically close sites, both in terms of mineralogy and typology. Finally, I establish that the lapidary production during the Early Ceramic Age differs significantly between South American sites and Saladoid sites in the archipelago. Some indications pointing to the Isthmo-Colombian area are proposed, which will require further research to enhance our understanding to the same level as that of the Caribbean islands, enabling advanced comparisons.
   
   **Keywords**: Caribbean; Lapidary artifacts; Ceramic Age; Beads; Pendants; Raw materials
 
@@ -63,205 +68,61 @@ The archipelago formed of the Caribbean islands is a specific region of America,
 ## Periodization
 
 ::: justify
-If, as previously stated, the Caribbean islands have been inhabited for more than 7000 years, the work presented here focuses entirely on the Ceramic Age, since no significant lapidary production\footnote{we will use the term *lapidary* in this manuscript for the personal ornaments made of stone} is known before in the Caribbean. The Ceramic Age, traditionally subdivided on the basis of changes in ceramic production (decorations and shapes), and lasting about 2000 years, begins with the first Saladoid/Huecoid sites and ends with the arrival of European settlers. The Saladoid designation, like all other series (with the suffix "-oid") and sub-series (with the suffix "-an") [@keegan_oxford_2013], takes its name from the eponymous site where a particular type of ceramic production was identified, here the Saladero site in Venezuela [@cruxent_archeological_1958]. The diversity of appellations is great in the Caribbean, and as Keegan and Hofman recently reminded us [-@keegan_caribbean_2017]: "*Archaeologists have used a bewildering assortment of names: Saladoid, Ostionoid, Troumassoid, la Hueca, Island Carib, Island Arawak, Taíno, Lucayan, Agroalfarera, Ciboney, and so on. The challenge is to make sense of these various names, some of which even we are not sure what they really mean.*". Currently, the majority of archaeologists agree that this classification into series and sub-series, supposed to represent particular geographical areas and chronological periods, has significant limitations, but is still necessary for communication among researchers in the Caribbean area [@keegan_caribbean_2017]. The most commonly used scheme, reworked from Rouse's pioneering work [-@rouse_tainos_1992] and involving complex local variations among the islands, proposes for the Lesser Antilles a division into Saladoid and a group of different facies often integrated under the term post-Saladoid [@keegan_oxford_2013; @hofman_postsaladoid_2013]. The former includes two main subseries: Huecan Saladoid (named after the La Hueca site in Puerto Rico), whose sites are rather old and mainly concentrated in the northern part of the Lesser Antilles, and Cedrosan Saladoid (named after the Cedros site in Venezuela), which lasted longer and is found in all the Lesser Antilles. The post-Saladoid, on the other hand, encompasses a fairly wide variety of local variations mainly within the Troumassoid (Troumassée site in St. Lucia) and Ostionoid (Ostiones site in Puerto Rico) series, themselves subdivided into subseries such as Troumassan, Suazan, Ostionan, Elenan, Chican, Marmoran [@berard_saladoid_2013; @hofman_postsaladoid_2013]. The Ceramic Age can also be called Neo-Indian, as is sometimes the case in South America [@navarrete_prehistory_2008; @rouse_venezuelan_1963], to emphasize not only the evolution of ceramic production but also all the changes in the way of life during this transition [@bonnissent_melting_2013]. It is then divided into Early Neo-Indian and Late Neo-Indian [@bonnissent_archeologie_2008; @bonnissent_gisements_2013; @bonnissent_melting_2013]. Another school also proposes to put Huecoid and Saladoid on the same level, respectively under the names of Agroalfarero I and Agroalfarero II, the former having allowed for the local development of Agroalfarero III (Ostionoid) and IV (Taíno phase) [@chanlattebaik_huecoid_2013]. To name the periods in a homogeneous way, without relying exclusively on the characteristics of the ceramic assemblages, and for the whole area of the Lesser Antilles, B. Bérard [-@berard_boxes_2019] proposes to divide the Ceramic Age into four periods: Early, Middle, Late, and Final Ceramic (Table 1). In each of these periods, which succeed one another in time within the same space, several cultural components are grouped together, such as the Early Cerdosan Saladoid and Huecan Saladoid/Huecoid in the Early Ceramic period. The Late Ceramic period, on the other hand, groups together the numerous variations of Troumassoid, Ostionoid, and even the late Cedrosan Saladoid, which are geographical variations in ceramic production, but contemporary and grouped together in this way for a better overall view and understanding for the non-specialist. This, in particular, makes it possible to integrate other disciplines into the ongoing discussion about the cultural evolution of the populations of the Lesser Antilles and Puerto Rico during the two millennia of the Ceramic Age. \textbf{It is on this periodization, since one must be chosen, and because it allows for regional-scale study, that this work will be based.}
+If, as previously stated, the Caribbean islands have been inhabited for more than 7000 years, the work presented here focuses entirely on the Ceramic Age, since no significant lapidary production\footnote{we will use the term *lapidary* in this manuscript for the personal ornaments made of stone} is known before in the Caribbean. The Ceramic Age, traditionally subdivided on the basis of changes in ceramic production (decorations and shapes), and lasting about 2000 years, begins with the first Saladoid/Huecoid sites and ends with the arrival of European settlers. The Saladoid designation, like all other series (with the suffix "-oid") and sub-series (with the suffix "-an") [@keegan_oxford_2013], takes its name from the eponymous site where a particular type of ceramic production was identified, here the Saladero site in Venezuela [@cruxent_archeological_1958]. The diversity of appellations is great in the Caribbean, and as Keegan and Hofman recently reminded us [-@keegan_caribbean_2017]: "*Archaeologists have used a bewildering assortment of names: Saladoid, Ostionoid, Troumassoid, la Hueca, Island Carib, Island Arawak, Taíno, Lucayan, Agroalfarera, Ciboney, and so on. The challenge is to make sense of these various names, some of which even we are not sure what they really mean.*". Currently, the majority of archaeologists agree that this classification into series and sub-series, supposed to represent particular geographical areas and chronological periods, has significant limitations, but is still necessary for communication among researchers in the Caribbean area [@keegan_caribbean_2017]. The most commonly used scheme, reworked from Rouse's pioneering work [-@rouse_tainos_1992] and involving complex local variations among the islands, proposes for the Lesser Antilles a division into Saladoid and a group of different facies often integrated under the term post-Saladoid [@keegan_oxford_2013; @hofman_postsaladoid_2013]. The former includes two main subseries: Huecan Saladoid (named after the La Hueca site in Puerto Rico), whose sites are rather old and mainly concentrated in the northern part of the Lesser Antilles, and Cedrosan Saladoid (named after the Cedros site in Venezuela), which lasted longer and is found in all the Lesser Antilles. The post-Saladoid, on the other hand, encompasses a fairly wide variety of local variations mainly within the Troumassoid (Troumassée site in St. Lucia) and Ostionoid (Ostiones site in Puerto Rico) series, themselves subdivided into subseries such as Troumassan, Suazan, Ostionan, Elenan, Chican, Marmoran [@berard_saladoid_2013; @hofman_postsaladoid_2013]. The Ceramic Age can also be called Neo-Indian, as is sometimes the case in South America [@navarrete_prehistory_2008; @rouse_venezuelan_1963], to emphasize not only the evolution of ceramic production but also all the changes in the way of life during this transition [@bonnissent_melting_2013]. It is then divided into Early Neo-Indian and Late Neo-Indian [@bonnissent_archeologie_2008; @bonnissent_gisements_2013; @bonnissent_melting_2013]. Another school also proposes to put Huecoid and Saladoid on the same level, respectively under the names of Agroalfarero I and Agroalfarero II, the former having allowed for the local development of Agroalfarero III (Ostionoid) and IV (Taíno phase) [@chanlattebaik_huecoid_2013]. To name the periods in a homogeneous way, without relying exclusively on the characteristics of the ceramic assemblages, and for the whole area of the Lesser Antilles, B. Bérard [-@berard_boxes_2019] proposes to divide the Ceramic Age into four periods: Early, Middle, Late, and Final Ceramic (@tbl-periodization). In each of these periods, which succeed one another in time within the same space, several cultural components are grouped together, such as the Early Cerdosan Saladoid and Huecan Saladoid/Huecoid in the Early Ceramic period. The Late Ceramic period, on the other hand, groups together the numerous variations of Troumassoid, Ostionoid, and even the late Cedrosan Saladoid, which are geographical variations in ceramic production, but contemporary and grouped together in this way for a better overall view and understanding for the non-specialist. This, in particular, makes it possible to integrate other disciplines into the ongoing discussion about the cultural evolution of the populations of the Lesser Antilles and Puerto Rico during the two millennia of the Ceramic Age. \textbf{It is on this periodization, since one must be chosen, and because it allows for regional-scale study, that this work will be based.}
 :::
 
-```{=tex}
-\begin{table}[h]
-\centering
-\footnotesize
-\begin{tabular}{@{}cccc@{}}
-\toprule
-\textbf{Dates} & \textbf{Period} & \textbf{Cultural component} \\ \midrule
- & & - Suazan Troumassoid \\
-1100 A.D. & Final Ceramic & - Marmoran Troumassoid \\
-- contact & & (Marmora Bay) \\
- & & - Chican Ostionoid / Chicoid \\ \midrule
- & & - Troumassan Troumassoid \\
- & & - Marmoran Troumassoid \\
-750 A.D. & & (Mill Reef) \\
-- 1100 A.D. & Late Ceramic & - Ostionan Ostionoid \\
- & & - Elenan Ostionoid \\
- & & - Late Cedrosan Saladoid \\
- & & - Caliviny \\ \midrule
-400 A.D. & Middle Ceramic & Middle-Late \\
-- 750 A.D. &  & Cedrosan Saladoid \\ \midrule
-(400 ?) 200 B.C. & Early Ceramic & - Early Cedrosan Saladoid \\
-- 400 A.D. & & - Huecann Saladoid / Huecoid \\ 
-\bottomrule
-\end{tabular}
-\caption{Periodization of the Ceramic Age in the Lesser Antilles and Puerto Rico (mod. after Bérard 2019).}
-\label{tab:periods}
-\end{table}
+```{r tbl-periodization}
+#| label: tbl-periodization
+#| tbl-cap: Periodization of the Ceramic Age in the Lesser Antilles and Puerto Rico (mod. after Bérard 2019).
+library(knitr)
+library(kableExtra)
+periodization=read.csv(file = "Table_periodization.csv",na.strings = "0",encoding="UTF8")
+kable(periodization,col.names = gsub("[_]", " ", names(periodization)),align = "ccl") %>%
+  kable_styling(latex_options = "hold_position") %>%
+  collapse_rows(columns = c(1,2)) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
 ```
+
 ## Datasets and subsets
 
 ::: justify
-The database of 80 archaeological sites and more than 8000 artifacts related to the lapidary production during the Ceramic Age in the Caribbean islands [@queffelec_database_2021], whose aim was to be exhaustive, need to be sub-set for the diversity and similarity analysis conducted in this work due to heterogeneous quality of the data. For the diversity analysis, only the 11 best datasets were kept, including only the sites for which the complete lapidary sample has been investigated recently, and where the raw materials and types are described. For the similarity analysis, a larger number of sites have been included, but these site are not necessarily the same for raw material and typological analyses. For raw material similarity analyses, data was reduced to 22 sites by keeping only the sites with at least 10 artifacts remaining after removing the raw materials identified in a single site or never formally identified by analytical techniques (Table 2). Given the quality of some mineralogical information, especially concerning the so-called *greenstones*, and also because one can argue that people from the Ceramic Age were not gemologists either, this subsample of 22 sites was also used with all green rocks and minerals gathered in a single category, and also with all green rocks and minerals gathered but turquoise, which is often easily recognized by naked-eye. For the site of Pearls, only data from Cody's excavations were considered, since we think it is less biased in terms of raw material distribution than the content of the surface collection published recently who could have clearly overcome chips or fragments of raw materials and therefore being biased towards some raw materials. As for the typological similarity analysis, the selection has been even more difficult since this kind of information is severely missing from the literature. Discrepancies between the datasets for raw materials and typology are then observed, and the different degrees of typological precision used for the different analysis imply the conservation of different archaeological sites in the sample. To explain some of these discrepancies, one can take the example of a site for which only the number of beads and pendants is given in the literature, with no detailed analysis. Such a site is used for very general study based on the number of beads and pendants, but cannot be integrated in a study based on the detailed typology of beads. This is the case for example for Royall's (199 artifacts), Punta Candelero (592 artifacts), Doig's (43 artifacts) for which the detailed typology is not published. Sometimes iconography in the literature allows to circumvent this issue, but sometimes not, as is the case for the 81 rock crystal beads from Golden Rock for which no standardized picture is published and then it is impossible from the picture in the article to know if the beads are cylindrical or discoid [@versteeg_archaeology_1992]. Other differences between different levels of details can also come from the incomplete description of the whole archaeological collection, as for Trants, for which the literature details the type of 123 beads and 7 pendants out of the 523 beads and 12 pendants listed in the article [@crock_archaeology_1998]. By not keeping the raw material fragments in this typological study and relying on the previously established rule of keeping only the sites with more than 10 remaining artifacts, we also removed two archaeological sites from the dataset (Grand Case and Hacienda Grande). Finally, it is noteworthy that data for the site of Pearls in this typological analysis integrates both the results from Cody's excavation [@cody_site_1991] and the private collection inventory based on surface collection [@falci_lapidary_2020], since we consider that complete and/or finished objects of any raw material would have been collected even in these uncontrolled circumstances. The different levels of precision allow to create several tables (Tables 3 and 4), which sometimes lead to very small samples given the low level of detail in the literature.
+The database of 80 archaeological sites and more than 8000 artifacts related to the lapidary production during the Ceramic Age in the Caribbean islands [@queffelec_database_2021], whose aim was to be exhaustive, need to be sub-set for the diversity and similarity analysis conducted in this work due to heterogeneous quality of the data. For the diversity analysis, only the 11 best datasets were kept, including only the sites for which the complete lapidary sample has been investigated recently, and where the raw materials and types are described. For the similarity analysis, a larger number of sites have been included, but these site are not necessarily the same for raw material and typological analyses. For raw material similarity analyses, data was reduced to 22 sites by keeping only the sites with at least 10 artifacts remaining after removing the raw materials identified in a single site or never formally identified by analytical techniques (@tbl-dataset_rawmaterials). Given the quality of some mineralogical information, especially concerning the so-called *greenstones*, and also because one can argue that people from the Ceramic Age were not gemologists either, this subsample of 22 sites was also used with all green rocks and minerals gathered in a single category, and also with all green rocks and minerals gathered but turquoise, which is often easily recognized by naked-eye. For the site of Pearls, only data from Cody's excavations were considered, since we think it is less biased in terms of raw material distribution than the content of the surface collection published recently who could have clearly overcome chips or fragments of raw materials and therefore being biased towards some raw materials. As for the typological similarity analysis, the selection has been even more difficult since this kind of information is severely missing from the literature. Discrepancies between the datasets for raw materials and typology are then observed, and the different degrees of typological precision used for the different analysis imply the conservation of different archaeological sites in the sample. To explain some of these discrepancies, one can take the example of a site for which only the number of beads and pendants is given in the literature, with no detailed analysis. Such a site is used for very general study based on the number of beads and pendants, but cannot be integrated in a study based on the detailed typology of beads. This is the case for example for Royall's (199 artifacts), Punta Candelero (592 artifacts), Doig's (43 artifacts) for which the detailed typology is not published. Sometimes iconography in the literature allows to circumvent this issue, but sometimes not, as is the case for the 81 rock crystal beads from Golden Rock for which no standardized picture is published and then it is impossible from the picture in the article to know if the beads are cylindrical or discoid [@versteeg_archaeology_1992]. Other differences between different levels of details can also come from the incomplete description of the whole archaeological collection, as for Trants, for which the literature details the type of 123 beads and 7 pendants out of the 523 beads and 12 pendants listed in the article [@crock_archaeology_1998]. By not keeping the raw material fragments in this typological study and relying on the previously established rule of keeping only the sites with more than 10 remaining artifacts, we also removed two archaeological sites from the dataset (Grand Case and Hacienda Grande). Finally, it is noteworthy that data for the site of Pearls in this typological analysis integrates both the results from Cody's excavation [@cody_site_1991] and the private collection inventory based on surface collection [@falci_lapidary_2020], since we consider that complete and/or finished objects of any raw material would have been collected even in these uncontrolled circumstances. The different levels of precision allow to create several tables (@tbl-dataset_types, and @tbl-dataset_precisetypes), which sometimes lead to very small samples given the low level of detail in the literature.
 :::
 
-```{=tex}
-\newpage
-\begin{landscape}   
-\begin{table}[]
-\begin{adjustwidth}{-1cm}{-1cm}
-\centering
-\setlength\tabcolsep{1.5 pt}
-\scriptsize
-\begin{tabular}{@{}llllccccccccc@{}}
-\toprule
-\textbf{Site} & \textbf{Period} & \textbf{Cultural comp.} & \textbf{Anorthite} & \textbf{Amethyst} & \textbf{Aventurine} & \textbf{Barytine} & \textbf{Limestone} & \textbf{Chalcedony} & \textbf{Calcite} & \textbf{Carnelian} & \textbf{} \\ \midrule
-Anse à la Gourde & Late C. & Trouma. & 1 & 0 & 0 & 0 & 0 & 0 & 12 & 0 &  \\
-Baie Orientale 2 & Late C. & Trouma. & 0 & 0 & 0 & 0 & 0 & 0 & 99 & 0 &  \\
-Doig's & Early-Middle C. & C. Salad. & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 &  \\
-El Cabo & Late-Final C. & Ostio. & 0 & 0 & 0 & 0 & 0 & 0 & 6 & 0 &  \\
-El Flaco & Late-Final C. & Ostio. & 0 & 0 & 0 & 0 & 0 & 0 & 65 & 0 &  \\
-Elliot's & Middle C. & Cedrosan Salad. & 0 & 1 & 0 & 4 & 12 & 10 & 5 & 3 &  \\
-Gare Maritime & Early C. & Huecan Salad. & 0 & 9 & 1 & 0 & 0 & 0 & 3 & 0 &  \\
-Golden Grove & Late C. & Trouma./Barranc. & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &  \\
-Golden Rock & Middle C. & Cedrosan Salad. & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 &  \\
-Grand Bay & Middle-Late C. & Cedrosan Salad. & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 3 &  \\
-Grand Case & Late C. & Trouma. & 0 & 0 & 0 & 0 & 0 & 0 & 11 & 0 &  \\
-Hope Estate  & Early C. & Huecan/Cedrosan Salad. & 2 & 8 & 0 & 0 & 1 & 1 & 24 & 3 &  \\
-La Hueca & Early C. & Huecan Salad. & 0 & 4 & 10 & 0 & 0 & 2 & 9 & 2 &  \\
-Main Street & Early C. & Cedrosan Salad. & 0 & 0 & 0 & 0 & 1 & 0 & 1 & 1 &  \\
-Morel & Early C. & Huecan/Cedrosan Salad. & 0 & 13 & 1 & 0 & 0 & 0 & 4 & 9 &  \\
-Pearls & Early C. & Cedrosan Salad. & 0 & 23 & 0 & 0 & 0 & 2 & 0 & 9 &  \\
-Playa Grande & Late-Final C. & Ostio. & 0 & 0 & 0 & 0 & 0 & 0 & 2 & 0 &  \\
-Punta Candelero & Early C. & Huecan Salad. & 0 & 0 & 27 & 0 & 0 & 0 & 0 & 0 &  \\
-Royall's & Middle C. & Cedrosan Salad. & 0 & 0 & 0 & 8 & 23 & 8 & 59 & 56 &  \\
-Sorcé & Early C. & Cedrosan Salad. & 0 & 2 & 2 & 0 & 0 & 2 & 3 & 1 &  \\
-Trants & Early C. & Cedrosan Salad. & 1 & 23 & 13 & 0 & 0 & 0 & 0 & 146 &  \\
-Vivé & Early C. & Cedrosan Salad. & 1 & 6 & 0 & 1 & 0 & 2 & 1 & 3 &  \\
- &  &  &  &  &  &  &  &  &  &  &  &  \\
-\textbf{Site} & \textbf{Rock crystal} & \textbf{Diorite} & \textbf{Jasper} & \textbf{Malachite} & \textbf{Marble} & \textbf{Nephrite} & \textbf{Paragonite} & \textbf{Serpentine} & \textbf{Stalactite} & \textbf{Sudoite} & \textbf{Turquoise} \\
-Anse à la Gourde & 0 & 4 & 0 & 0 & 1 & 0 & 0 & 1 & 1 & 0 & 1 \\
-Baie Orientale 2 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Doig's & 2 & 2 & 0 & 0 & 0 & 3 & 0 & 2 & 0 & 0 & 0 \\
-El Cabo & 0 & 25 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 \\
-El Flaco & 0 & 17 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Elliot's & 9 & 6 & 0 & 1 & 0 & 2 & 0 & 1 & 0 & 0 & 0 \\
-Gare Maritime  & 3 & 1 & 1 & 0 & 0 & 1 & 1 & 17 & 0 & 3 & 7 \\
-Golden Grove & 0 & 271 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Golden Rock & 81 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Grand Bay & 0 & 6 & 0 & 0 & 0 & 0 & 0 & 1 & 0 & 0 & 0 \\
-Grand Case & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Hope Estate & 14 & 11 & 0 & 1 & 1 & 1 & 11 & 5 & 0 & 2 & 2 \\
-La Hueca & 10 & 3 & 0 & 5 & 1 & 9 & 0 & 677 & 0 & 0 & 3 \\
-Main Street & 6 & 1 & 0 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 0 \\
-Morel & 13 & 10 & 0 & 0 & 1 & 3 & 1 & 1 & 1 & 2 & 0 \\
-Pearls & 22 & 14 & 0 & 0 & 0 & 26 & 0 & 9 & 0 & 0 & 10 \\
-Playa Grande & 0 & 11 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 & 0 \\
-Punta Candelero & 63 & 0 & 0 & 75 & 8 & 4 & 0 & 257 & 0 & 0 & 24 \\
-Royall's & 18 & 15 & 3 & 0 & 0 & 1 & 0 & 3 & 0 & 0 & 1 \\
-Sorcé & 4 & 2 & 0 & 3 & 0 & 8 & 0 & 39 & 0 & 0 & 2 \\
-Trants  & 49 & 270 & 0 & 0 & 0 & 2 & 0 & 1 & 0 & 0 & 11 \\
-Vivé & 2 & 5 & 1 & 0 & 0 & 2 & 2 & 0 & 0 & 1 & 9 \\ \bottomrule
-\end{tabular}
-\caption{Jeu de données nettoyé utilisé pour les analyses régionales de la distribution des matières premières utilisées dans l’artisanat lapidaire de l’âge Céramique dans les Antilles.}
-\label{tab:data_MP}
-\end{adjustwidth}
-\end{table}
-\end{landscape}
-\newpage
+```{r tbl-dataset_rawmaterials}
+#| label: tbl-dataset_rawmaterials
+#| tbl-cap: Dataset used for regional analysis of the distribution of raw materials used for lapidary production during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_rawmaterials=read.csv(file = "Table_rawmaterials.csv",na.strings = "0",encoding = "UTF-8")
+kable(dataset_rawmaterials, col.names = gsub("[_]", " ", names(dataset_rawmaterials))) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
 ```
 
-```{=tex}
-\newpage
-\begin{table}[]
-\centering  
-\footnotesize
-\begin{tabular}{@{}lcccccc@{}}
-\toprule
-\textbf{Site} & \textbf{Bead} & \textbf{Pendant} & \textbf{Non perforated plate} & \textbf{Bead-pendant} & \textbf{Earplug} & \textbf{Total} \\ \midrule
-Anse à la Gourde & 22 & 1 &  &  &  & \textbf{23} \\
-Baie Orientale 2 & 14 &  &  &  &  & \textbf{14} \\
-Doig's & 42 & 1 &  &  &  & \textbf{43} \\
-El Cabo & 16 &  & 1 & 18 & 2 & \textbf{37} \\
-El Carril & 2 & 2 &  & 6 &  & \textbf{10} \\
-El Flaco & 68 & 1 &  & 22 &  & \textbf{91} \\
-Elliot's & 32 & 14 &  &  &  & \textbf{46} \\
-Gare maritime & 31 & 4 &  &  &  & \textbf{35} \\
-Golden Grove & 49 &  &  &  &  & \textbf{49} \\
-Golden Rock & 81 &  &  &  &  & \textbf{81} \\
-Grand Bay & 16 & 1 &  &  &  & \textbf{17} \\
-Hope Estate & 82 & 19 &  &  & 1 & \textbf{102} \\
-Main Street & 11 & 1 &  &  &  & \textbf{12} \\
-Morel & 42 & 10 &  &  &  & \textbf{52} \\
-Pearls & 1137 & 175 &  & 1 &  & \textbf{1313} \\
-Playa Grande & 8 & 3 &  & 2 & 4 & \textbf{17} \\
-Prosperity & 19 & 5 &  &  &  & \textbf{24} \\
-Punta   Candelero & 360 & 232 &  &  &  & \textbf{592} \\
-Royall's & 73 & 8 &  &  &  & \textbf{81} \\
-Seaview & 18 &  &  &  &  & \textbf{18} \\
-Sorcé & 711 & 118 & 225 &  &  & \textbf{1054} \\
-Sorcé La Hueca & 1210 & 1633 & 34 &  &  & \textbf{2877} \\
-Tecla & 49 & 10 & 13 &  &  & \textbf{72} \\
-Trants & 523 & 12 &  &  &  & \textbf{535} \\
-Vivé & 35 & 2 &  &  & 1 & \textbf{38} \\
-\textbf{Total} & \textbf{4651} & \textbf{2252} & \textbf{273} & \textbf{49} & \textbf{8} & \textbf{7233} \\ \bottomrule
-\end{tabular}
-\caption{Dataset used for regional analysis of the distribution of types of lapidary products during the Ceramic Age in the Caribbean islands.}
-\label{tab:periods}
-\end{table}
-\newpage
+```{r tbl-dataset_types}
+#| label: tbl-dataset_types
+#| tbl-cap: Dataset used for regional analysis of the distribution of types of lapidary products during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_types=read.csv(file = "Table_types.csv",na.strings = "")
+kable(dataset_types,col.names = gsub("[_]", " ", names(dataset_types)), align = "lcccccc") %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
 ```
 
-```{=tex}
-\newpage
-\begin{landscape}
-\begin{table}[]
-\centering
-\footnotesize
-\begin{tabular}{@{}lccccccc@{}}
-\toprule
-\textbf{Site} & \textbf{Anthropomorphic} & \textbf{Anthropozoomorphic} & \textbf{Biconical} & \textbf{Cylindrical} & \textbf{Discoid} & \textbf{Faceted} &  \\ \midrule
-Anse à la Gourde &  &  &  & 4 & 14 &  &  \\
-Baie Orientale 2 &  &  &  & 11 & 1 &  &  \\
-El Cabo &  &  &  &  & 9 &  &  \\
-El Flaco &  &  &  &  & 38 &  &  \\
-Elliot's &  &  &  & 8 &  &  &  \\
-Gare maritime &  &  &  & 6 & 17 &  &  \\
-Grand Bay &  &  &  & 2 & 8 &  &  \\
-Hacienda   Grande &  & 1 & 1 & 3 & 2 &  &  \\
-Hope Estate &  &  & 2 & 22 & 34 &  &  \\
-Main Street &  &  &  & 7 & 1 &  &  \\
-Morel & 2 &  & 5 & 21 & 1 &  &  \\
-Pearls &  &  & 6 & 251 & 546 &  &  \\
-Prosperity &  &  &  & 9 & 3 &  &  \\
-Sorcé & 2 & 2 & 84 & 309 & 233 &  &  \\
-Sorcé La Hueca & 6 &  & 5 & 154 & 608 &  &  \\
-Tecla & 1 & 2 &  & 31 & 15 &  &  \\
-Trants &  &  & 1 & 64 & 13 & 20 &  \\
-Vivé &  &  & 4 & 7 & 13 &  &  \\
-\textbf{Total} & \textbf{11} & \textbf{5} & \textbf{108} & \textbf{909} & \textbf{1556} & \textbf{20} &  \\
- & \textbf{Geometric} & \textbf{Bead-pendant} & \textbf{Planoconvex} & \textbf{Spherical} & \textbf{Barrel} & \textbf{Zoomorphic} & \textbf{Total} \\ \midrule
-Anse à la Gourde &  &  &  &  & 4 &  & \textbf{22} \\
-Baie Orientale 2 &  &  &  &  &  &  & \textbf{12} \\
-El Cabo &  & 18 &  &  &  &  & \textbf{27} \\
-El Flaco &  & 22 &  &  & 13 &  & \textbf{73} \\
-Elliot's &  &  &  &  & 7 & 2 & \textbf{17} \\
-La Hueca & 48 &  & 356 &  & 87 & 1579 & \textbf{2843} \\
-Gare maritime &  &  & 1 & 2 & 4 & 4 & \textbf{34} \\
-Grand Bay & 1 &  &  &  & 1 &  & \textbf{12} \\
-Hacienda   Grande &  &  &  &  & 1 & 2 & \textbf{10} \\
-Hope Estate & 4 &  & 3 &  & 19 & 13 & \textbf{97} \\
-Main Street &  &  &  &  & 1 & 1 & \textbf{10} \\
-Morel &  &  &  & 1 & 14 & 7 & \textbf{51} \\
-Pearls & 69 & 1 & 48 & 2 & 269 & 100 & \textbf{1292} \\
-Prosperity & 3 &  & 2 &  & 3 & 2 & \textbf{22} \\
-Sorcé &  &  & 73 &  & 12 & 71 & \textbf{786} \\
-Tecla &  &  & 2 &  & 1 & 7 & \textbf{59} \\
-Trants & 1 &  &  &  & 25 & 6 & \textbf{130} \\
-Vivé &  &  & 2 & 1 & 6 & 2 & \textbf{35} \\
-\textbf{Total} & \textbf{126} & \textbf{41} & \textbf{487} & \textbf{6} & \textbf{467} & \textbf{1796} & \textbf{5532} \\ \bottomrule
-\end{tabular}
-\caption{Dataset used for regional analysis of the distribution of precise types of lapidary products during the Ceramic Age in the Caribbean islands.}
-\label{tab:data_toustypes}
-\end{table}
-\end{landscape}
-\newpage
+```{r tbl-dataset_precisetypes}
+#| label: tbl-dataset_precisetypes
+#| tbl-cap: Dataset used for regional analysis of the distribution of precise types of lapidary products during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_precisetypes=read.csv(file = "Table_precisetypes.csv",na.strings = "")
+kable(dataset_precisetypes,col.names = gsub("[_]", " ", names(dataset_precisetypes)), align = "lccccccccccccc") %>%
+   row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
 ```
+
 ## Diversity
 
 ::: justify
@@ -514,7 +375,6 @@ Exhaustive and reliable data for lapidary production for 11 and 18 sites for raw
 #| label: fig-diversity_rawmat
 #| fig-cap: "Raw materials diversity profiles"
 #| warning: false
-
 profils_MP = lapply(list_proba_vectors_MP,fun_profile)
 names(profils_MP) = Sites_MP
 Plot_Diversite_MP = as.data.frame(unlist(profils_MP))
@@ -624,8 +484,6 @@ plot_types = ggdraw(a) + draw_plot(inseta, .20, .08, .55, .45)
 plot_types_majeurs = ggdraw(b) + draw_plot(insetb, .20, .08, .55, .45)
 plot_grid(plot_types,plot_types_majeurs,nrow=2,align = "v")
 ```
-
-\clearpage 
 
 ## Similarity
 
@@ -859,7 +717,6 @@ Paaf_typerawsites_BR_C_sup <- BR.sim(Paaf_typerawsites[1:9])
 Paaf_typerawsites_BR_C_sup[upper.tri(Paaf_typerawsites_BR_C_sup)] = 0
 ```
 
-
 ### Raw material similarity
 
 Seriation (centered data, Euclidean distance, OLO algorithm) of sites and individualized raw materials highlights four groups of sites (@fig-heatmap_rawmaterial). Huecan Saladoid sites (Punta Candelero, La Hueca, Gare Maritime and Sorcé, the site neighbouring La Hueca) are grouped due to their high serpentine content. A second group stands out, based on the significant presence of calcite, including sites from the Late Ceramic (Anse à la Gourde, Baie Orientale 2, Grand Case) and Final Ceramic (El Flaco) periods, and with a weaker similarity, Hope Estate (Early Ceramic) and Royall's (Middle Ceramic). A third group corresponds to Early Ceramic and Middle Ceramic sites rich in rock crystal and presenting a diversity of materials such as nephrite, amethyst, diorite, etc. Finally, a group with significant proportions of diorite and, to a lesser extent, carnelian, is highlighted. It includes sites from several periods, such as the Early Ceramic (Trants), but especially recent and final sites (Golden Grove, which is a diorite bead production workshop, El Cabo, Playa Grande). In this group, but relatively distant from the others, is the site of Vivé, which, while indeed presenting several objects in diorite and carnelian, also stands out for a high proportion of turquoise and amethyst.
@@ -870,7 +727,7 @@ In order to eliminate a potential bias created by the sites studied in more deta
 #| label: fig-heatmap_rawmaterial
 #| fig-cap: "Seriation of archaeological sites and detailed raw materials."
 #| warning: false
-
+library(heatmaply)
 hmap_rawmaterial = heatmaply(df_rawmaterial,
                  scale = "row", #scaling of values to compare quite different samples
                  col = bgy.ramp(100), #use of teal color
@@ -878,9 +735,11 @@ hmap_rawmaterial = heatmaply(df_rawmaterial,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
+#hmap_rawmaterial[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_rawmaterial[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period"
+hmap_rawmaterial
 #changing the automatic name to Period below the color bars
-export(p = hmap_rawmaterial,file = "hmap_rawmaterial.png")
+#export(p = hmap_rawmaterial,file = "hmap_rawmaterial.png")
 #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
 
@@ -896,9 +755,10 @@ hmap_greenturq = heatmaply(df_greenturq,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-
+#hmap_greenturq[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_greenturq[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
-export(p = hmap_greenturq,file = "hmap_greenturq.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+hmap_greenturq
+#export(p = hmap_greenturq,file = "hmap_greenturq.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
 
 ```{r Plot seriations raw material greenstones}
@@ -913,9 +773,10 @@ hmap_greenstone = heatmaply(df_greenstone,
                  RowSideColors = color_sites$color, #adding the  color bars for Periods
                  key.title = "Similarity",
                  cexCol = 0.9)
-
+#hmap_greenstone[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_greenstone[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
-export(p = hmap_greenstone,file = "hmap_greenstone.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
+hmap_greenstone
+#export(p = hmap_greenstone,file = "hmap_greenstone.png") #only solution I found to put the graph in the pdf is to export it before, because the heatmaply function creates a plotly object and not a ggplot object, and plotly object are only suitable for html rendering
 ```
 
 Another way of representing the affinities between sites and raw materials is Correspondence Analysis. @fig-CA_rawmaterial shows the first three dimensions of this analysis. The first dimension clearly corresponds to the opposition between sites rich in greenstones (especially serpentine) and other minerals, with a cluster of ancient sites including the Huecan Saladoid sites on the left of the graph, and more recent sites on the right side. The second dimension distinguishes sites rich in calcite from those rich in diorite, as already observed in the seriations. The third dimension mainly incorporates the variance in crystal quartz proportion. By keeping only dimensions 1 and 3 (@fig-CA_rawmaterial), this analysis separates the sites extremely effectively based on their period. The results obtained by the Correspondence Analysis largely confirm the results of the seriations, highlighting the robustness of this quantitative methodology.
@@ -968,8 +829,8 @@ hmapsimBR = heatmaply(matrix_simBR,
                  #scale = "row", #scaling of values to compare quite different samples
                  col = bgy.ramp(100), #use of teal color
                  seriate = "OLO", #ordering of the leaves
-                 RowSideColors = color_sites$Color, #adding the  color bars for Periods
-                 ColSideColors = color_sites$Color,
+                 RowSideColors = color_sites$color, #adding the  color bars for Periods
+                 ColSideColors = color_sites$color,
                  key.title = "Brainerd-Robinson \n similarity",
                  show_dendrogram = c(FALSE, FALSE),
                  cexCol = 1)
@@ -978,7 +839,8 @@ hmapsimBR = heatmaply(matrix_simBR,
 hmapsimBR[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 hmapsimBR[["x"]][["layout"]][["yaxis"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
 hmapsimBR[["x"]][["layout"]][["showlegend"]] = FALSE
-export(p = hmapsimBR,file = "hmapsimBR.png")
+hmapsimBR
+#export(p = hmapsimBR,file = "hmapsimBR.png")
 ```
 
 The exploration of network analysis results can be made difficult by the entanglement of too many links between nodes or the overlap of nodes. Several methods exist to represent such networks [@henry_representations_2008], and one of them corresponds to the representation by clusters or matrices. Here, to maintain the node/link representation type, thresholds are applied to the list of links between sites to keep only links with a similarity greater than or equal to the chosen threshold. @fig-networksBR_rawmaterial thus represents the network of archaeological sites when the threshold is set to remove the maximum number of links between sites while maintaining a single, fully connected network, meaning that all sites are linked in a single network. It can be observed that the strongest similarities are between recent period sites, namely between Playa Grande and El Cabo for the Late-Final Ceramic and Baie Orientale 2 and Grand Case for the Late Ceramic. Two groups of recent sites are linked to the group of ancient and Middle Ceramic sites through Hope Estate for the group of sites rich in calcite, and through Trants for sites rich in diorite and carnelian, forming a system similar to that already observed. It should also be noted that there is a specific group of Early Ceramic sites at the top of the figure, which includes sites attributed to the Huecan Saladoid and Sorcé, the neighboring site of La Hueca on the island of Vieques. These sites are connected to sites attributed to the Cedrosan Saladoid through the Guadeloupean site of Gare Maritime. Finally, the Middle Ceramic sites\footnote{except Golden Rock which is alone, due to its very specific collection made of a a single rock crystal collar} are located as interface between recent sites rich in diorite and Cedrosan Saladoid sites. The Grand Bay site, attributed to Middle-Late Ceramic without being able to distinguish the origin of the lapidary objects more precisely in this multicomponent site, is here clearly located in one of the Post-Saladoid groups. The choice of the threshold used to represent the network being arbitrary, as interesting as the threshold that allows at least one link per site may be, it is important to observe the networks formed with other thresholds [@peeples_binarize_2013]. With the lowest threshold represented here, 0.3, it can be seen that the Late and Final Ceramic sites form a single set with very strong similarities. The color scale of the links, as well as the thickness scale of the links, representing a wider range of values, allow for better differentiation between groups. Thus, recent sites, which have much less diversity than older sites, can show much stronger similarities because they only involve two or three raw materials. The heart of the network, formed by Cedrosan Saladoid sites, has many more connections (which places it at the center via the node positioning algorithm), but the links are weaker, as the raw materials are more diverse, making it difficult to achieve very high similarities. From a threshold of 0.4, the two groups within the recent sites are distinguished, and the network strongly resembles the network described previously for a threshold of 0.461. At a threshold of 0.462 (not shown here), the network is no longer complete, and of course, the Golden Rock site is the first to be removed from the network. At a threshold of 0.5, the groups of recent sites are also separated from the Early and Middle Ceramic sites, clearly indicating that this is where the chronological and possibly cultural limit lies if one wishes to dichotomize Ceramic Age lapidary.
@@ -1237,7 +1099,8 @@ hmap_typesobjets = heatmaply(df_typesobjets,
                  cexCol = 0.9)
 #hmap_typesobjets[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_typesobjets[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
-export(p = hmap_typesobjets,file = "hmap_typesobjets.png")
+hmap_typesobjets
+#export(p = hmap_typesobjets,file = "hmap_typesobjets.png")
 ```
 
 Looking more closely at the typology, it is interesting to observe the groups formed when seriation concerns the sites for which information on bead and pendant types is known (@fig-seriation_alltypes), as well as focusing solely on the beads (@fig-seriation_typebeads). When bead and pendant types are taken into account, the main distinction is between Late Ceramic sites and the others, once again, since El Flaco and El Cabo are isolated due to their content of bead-pendants. The other sites are separated into two groups depending on whether they are richer in cylindrical or discoid beads, which is even more strongly confirmed in the analysis focused solely on bead types, which clearly distinguishes these two groups (@fig-seriation_typebeads). Although the separation criteria of the clusters are clear, the content of these clusters only provides one clear piece of information on a possible chronological distinction: there is none. These analyses clearly indicate that sites can be quite different from each other in terms of the typology of beads and pendants, but this difference is not related to the chronological period to which the archaeological site is attributed, except for the Late Ceramic sites from Dominican Republic.
@@ -1255,7 +1118,8 @@ hmap_toustypes = heatmaply(df_toustypes,
                  cexCol = 0.9)
 #hmap_toustypes[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_toustypes[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
-export(p = hmap_toustypes,file = "hmap_toustypes.png")
+hmap_toustypes
+#export(p = hmap_toustypes,file = "hmap_toustypes.png")
 ```
 
 ```{r seriation types of beads}
@@ -1271,7 +1135,8 @@ hmap_typesperles = heatmaply(df_typesperles,
                  cexCol = 0.9)
 #hmap_typesperles[["x"]][["layout"]][["annotations"]][[1]][["text"]]="" #removing a word above the row denderogram
 hmap_typesperles[["x"]][["layout"]][["xaxis2"]][["ticktext"]]="Period" #changing the automatic name to Period below the color bars
-export(p = hmap_typesperles,file = "hmap_typesperles.png")
+hmap_typesperles
+#export(p = hmap_typesperles,file = "hmap_typesperles.png")
 ```
 
 Correspondence Analysis carried out on the detailed typological data required additional processing. Indeed, while seriations aim to group sites, CA tries to maximize the variance on a few dimensions and therefore seeks to highlight disparities and differences. Thus, rare types have a huge weight in the overall variance of the dataset, as the few sites that contain them are compared to sites that do not contain them at all, and this obscures the variability related to other types. If in the seriations the rarity of faceted beads identified only in Trants, or the rarely inventoried labrets, did not seem to play a major role in bringing sites closer together, in the CA, it was necessary to remove them from the dataset, otherwise the only information that could be gleaned was that the sites that presented these rare types were different from the others. Then, as with some diversity analyses, the faceted bead type was excluded (only 1 site), as well as spherical beads (less than 10 objects) and anthropozoomorphic pendants (less than 10 objects). The bead-pendants, which also have a strong weight in the analysis, were not removed because they are present in significant quantities, are easily identifiable, and since they have a strong impact only on the first dimension, it is possible to ignore their presence by observing dimensions 2 and 3 (@fig-CA_types C). This also applies when performing the same analysis on bead types only (@fig-CA_typesbeads). These analyses confirm the clear distinction between the El Cabo and El Flaco sites, related to their content of bead-pendants. When observing dimensions 2 and 3 of these CA, the sites do not form well-defined groups, and in particular, no chronological distinction is evident. The most opposed types are the biconical, barrel, and planoconvex beads, while discoid and cylindrical beads are located more centrally, indicating that they have lower variance. In particular, discoid beads seem to be the most common element in both analysis including all types as well as in the one including only beads.
@@ -1322,8 +1187,6 @@ dim2_3[["labels"]][["colour"]] = "Period"
 plot_grid(dim1_2,dim1_3 + theme(legend.position = "none"),dim2_3,legend_CA_typesbeads,rel_widths = c(1,1,.5),nrow =2, labels = c("A","B","C"),align = 'v')
 ```
 
-\clearpage
-
 ### Combined typology and raw materials similarity
 
 ```{r}
@@ -1340,44 +1203,21 @@ df_typerawsites_simple  <- read.csv(file = "bdd_paaf_rawtyposites.csv", row.name
   color_sites_typerawsites=inner_join(color_sites_typerawsites,data_sites, by = c("Site" = "Site")) %>%
   select(-Site_short, -Index, -Longitude, -Latitude,-Culture)
     color_sites_typerawsites$color = str_replace_all(color_sites_typerawsites$Period, color_periods)
-
 ```
 
-In order to extract even more in-depth information, while being aware of the varying quality of the data when it comes to entering into detail, we can try to analyze the dataset combining raw materials and typology. First, a new dataset needs to be created, combining information from typology, raw materials, and keeping only the sites for which both information is known (Table 5). Correspondence Analysis, whether introducing maximum precision at the level of green rocks or grouping green rocks together (except for turquoise), shows well-marked preferences for certain materials for the production of certain types of lapidary adornments (@fig-CA_typesraw). These analyses also show that zoomorphic pendants (the vast majority of pendants) are located opposite to colorless materials (calcite, rock crystal) and finally opposite to most types of beads, as they are opposed on the first dimension of the CA which accounts for 65% of the variance. In particular, the proximity of serpentine with zoomorphic pendants is noteworthy, when precise determinations of materials are preserved, and that of malachite with geometric pendants. Nephrite and paragonite are less affiliated with a particular type, but when green rocks are grouped, the weight of serpentine (in very rich sites in Puerto Rico, for example) takes over (@fig-CA_typesraw B). The discoid type remains fairly central on the second dimension of the Correspondence Analysis, which mainly opposes elongated beads with planoconvex beads and geometric pendants. The most common colorless materials (calcite and rock crystal) are also located in the central part of this second dimension, used to produce several different types of beads. It is interesting to note that these two materials with similar colors ultimately have a similar, diversified use. Other materials are strongly linked to elongated beads: white and red materials, and to a lesser extent, amethyst and diorite. It can also be observed that turquoise, as expected, is located close to the planoconvex type.
+In order to extract even more in-depth information, while being aware of the varying quality of the data when it comes to entering into detail, we can try to analyze the dataset combining raw materials and typology. First, a new dataset needs to be created, combining information from typology, raw materials, and keeping only the sites for which both information is known (@tbl-dataset_types_rawmaterials). Correspondence Analysis, whether introducing maximum precision at the level of green rocks or grouping green rocks together (except for turquoise), shows well-marked preferences for certain materials for the production of certain types of lapidary adornments (@fig-CA_typesraw). These analyses also show that zoomorphic pendants (the vast majority of pendants) are located opposite to colorless materials (calcite, rock crystal) and finally opposite to most types of beads, as they are opposed on the first dimension of the CA which accounts for 65% of the variance. In particular, the proximity of serpentine with zoomorphic pendants is noteworthy, when precise determinations of materials are preserved, and that of malachite with geometric pendants. Nephrite and paragonite are less affiliated with a particular type, but when green rocks are grouped, the weight of serpentine (in very rich sites in Puerto Rico, for example) takes over (@fig-CA_typesraw B). The discoid type remains fairly central on the second dimension of the Correspondence Analysis, which mainly opposes elongated beads with planoconvex beads and geometric pendants. The most common colorless materials (calcite and rock crystal) are also located in the central part of this second dimension, used to produce several different types of beads. It is interesting to note that these two materials with similar colors ultimately have a similar, diversified use. Other materials are strongly linked to elongated beads: white and red materials, and to a lesser extent, amethyst and diorite. It can also be observed that turquoise, as expected, is located close to the planoconvex type.
 
-\begin{landscape}   
-\begin{table}[]
-\setlength\tabcolsep{2 pt}
-\centering
-\footnotesize
-\begin{tabular}{@{}lcccccccccc@{}}
-\toprule
-Gemstone & Biconical & Cylindrical & Discoid & Faceted & Geometric & Planoconvex & Spherical & Barrel & Zoomorphic & \textbf{Total} \\ \midrule
-Amethyste & 8 & 31 & 39 & 2 &  & 7 & 2 & 69 & 1 & \textbf{159} \\
-Anorthite &  &  & 4 &  &  &  &  &  &  & \textbf{4} \\
-Aventurine & 1 & 10 & 2 & 1 & 1 & 1 &  & 1 & 7 & \textbf{24} \\
-Barytine &  & 2 &  &  &  &  &  &  &  & \textbf{2} \\
-Calcite & 1 & 46 & 53 &  & 6 & 1 &  & 17 & 11 & \textbf{135} \\
-Carnelian &  & 37 & 12 & 4 &  &  &  & 47 &  & \textbf{100} \\
-Chalcedony &  &  &  &  &  &  &  & 2 &  & \textbf{2} \\
-Diorite & 2 & 201 & 168 & 6 &  & 2 &  & 135 & 1 & \textbf{515} \\
-Jasper &  &  &  &  &  &  &  & 2 &  & \textbf{2} \\
-Limestone &  &  &  &  &  &  &  & 2 &  & \textbf{2} \\
-Malachite &  & 1 & 1 &  & 2 & 2 &  &  & 1 & \textbf{7} \\
-Marble &  & 3 &  &  &  &  &  & 1 &  & \textbf{4} \\
-Nephrite &  & 3 & 5 &  & 23 & 5 & 1 & 1 & 42 & \textbf{80} \\
-Paragonite &  &  & 6 &  &  & 1 &  &  & 7 & \textbf{14} \\
-Rock crystal & 8 & 74 & 78 & 2 & 2 & 9 &  & 36 & 4 & \textbf{213} \\
-Serpentine & 1 & 4 & 20 &  & 4 & 1 & 1 & 2 & 717 & \textbf{751} \\
-Stalactite &  & 1 &  &  &  &  &  & 1 &  & \textbf{2} \\
-Sudoite & 1 &  & 4 &  &  &  &  &  & 2 & \textbf{7} \\
-Turquoise &  & 7 & 135 & 1 & 10 & 29 &  & 15 & 4 & \textbf{201} \\
-\textbf{Total} & \textbf{22} & \textbf{420} & \textbf{527} & \textbf{16} & \textbf{48} & \textbf{59} & \textbf{4} & \textbf{331} & \textbf{797} & 2224 \\ \bottomrule
-\end{tabular}
-\caption{Dataset combining precise types and raw materials of the general lapidary production during the Ceramic Age in the Caribbean islands.}
-\label{tab:data_MP_Typo_combine}
-\end{table}
-\end{landscape}
+```{r tbl-dataset_types_rawmaterials}
+#| label: tbl-dataset_types_rawmaterials
+#| tbl-cap: Dataset combining precise types and raw materials of the general lapidary production during the Ceramic Age in the Caribbean islands.
+
+library(knitr)
+library(kableExtra)
+dataset_types_rawmaterials=read.csv(file = "Table_types_rawmaterials.csv")
+kable(dataset_types_rawmaterials,col.names = gsub("[_]", " ", names(dataset_types_rawmaterials)), align = "lccccccccc") %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
+```
 
 ```{r CA Typo/Raw}
 #| label: fig-CA_typesraw
@@ -1391,141 +1231,21 @@ ca_typerawgreenturq = CA(df_typerawgreenturq, graph = F)
 plot_grid(fviz_ca(ca_typeraw, axes = c(1, 2),graph.type = "ggplot",labelsize = 2,repel = T), fviz_ca(ca_typerawgreenturq, axes = c(1, 2),graph.type = "ggplot",labelsize = 2,repel = T),ncol = 2, labels = "AUTO")
 ```
 
-It is also possible, while retaining the most information (site+raw material+typology), to create a dataset allowing for the analysis of similarity between sites (Table 6). With such precise data, the number of objects is significantly reduced and drop to 2224, due to the combination of lacking typologocial or gemological information for several sites. For example, the site of Doig's only includes one object here because only one object from this site is described in terms of raw material and type, while the complete collection is made of 43 objects. The problem is the same for sites that have been included in other analyses, such as Hacienda Grande (5 objects known for type and raw material), Main Street (8), Playa Grande (4), Punta Candelero (7), and Tecla (2). All of which have been removed from the dataset. Although their weight is very low and does not change the result of the correspondence analysis, these poorly documented sites create significant distortions in network analyses. The limit for retaining an archaeological site in the dataset was arbitrarily set at 10 objects documented for their type and raw material. This dataset of 14 sites and 84 Type-Raw material, although it is far from ideal, allows the study of proximities between archaeological sites in the corpus at an unprecedented level of detail. The resulting CA includes the 14 sites, but it is not possible to display the 84 Type-Raw material combinations while maintaining a readable graph (@fig-CA_typesrawsites). This analysis highlights, on the first dimension of the analysis (28% of the expressed variance), the major opposition that exists, at this level of precision, between the sites rich in green rocks and pendants from the Early Ceramic of Vieques, such as La Hueca and Sorcé, and the sites richer in colorless and non-green materials, and richer in beads, from the Cedrosan Saladoid and later periods. The second and third dimensions of the analysis (29% of the variance combined) confirm the clear opposition between the Early Ceramic and the later periods. Although the only Middle Ceramic site retained in this dataset behaves in this CA like the Early Ceramic sites, the site of Grand Bay, attributed to the Middle/Late Ceramic period for the lapidary collection, is situated at an interface position between the Early Ceramic and Late/Final Ceramic sites.
+It is also possible, while retaining the most information (site+raw material+typology), to create a dataset allowing for the analysis of similarity between sites (@tbl-dataset_types_rawmaterials_sites). With such precise data, the number of objects is significantly reduced and drop to 2224, due to the combination of lacking typologocial or gemological information for several sites. For example, the site of Doig's only includes one object here because only one object from this site is described in terms of raw material and type, while the complete collection is made of 43 objects. The problem is the same for sites that have been included in other analyses, such as Hacienda Grande (5 objects known for type and raw material), Main Street (8), Playa Grande (4), Punta Candelero (7), and Tecla (2). All of which have been removed from the dataset. Although their weight is very low and does not change the result of the correspondence analysis, these poorly documented sites create significant distortions in network analyses. The limit for retaining an archaeological site in the dataset was arbitrarily set at 10 objects documented for their type and raw material. This dataset of 14 sites and 84 Type-Raw material, although it is far from ideal, allows the study of proximities between archaeological sites in the corpus at an unprecedented level of detail. The resulting CA includes the 14 sites, but it is not possible to display the 84 Type-Raw material combinations while maintaining a readable graph (@fig-CA_typesrawsites). This analysis highlights, on the first dimension of the analysis (28% of the expressed variance), the major opposition that exists, at this level of precision, between the sites rich in green rocks and pendants from the Early Ceramic of Vieques, such as La Hueca and Sorcé, and the sites richer in colorless and non-green materials, and richer in beads, from the Cedrosan Saladoid and later periods. The second and third dimensions of the analysis (29% of the variance combined) confirm the clear opposition between the Early Ceramic and the later periods. Although the only Middle Ceramic site retained in this dataset behaves in this CA like the Early Ceramic sites, the site of Grand Bay, attributed to the Middle/Late Ceramic period for the lapidary collection, is situated at an interface position between the Early Ceramic and Late/Final Ceramic sites.
 
-```{=tex}
-\begin{landscape}
-\begin{table}[]
-\begin{adjustwidth}{-1.1cm}{-1.1cm}
-\centering
-\tiny
-\setlength\tabcolsep{1pt}
-\begin{tabular}{@{}rccccccccccccccccccc@{}}
-\toprule
-\multicolumn{1}{l}{} & Amethyst & Anorthite & Aventurine & Barytine & Limestone & Chalcedony & Calcite & Carnelian & Rock crystal & Diorite & Jasper & Malachite & Marble & Nephrite & Paragonite & Serpentine & Stalactite & Sudoite & Turquoise \\ \midrule
-\multicolumn{1}{l}{\textbf{Biconical}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Hacienda Grande &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  \\
-Hope Estate &  &  &  &  &  &  & 1 &  & 1 &  &  &  &  &  &  &  &  &  &  \\
-La Hueca &  &  & 1 &  &  &  &  &  & 1 & 1 &  &  &  &  &  & 1 &  &  &  \\
-Morel & 4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  \\
-Pearls &  &  &  &  &  &  &  &  & 3 & 1 &  &  &  &  &  &  &  &  &  \\
-Sorcé &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  \\
-Trants &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  \\
-Vivé & 4 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{l}{\textbf{Cylindrical}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Anse à la Gourde &  &  &  &  &  &  & 3 &  &  &  &  &  &  &  &  &  & 1 &  &  \\
-Baie Orientale 2 &  &  &  &  &  &  & 10 &  &  &  &  &  &  &  &  &  &  &  &  \\
-El Cabo &  &  &  &  &  &  & 3 &  &  & 15 &  &  &  &  &  &  &  &  &  \\
-El Carril &  &  &  &  &  &  & 3 &  &  & 3 &  &  &  &  &  &  &  &  &  \\
-El Flaco &  &  &  &  &  &  & 15 &  &  & 7 &  &  &  &  &  &  &  &  &  \\
-Elliot's (PH-03) & 1 &  &  & 1 &  &  &  &  & 1 & 4 &  &  &  &  &  & 1 &  &  &  \\
-Gare maritime & 2 &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  & 1 &  &  & 2 \\
-Grand Bay &  &  &  &  &  &  &  &  &  & 2 &  &  &  &  &  &  &  &  &  \\
-Hacienda Grande &  &  &  &  &  &  &  & 1 &  & 2 &  &  &  &  &  &  &  &  &  \\
-Hope Estate & 1 &  &  &  &  &  & 7 & 1 & 5 & 5 &  &  &  &  &  &  &  &  &  \\
-La Hueca & 1 &  & 1 &  &  &  & 1 & 1 & 2 & 1 &  &  & 1 &  &  & 1 &  &  & 1 \\
-Main Street &  &  &  &  &  &  & 1 &  & 3 & 1 &  &  & 1 &  &  &  &  &  &  \\
-Morel & 1 &  &  &  &  &  &  & 1 & 13 & 5 &  &  & 1 &  &  &  &  &  &  \\
-Pearls & 21 &  &  &  &  &  & 1 & 22 & 23 & 139 &  &  &  & 3 &  &  &  &  & 3 \\
-Playa Grande &  &  &  &  &  &  &  &  &  & 2 &  &  &  &  &  &  &  &  &  \\
-Prosperity &  &  &  &  &  &  &  & 1 & 2 &  &  &  &  &  &  &  &  &  &  \\
-Sorcé & 1 &  & 1 &  &  &  & 1 & 1 & 1 & 1 &  & 1 &  &  &  & 1 &  &  & 1 \\
-Trants & 3 &  & 8 &  &  &  &  & 7 & 21 & 17 &  &  &  &  &  &  &  &  &  \\
-Vivé &  &  &  & 1 &  &  & 1 & 2 & 2 &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{l}{\textbf{Discoid}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Anse à la Gourde &  & 1 &  &  &  &  & 6 &  &  & 3 &  &  &  &  &  &  &  &  & 1 \\
-Baie Orientale 2 &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  &  \\
-El Cabo &  &  &  &  &  &  &  &  &  & 9 &  &  &  &  &  &  &  &  &  \\
-El Flaco &  &  &  &  &  &  & 32 &  &  & 6 &  &  &  &  &  &  &  &  &  \\
-Gare maritime &  &  & 1 &  &  &  & 1 &  & 2 &  &  &  &  &  &  & 8 &  & 1 & 3 \\
-Grand Bay &  &  &  &  &  &  & 1 &  &  & 4 &  &  &  &  &  &  &  &  &  \\
-La Hueca & 1 &  & 1 &  &  &  & 1 &  & 2 &  &  & 1 &  & 1 &  & 1 &  &  & 1 \\
-Hope Estate & 1 & 2 &  &  &  &  & 7 &  & 3 &  &  &  &  &  & 5 & 4 &  & 2 & 4 \\
-Main Street &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  \\
-Morel &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  &  \\
-Pearls & 37 &  &  &  &  &  & 3 & 12 & 58 & 143 &  &  &  & 4 &  & 7 &  &  & 119 \\
-Prosperity &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 \\
-Trants &  &  &  &  &  &  &  &  & 12 &  &  &  &  &  &  &  &  &  &  \\
-Vivé &  & 1 &  &  &  &  &  &  &  & 3 &  &  &  &  & 1 &  &  & 1 & 6 \\
-\multicolumn{1}{l}{\textbf{Faceted}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Trants & 2 &  & 1 &  &  &  &  & 4 & 2 & 6 &  &  &  &  &  &  &  &  & 1 \\
-\end{tabular}
-\caption{Table continue on next page.}
-\label{tab:data_MP_Typo}
-\end{adjustwidth}
-\end{table}
-\end{landscape}
+```{r tbl-dataset_types_rawmaterials_sites}
+#| label: tbl-dataset_types_rawmaterials_sites
+#| tbl-cap: Dataset combining precise types and raw materials for each site during the Ceramic Age in the Caribbean islands.
+library(knitr)
+library(kableExtra)
+dataset_types_rawmaterials_sites=read.csv(file = "Table_types_rawmaterials_sites.csv")
+kable(dataset_types_rawmaterials_sites,col.names = gsub("[_]", " ", names(dataset_types_rawmaterials_sites)),align = "lccccccccccccccccccc") %>%
+  add_indent(c(1, 10,30,45,47,56,63,67,82), level_of_indent = 1) %>%
+  row_spec(0, align = "c") %>%
+  row_spec(c(1, 10,30,45,47,56,63,67,82), bold = T) %>%
+  kable_styling(latex_options = "hold_position")
 ```
-\newpage
 
-\addtocounter{table}{-1}
-
-```{=tex}
-\begin{landscape}
-\begin{table}[]
-\begin{adjustwidth}{-1.1cm}{-1.1cm}
-\centering
-\tiny
-\setlength\tabcolsep{1.5 pt}
-\begin{tabular}{@{}rccccccccccccccccccc@{}}
-\multicolumn{1}{l}{} & Amethyst & Anorthite & Aventurine & Barytine & Limestone & Chalcedony & Calcite & Carnelian & Rock crystal & Diorite & Jasper & Malachite & Marble & Nephrite & Paragonite & Serpentine & Stalactite & Sudoite & Turquoise \\ \midrule
-\multicolumn{1}{l}{\textbf{Geometric}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Anse à la Gourde &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  &  \\
-Gare maritime &  &  &  &  &  &  & 2 &  &  &  &  &  &  &  &  & 2 &  &  &  \\
-Grand Bay &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  \\
-Hope Estate &  &  &  &  &  &  & 2 &  & 1 &  &  & 1 &  &  &  &  &  &  &  \\
-La Hueca &  &  & 1 &  &  &  & 1 &  &  &  &  & 1 &  & 1 &  & 1 &  &  &  \\
-Pearls &  &  &  &  &  &  &  &  & 1 &  &  &  &  & 21 &  &  &  &  & 9 \\
-Prosperity &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  \\
-Trants &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 \\
-\multicolumn{1}{l}{\textbf{Planoconvex}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Gare maritime &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 \\
-Hope Estate &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  \\
-La Hueca &  &  & 1 &  &  &  & 1 &  &  &  &  & 1 &  & 1 &  & 1 &  &  & 1 \\
-Pearls & 7 &  &  &  &  &  &  &  & 9 & 2 &  &  &  & 3 &  &  &  &  & 24 \\
-Sorcé &  &  &  &  &  &  &  &  &  &  &  & 1 &  & 1 &  & 1 &  &  & 1 \\
-Vivé &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 2 \\
-\multicolumn{1}{l}{\textbf{Spherical}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Morel & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-Pearls &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  & 1 &  &  &  \\
-Vivé & 1 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{l}{\textbf{Barrel}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Anse à la Gourde &  &  &  &  &  &  & 1 &  &  & 1 &  &  & 1 &  &  &  &  &  &  \\
-El Flaco &  &  &  &  &  &  & 13 &  &  &  &  &  &  &  &  &  &  &  &  \\
-Elliot's (PH-03) & 1 &  &  &  & 2 & 1 &  & 2 &  & 1 &  &  &  &  &  &  &  &  &  \\
-Gare maritime & 2 &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  & 1 &  &  &  \\
-Hacienda Grande &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  \\
-Hope Estate & 3 &  &  &  &  &  & 2 & 3 &  & 9 &  &  &  &  &  &  &  &  &  \\
-Main Street &  &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  \\
-Morel & 6 &  &  &  &  &  & 1 & 1 &  & 4 &  &  &  &  &  &  & 1 &  &  \\
-Pearls & 50 &  &  &  &  &  &  & 36 & 31 & 96 &  &  &  & 1 &  &  &  &  & 15 \\
-Prosperity & 2 &  &  &  &  &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  \\
-Sorcé & 1 &  &  &  &  &  &  &  & 1 & 1 &  &  &  &  &  &  &  &  &  \\
-Sorcé La Hueca & 1 &  & 1 &  &  &  &  & 1 & 1 & 1 &  &  &  &  &  & 1 &  &  &  \\
-Trants & 2 &  &  &  &  &  &  & 1 & 3 & 19 &  &  &  &  &  &  &  &  &  \\
-Vivé & 1 &  &  &  &  & 1 &  & 1 &  & 2 & 1 &  &  &  &  &  &  &  &  \\
-\multicolumn{1}{l}{\textbf{Zoomorphic}} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
-Doig's &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  \\
-Elliot's &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  \\
-Gare maritime &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 & 1 &  & 1 & 1 \\
-Hope Estate &  &  &  &  &  &  & 3 &  &  &  &  &  &  & 1 & 5 & 1 &  &  &  \\
-La Hueca & 1 &  & 3 &  &  &  & 4 &  & 4 &  &  & 1 &  & 4 &  & 669 &  &  &  \\
-Main Street &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  \\
-Morel &  &  & 1 &  &  &  &  &  &  &  &  &  &  & 3 & 1 & 1 &  & 1 &  \\
-Pearls &  &  &  &  &  &  & 2 &  &  & 1 &  &  &  & 23 &  &  &  &  & 3 \\
-Prosperity &  &  & 1 &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  \\
-Punta Candelero &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 7 &  &  &  \\
-Sorcé &  &  & 1 &  &  &  & 2 &  &  &  &  &  &  & 5 &  & 36 &  &  &  \\
-Tecla &  &  & 1 &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  &  &  \\
-Trants &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & 1 &  &  &  \\
-Vivé &  &  &  &  &  &  &  &  &  &  &  &  &  & 2 &  &  &  &  &  \\
-\multicolumn{1}{l}{\textbf{Total}} & \textbf{159} & \textbf{4} & \textbf{24} & \textbf{2} & \textbf{2} & \textbf{2} & \textbf{135} & \textbf{100} & \textbf{213} & \textbf{518} & \textbf{2} & \textbf{7} & \textbf{4} & \textbf{80} & \textbf{14} & \textbf{751} & \textbf{2} & \textbf{7} & \textbf{201} \\ \bottomrule
-\end{tabular}
-\caption[]{Dataset combining precise types and raw materials for each site during the Ceramic Age in the Caribbean islands.}
-\end{adjustwidth}
-\end{table}
-\end{landscape}
-```
 ```{r CA Typo/Raw/Sites}
 #| label: fig-CA_typesrawsites
 #| fig-cap: "Correspondence Analysis of the archaeological sites' lapidary collection combining raw materials and detailed typology for each site."
@@ -1566,7 +1286,7 @@ df_typerawsites$Color = factor(df_typerawsites$Color, levels=c("dodgerblue", "da
 
 edges <- melt(Paaf_typerawsites_BR) %>%
   rename(Site1 = Var1, Site2 = Var2, Similarity = value) %>%
-  filter(Similarity>T)
+  filter(Similarity>T) 
 g = graph_from_data_frame(edges,directed = FALSE,vertices = df_typerawsites[,1:5])
 
 ggraph(g, layout = "kk") + 
@@ -1635,9 +1355,10 @@ edges = melt(Paaf_raw_BR_sup) %>%
   filter(Similarity>=T) #Tmin ou T
 Paaf_bdd$Index=row.names(Paaf_bdd)
 Paaf_bdd = rename(Paaf_bdd,Site = Index)
+Paaf_bdd$Color = factor(Paaf_bdd$Color, levels=c("dodgerblue", "darkorange","mediumblue", "darkgrey", "gold"))
 g = graph_from_data_frame(edges,directed = FALSE,vertices = Paaf_bdd[,1:7])
 
-# Giving the edges the strating and ending points which are the coordinates of the sites.
+# Giving the edges the starting and ending points which are the coordinates of the sites.
 
 edges_for_plot <- edges %>%
   inner_join(Paaf_bdd %>% select(Site, Longitude, Latitude), 
@@ -1671,6 +1392,8 @@ ggraph(lay) + country_shapes + mapcoords + maptheme +
     scale_color_identity("Legend", labels = levels(as.factor(Paaf_bdd$Period)),guide = "legend") +
   geom_node_text(aes(label = name), repel = TRUE, size = 3,
                  color = "black", fontface = "bold")
+
+
 
 ```
 
@@ -1713,49 +1436,20 @@ This homogeneity implies regular contacts between human groups inhabiting the An
 
 ## The origin of this lapidary production
 
-The most widely discussed topic among Caribbean archaeologists through the diverse lapidary productions of the Early Ceramic period is undoubtedly the distribution of these objects and the origin of the raw materials used for their production. The interpretations are mostly similar, indicating origins from all around the Caribbean islands as well as the northern coast of South America [e.g. @rodriguez_early_1993; @hofman_island_2007; @cody_distribution_1993]. Table 7 summarizes the different proposals of archaeologists in the region regarding the origin of the most common materials. Some studies mainly cite old geological literature or personal communications from geologists [@cody_distribution_1993; @rodriguez_early_1993; @murphy_prehistory_1999], while most recent studies only repeat these hypothetical attributions. These two categories of work ultimately provide very little concrete evidence, and unfortunately, I do not currently believe it is possible to go further in a reasonable way. As D. Watters [@watters_stone_1997a] wrote: "*Archaeologists tend to favour lowland South American sources because of undoubted linguistic and artifactual evidence linking the Caribbean's early Ceramic Age colonizers with that region, but empirical evidence of such sources is largely lacking*". Ongoing work on turquoise and diorite will hopefully bear fruit in the coming years [@queffelec2022lithic; @queffelec_provenancing_2021], while carnelian could also be a possibility, based on recent work in other parts of the world [@carter_geologic_2016; @theunissen_doubts_2000; @insoll_understanding_2004]. Hypothesis will have to be tested both with fieldwork and analytical programs about the origin of sudoite [@queffelec_first_2021] and the origin of nephrite [@acevedogomez_placas_2018].
+The most widely discussed topic among Caribbean archaeologists through the diverse lapidary productions of the Early Ceramic period is undoubtedly the distribution of these objects and the origin of the raw materials used for their production. The interpretations are mostly similar, indicating origins from all around the Caribbean islands as well as the northern coast of South America [e.g. @rodriguez_early_1993; @hofman_island_2007; @cody_distribution_1993]. @tbl-proposed_provenance summarizes the different proposals of archaeologists in the region regarding the origin of the most common materials. Some studies mainly cite old geological literature or personal communications from geologists [@cody_distribution_1993; @rodriguez_early_1993; @murphy_prehistory_1999], while most recent studies only repeat these hypothetical attributions. These two categories of work ultimately provide very little concrete evidence, and unfortunately, I do not currently believe it is possible to go further in a reasonable way. As D. Watters [@watters_stone_1997a] wrote: "*Archaeologists tend to favour lowland South American sources because of undoubted linguistic and artifactual evidence linking the Caribbean's early Ceramic Age colonizers with that region, but empirical evidence of such sources is largely lacking*". Ongoing work on turquoise and diorite will hopefully bear fruit in the coming years [@queffelec2022lithic; @queffelec_provenancing_2021], while carnelian could also be a possibility, based on recent work in other parts of the world [@carter_geologic_2016; @theunissen_doubts_2000; @insoll_understanding_2004]. Hypothesis will have to be tested both with fieldwork and analytical programs about the origin of sudoite [@queffelec_first_2021] and the origin of nephrite [@acevedogomez_placas_2018].
 
-```{=tex}
-\begin{table}[]
-\centering
-\footnotesize
-\begin{tabular}{@{}lll@{}}
-\toprule
-\textbf{Gemstone} & \textbf{Proposed provenance} & \textbf{Reference} \\ \midrule
- & Brazil & Cody 1991 \\
-Amethyst & South America & Rodriguez 1993 ; Murphy 1999 \\
- & Martinique & Hofman 2007 \\
- & Not Martinique & Queffelec et al. 2018\\ \midrule
-Aventurine & Brésil & Rodriguez 1993 \\ \midrule
-Barityne & Antigua & Murphy 1999 ; Hofman et al. 2007 \\ \midrule
-Calcite & Guadeloupe, Antigua, St. Martin, Anguilla, Porto Rico & Hofman et al. 2007 \\ \midrule
- & Dominican Republic & Cody 1993\\ 
-Carnelian & Unknown & Murphy 1999\\  
- & South America or Greater Antilles & Crock \& Bartone 1998 \\
- & Antigua & Murphy et al. 2000 \\ \midrule
- & Antigua & Murphy 1999\\
-Rock crystal & Puerto Rico, St. Martin, Antigua, Martinique & Hofman et al. 2007 \\
- & and other volcanic islands & \\ \midrule
-Diorite & St. Martin & Murphy 1999 \\ 
- & Tobago & Mones 2007 \\ \midrule
- & Puerto Rico, South America & Rodriguez 1993\\
-Malachite & Inconnu & Murphy 1999 \\ 
- & Antigua & Murphy 2000 \\ \midrule
- & Brésil & Cody 1991, 1993 \\
-Nephrite & Central and South America & Rodriguez 1993 ; Murphy 1999 \\
- & Continent Hofman et al. 2007 \\ \midrule
- & Greater Antilles and Venezuela & Cody 1993\\
-Serpentine & Porto Rico & Rodriguez 1993 \\
- & Venezuelan coast, Puerto Rico & Murphy 1999 ; Hofman et al. 2007 \\ \midrule
-Sudoite & Panama, Colombia, Hispaniola, Cuba & Queffelec et al. 2021 \\ \midrule
- & North Chile and East Brazil & Cody 1993 \\ 
-Turquoise & Brazil, Peru, and others & Rodriguez 1993 \\
- & Continent & Murphy 1999 ; Hofman et al. 2007 \\ \bottomrule
-\end{tabular}
-\caption{Summary of the proposed provenance in the literature for different gemstones}
-\label{tab:provenance}
-\end{table}
+```{r tbl-proposed_provenance}
+#| label: tbl-proposed_provenance
+#| tbl-cap: Summary of the proposed provenance in the literature for different gemstones
+
+
+proposed_provenance=read.csv(file = "Table_provenances.csv")
+kable(proposed_provenance,col.names = gsub("[_]", " ", names(proposed_provenance))) %>%
+  collapse_rows(columns = 1) %>%
+  row_spec(0, align = "c") %>%
+  kable_styling(latex_options = "hold_position")
 ```
+
 One aspect that remains unclear about the Early Ceramic period's production of lapidary adornments, in addition to the source of raw materials, is the origin of the cultural tradition and technical expertise. Caribbean archaeologists largely agree that the use of raw materials and the evolution of stylistic frog-shaped pendants suggest a desire to maintain ties with the inhabitants of the continent. Yet, while the link between ceramic productions has been established since the 1950s\footnote{However, the origin of the specificities of Huecan ceramic productions still raises questions, especially if their arrival in the Antilles is considered to be earlier than the Cedrosan Saladoid (Bonnissent 2013)} [e.g. @cruxent_archeological_1958; @rouse_venezuelan_1963; @rostain_archaeology_2008; @berard_saladoid_2013], and has recently been confirmed by genetic studies [@nagele_genomic_2020; @fernandes_genetic_2020], the production of lapidary adornments do not show such an obvious link, to say the least.
 
 When searching through general literature on the archaeology of northern South America and specifically the Orinoco Basin, references to stone adornments are rare, and some general articles or book chapters don't even mention them [@navarrete_prehistory_2008; @gasson_orinoquia_2002; @arroyokalin_entre_2019; @versteeg_barrancoid_2008]. This suggests that stone adornments were not a major element of material culture for the inhabitants of this region during the Ceramic Age, unlike the Early Ceramic period in the Caribbean, where all general writings mention them. The rare mentions of lapidary production mostly concern pendants: *muiraquitas* and winged plaque pendants or bat-shaped pendants ("*placas aladas*" in Spanish). However, *muiraquitas* on the continent are later than in Cedrosan Saladoid or Huecan occupations in the Caribbean islands, as they are found in Kwatta, Konduri or Santarem contexts, which are integrated into the Arauquinoid series (ca. 650-1250/1500 AD) [@rostain_archaeology_2008; @boomert_gifts_1987]. Their use persisted until colonial periods [see @boomert_gifts_1987 p. 36-40 for numerous examples]. The production of beads and pendants in the Santarém or Guyana region is extremely similar to that of the Early Ceramic period in the Caribbean islands [@barata_muiraquita_1954; @roth_stoneage_1944], but they are indeed later. The distribution of winged plaques and their production workshops is quite different: they are found from Costa Rica to Venezuela, passing through Panama and Colombia and are mainly found in the early centuries AD [@gasson_orinoquia_2002; @acevedogomez_placas_2018; @falci_recontextualizing_2017; @wagner_prehispanic_1972]. Some examples have been found in earlier contexts, in the first centuries before our era, in Costa Rica and Colombia [@acevedogomez_placas_2018]. The stone beads are even rarer and also later [@spencer_prehispanic_1992; @lozadamendieta_archaeology_2016], or completely absent from texts [@gasson_orinoquia_2002; @arroyokalin_entre_2019; @versteeg_barrancoid_2008]. When looking specifically at the elements found in Saladoid contexts on the continent, small lapidary adornment productions can be found, although they are difficult to find. For example, at the Corozal site [@roosevelt_parmana_1980], even though they mainly come from non-Saladoid levels, or at the Saladero site where cylindrical stone beads are mentioned: "*En Saladero, por ejemplo, solo encontramos restos de topi, lascas calcedonia, cuentas cilindricas de piedra y un punzon de hueso. No existen objetos ceremoniales.*" [p. 153 @rouse_venezuelan_1963]. After a request to the Peabody Museum at Yale University (R. Colten, pers. comm. 2022), it appears that their collections from major Saladoide sites such as Ronquín or Saladero are very poor in this regard. The Ronquín site, in fact, did not yield any stone beads, while all of the stone beads in their Saladero collection amount to five beads, four of which are made from a black and white material resembling diorite, the fifth resembling volcanic rock (@fig-saladero). These objects are very rare and currently there is no evidence attesting to a great diversity of production in terms of raw materials or forms: where are the continental Saladoid pendants or the amethyst beads? A more in-depth bibliographic research on these anciently excavated, studied, and published sites, which is difficult to conduct online, would require a significant effort to possibly find some images of lapidary productions, but that is out of the scope of this work.
