@@ -2,7 +2,7 @@ Site,Index,Longitude,Latitude,Subserie,Period,Nb_art_tot,Nb_art_ident,Anorthite,
 Elliot's,AN-01,-61.738348,17.071831,Cedrosan,Middle Ceramic,62,54,0,1,0,4,12,10,5,3,9,6,0,1,0,2,0,1,0,0,0
 Doig's,AN-04,-61.81173,17.016176,Cedrosan,Early Ceramic,43,11,0,0,0,0,0,0,2,0,2,2,0,0,0,3,0,2,0,0,0
 Royall's,AN-03,-61.818153,17.154506,Cedrosan,Middle Ceramic,199,195,0,0,0,8,23,8,59,56,18,15,3,0,0,1,0,3,0,0,1
-Anse à la Gourde,GD-03,-61.213342,16.258598,Troumassoid,Late Ceramic,28,21,1,0,0,0,0,0,12,0,0,4,0,0,1,0,0,1,1,0,1
+Anse Ã  la Gourde,GD-03,-61.213342,16.258598,Troumassoid,Late Ceramic,28,21,1,0,0,0,0,0,12,0,0,4,0,0,1,0,0,1,1,0,1
 Baie Orientale 2,SM-01,-63.020342,18.087671,Troumassoid,Late Ceramic,100,99,0,0,0,0,0,0,99,0,0,0,0,0,0,0,0,0,0,0,0
 Gare Maritime,GD-01,-61.733032,15.996632,Huecan,Early Ceramic,59,47,0,9,1,0,0,0,3,0,3,1,1,0,0,1,1,17,0,3,7
 Golden Grove,TO-02,-60.805636,11.163897,Troumassoid,Late Ceramic,271,271,0,0,0,0,0,0,0,0,0,271,0,0,0,0,0,0,0,0,0
@@ -10,9 +10,9 @@ Grand Bay,CA-01,-61.432866,12.477269,Cedrosan,Middle-Late Ceramic,17,11,0,0,0,0,
 Hope Estate,SM-02,-63.040779,18.095434,Cedrosan/Huecan,Early Ceramic,115,87,2,9,0,0,1,2,24,3,15,12,0,1,1,1,11,5,0,2,2
 Morel,GD-02,-61.331654,16.332459,Cedrosan,Early Ceramic,61,59,0,13,1,0,0,0,4,9,13,10,0,0,1,3,1,1,1,2,0
 Pearls,GR-01,-61.615102,12.145259,Cedrosan,Early Ceramic,139,115,0,23,0,0,0,2,0,9,22,14,0,0,0,26,0,9,0,0,10
-Sorcé,VI-01,-65.490762,18.099322,Cedrosan,Early Ceramic,1054,68,0,2,2,0,0,2,3,1,4,2,0,3,0,8,0,39,0,0,2
+SorcÃ©,VI-01,-65.490762,18.099322,Cedrosan,Early Ceramic,1054,68,0,2,2,0,0,2,3,1,4,2,0,3,0,8,0,39,0,0,2
 Trants,MO-01,-62.162221,16.760155,Cedrosan,Early Ceramic,602,516,1,23,13,0,0,0,0,146,49,270,0,0,0,2,0,1,0,0,11
-Vivé,MA-02,-61.082725,14.847667,Cedrosan,Early Ceramic,40,36,1,6,0,1,0,2,1,3,2,5,1,0,0,2,2,0,0,1,9
+VivÃ©,MA-02,-61.082725,14.847667,Cedrosan,Early Ceramic,40,36,1,6,0,1,0,2,1,3,2,5,1,0,0,2,2,0,0,1,9
 Golden Rock,SE-01,-62.981587,17.490163,Cedrosan,Middle Ceramic,81,81,0,0,0,0,0,0,0,0,81,0,0,0,0,0,0,0,0,0,0
 Punta Candelero,PR-04,-65.789355,18.091867,Huecan,Early Ceramic,592,458,0,0,27,0,0,0,0,0,63,0,0,75,8,4,0,257,0,0,24
 Main Street,ST-02,-64.9359,18.3416,Cedrosan,Early Ceramic,15,13,0,0,0,0,1,0,1,1,6,1,0,1,1,1,0,0,0,0,0
