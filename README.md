@@ -3,7 +3,7 @@ This is the repository for the data and code of an article written in Quarto, wi
 
 This article is based on one of my PhD dissertation chapter, available in French (but with English papers inside): https://theses.hal.science/tel-03994566
 
-The preprint as a pdf is available [here](https://osf.io/preprints/socarxiv/r9vmp/) with tables generated via direct LaTeX code in the .qmd document.
+The preprint as a pdf is available [here](https://osf.io/preprints/socarxiv/r9vmp/) with tables generated via direct LaTeX code in the .qmd document, and [here](https://aqueff.github.io/LapidaryCaribbeanRegionalArticle/) as an html page
 
 ## This repository contains
 - Quarto document for html rendering with R chuncks for Diversity analysis (Diversity profiles, modelling of diversity) and Similarity analysis (heatmaps and seriations, networks, correspondence analysis)
